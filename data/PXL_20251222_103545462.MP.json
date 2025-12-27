@@ -1,0 +1,49 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Guava",
+      "scientific_name": "Psidium guajava",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "Strawberry Guava",
+      "scientific_name": "Psidium cattleyanum",
+      "confidence": 0.6
+    }
+  ],
+  "identified_name": "Guava",
+  "scientific_name": "Psidium guajava",
+  "local_names": [
+    {
+      "name": "Amrud",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.9
+    },
+    {
+      "name": "Peru",
+      "language": "Tamil",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "Guava trees are often planted in tropical and subtropical regions worldwide, and the fruit is known for its fragrant aroma and sweet taste. Guava leaves are also traditionally used in some cultures for tea.",
+    "confidence": 0.85,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": true,
+  "is_edible": true,
+  "is_toxic_to_pets": false,
+  "plant_type": "Fruit Tree",
+  "environment": "Tropical and subtropical climates, cultivated in gardens and farms",
+  "difficulty": "Moderate care required, tolerant to various soil types",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103545462.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:38:15.593562Z"
+}

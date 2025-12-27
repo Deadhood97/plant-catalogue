@@ -1,0 +1,54 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Sweet Orange",
+      "scientific_name": "Citrus × sinensis",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "Mandarin Orange",
+      "scientific_name": "Citrus reticulata",
+      "confidence": 0.7
+    },
+    {
+      "identified_name": "Tangerine",
+      "scientific_name": "Citrus tangerina",
+      "confidence": 0.6
+    }
+  ],
+  "identified_name": "Sweet Orange",
+  "scientific_name": "Citrus × sinensis",
+  "local_names": [
+    {
+      "name": "Santra",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.9
+    },
+    {
+      "name": "Naranja",
+      "language": "Spanish",
+      "region": "Latin America",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "The sweet orange tree is widely cultivated for its fruit, which is one of the most consumed fruits worldwide, often enjoyed fresh or as juice.",
+    "confidence": 0.9,
+    "category": "Cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": true,
+  "is_toxic_to_pets": null,
+  "plant_type": "Tree",
+  "environment": "Tropical and subtropical climates",
+  "difficulty": "Moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103713089.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:34:09.397923Z"
+}

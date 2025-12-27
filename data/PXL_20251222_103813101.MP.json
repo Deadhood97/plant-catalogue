@@ -1,0 +1,43 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Black Pearl Pepper",
+      "scientific_name": "Capsicum annuum 'Black Pearl'",
+      "confidence": 0.9
+    },
+    {
+      "identified_name": "Purple Heart",
+      "scientific_name": "Tradescantia pallida",
+      "confidence": 0.6
+    }
+  ],
+  "identified_name": "Black Pearl Pepper",
+  "scientific_name": "Capsicum annuum 'Black Pearl'",
+  "local_names": [
+    {
+      "name": "Black Pearl Mirch",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.9,
+  "fun_fact": {
+    "text": "Black Pearl Pepper is known for its striking black-purple foliage and shiny black fruit which eventually ripens to bright red. It is often grown as an ornamental plant due to its unique leaf color.",
+    "confidence": 0.85,
+    "category": "aesthetic"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": true,
+  "is_toxic_to_pets": true,
+  "plant_type": "ornamental / spicy pepper plant",
+  "environment": "warm temperate to subtropical",
+  "difficulty": "moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103813101.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:47:40.228252Z"
+}

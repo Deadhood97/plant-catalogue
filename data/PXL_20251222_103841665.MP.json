@@ -1,0 +1,54 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Monstera",
+      "scientific_name": "Monstera deliciosa",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "Philodendron",
+      "scientific_name": "Philodendron bipinnatifidum",
+      "confidence": 0.7
+    },
+    {
+      "identified_name": "Split-leaf Philodendron",
+      "scientific_name": "Thaumatophyllum bipinnatifidum",
+      "confidence": 0.6
+    }
+  ],
+  "identified_name": "Monstera",
+  "scientific_name": "Monstera deliciosa",
+  "local_names": [
+    {
+      "name": "Cheese plant",
+      "language": "English",
+      "region": "Global",
+      "confidence": 0.9
+    },
+    {
+      "name": "Swiss Cheese Plant",
+      "language": "English",
+      "region": "Global",
+      "confidence": 0.9
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "Monstera deliciosa is known as the 'Swiss Cheese Plant' due to the unique holes and splits in its large leaves, which many designers love for adding dramatic tropical aesthetics to indoor spaces.",
+    "confidence": 0.9,
+    "category": "aesthetic"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": false,
+  "is_toxic_to_pets": true,
+  "plant_type": "houseplant",
+  "environment": "indoor, tropical",
+  "difficulty": "easy",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103841665.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:40:54.836698Z"
+}

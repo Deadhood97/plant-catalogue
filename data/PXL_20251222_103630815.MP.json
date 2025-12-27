@@ -1,0 +1,43 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Dahlia",
+      "scientific_name": "Dahlia spp.",
+      "confidence": 0.9
+    },
+    {
+      "identified_name": "Zinnia",
+      "scientific_name": "Zinnia elegans",
+      "confidence": 0.4
+    }
+  ],
+  "identified_name": "Dahlia",
+  "scientific_name": "Dahlia spp.",
+  "local_names": [
+    {
+      "name": "डालिया",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.9,
+  "fun_fact": {
+    "text": "Dahlias were declared the national flower of Mexico, where they are native, and are famous for their wide variety of flower shapes and colors.",
+    "confidence": 0.8,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "herbaceous perennial",
+  "environment": "garden, temperate to subtropical",
+  "difficulty": "moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103630815.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:43:06.309392Z"
+}

@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Oleander",
+      "scientific_name": "Nerium oleander",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Frangipani",
+      "scientific_name": "Plumeria rubra",
+      "confidence": 0.5
+    },
+    {
+      "identified_name": "Desert Rose",
+      "scientific_name": "Adenium obesum",
+      "confidence": 0.3
+    }
+  ],
+  "identified_name": "Oleander",
+  "scientific_name": "Nerium oleander",
+  "local_names": [
+    {
+      "name": "Kaner",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Oleander is often used as an ornamental plant in gardens and along roadsides because of its beautiful and abundant flowers.",
+    "confidence": 0.75,
+    "category": "aesthetic"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": true,
+  "plant_type": "Shrub",
+  "environment": "Warm temperate to subtropical",
+  "difficulty": "Moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103656466.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:41:41.345840Z"
+}

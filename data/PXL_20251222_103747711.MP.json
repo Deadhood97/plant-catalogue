@@ -1,0 +1,54 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Hibiscus",
+      "scientific_name": "Hibiscus rosa-sinensis",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Chinese Hibiscus",
+      "scientific_name": "Hibiscus rosa-sinensis",
+      "confidence": 0.75
+    },
+    {
+      "identified_name": "Shoeblackplant",
+      "scientific_name": "Hibiscus rosa-sinensis 'Moonglow'",
+      "confidence": 0.55
+    }
+  ],
+  "identified_name": "Hibiscus",
+  "scientific_name": "Hibiscus rosa-sinensis",
+  "local_names": [
+    {
+      "name": "Gudhal",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.85
+    },
+    {
+      "name": "Japa Kusuma",
+      "language": "Kannada",
+      "region": "Karnataka, India",
+      "confidence": 0.75
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Hibiscus flowers are widely used in Indian culture for religious offerings and as decorative garlands.",
+    "confidence": 0.9,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": true,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "shrub",
+  "environment": "tropical and subtropical",
+  "difficulty": "easy",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103747711.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:42:16.650798Z"
+}

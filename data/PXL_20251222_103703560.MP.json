@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Swiss Cheese Plant",
+      "scientific_name": "Monstera deliciosa",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "Split-leaf Philodendron",
+      "scientific_name": "Monstera deliciosa",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Philodendron",
+      "scientific_name": "Philodendron bipinnatifidum",
+      "confidence": 0.4
+    }
+  ],
+  "identified_name": "Swiss Cheese Plant",
+  "scientific_name": "Monstera deliciosa",
+  "local_names": [
+    {
+      "name": "Money Plant",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.7
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "Monstera deliciosa is popular worldwide as a decorative houseplant due to its unique leaf holes and ease of care.",
+    "confidence": 0.9,
+    "category": "aesthetic"
+  },
+  "is_flowering": false,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "Tropical perennial climbing plant",
+  "environment": "Indoor or shaded outdoor environments",
+  "difficulty": "Easy to moderate care",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103703560.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:34:56.729746Z"
+}

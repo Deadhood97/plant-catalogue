@@ -1,0 +1,54 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Chrysanthemum",
+      "scientific_name": "Chrysanthemum indicum",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "Aster",
+      "scientific_name": "Aster amellus",
+      "confidence": 0.6
+    },
+    {
+      "identified_name": "Dahlia",
+      "scientific_name": "Dahlia pinnata",
+      "confidence": 0.4
+    }
+  ],
+  "identified_name": "Chrysanthemum",
+  "scientific_name": "Chrysanthemum indicum",
+  "local_names": [
+    {
+      "name": "Guldaudi",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.9
+    },
+    {
+      "name": "Kembu",
+      "language": "Kannada",
+      "region": "Karnataka, India",
+      "confidence": 0.85
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "Chrysanthemums are traditionally used in East Asia during festivals and are symbols of longevity and rejuvenation.",
+    "confidence": 0.85,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "Perennial flowering plant",
+  "environment": "Gardens, pots, temperate to subtropical climates",
+  "difficulty": "Moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103737429.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:46:57.287906Z"
+}

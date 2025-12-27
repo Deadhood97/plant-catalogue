@@ -1,0 +1,43 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Malabar Nightshade",
+      "scientific_name": "Solanum violaceum",
+      "confidence": 0.75
+    },
+    {
+      "identified_name": "Chiltepin Pepper",
+      "scientific_name": "Capsicum annuum var. glabriusculum",
+      "confidence": 0.45
+    }
+  ],
+  "identified_name": "Malabar Nightshade",
+  "scientific_name": "Solanum violaceum",
+  "local_names": [
+    {
+      "name": "Makoy",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.7
+    }
+  ],
+  "confidence": 0.75,
+  "fun_fact": {
+    "text": "Malabar Nightshade is known for its small green to yellowish fruits and is found widely in tropical regions, often used in traditional remedies though exact uses vary.",
+    "confidence": 0.65,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": true,
+  "is_edible": false,
+  "is_toxic_to_pets": null,
+  "plant_type": "shrub",
+  "environment": "tropical, subtropical",
+  "difficulty": "easy",
+  "reference_image": {
+    "url": "photos/PXL_20251222_104012343.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:36:18.242866Z"
+}

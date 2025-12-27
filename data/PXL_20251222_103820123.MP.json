@@ -1,0 +1,54 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Indian Elm",
+      "scientific_name": "Holoptelea integrifolia",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Mulberry Tree",
+      "scientific_name": "Morus alba",
+      "confidence": 0.4
+    },
+    {
+      "identified_name": "Flame Tree",
+      "scientific_name": "Delonix regia",
+      "confidence": 0.2
+    }
+  ],
+  "identified_name": "Indian Elm",
+  "scientific_name": "Holoptelea integrifolia",
+  "local_names": [
+    {
+      "name": "Aaran",
+      "language": "Kannada",
+      "region": "Karnataka, India",
+      "confidence": 0.8
+    },
+    {
+      "name": "Bugul",
+      "language": "Marathi",
+      "region": "Maharashtra, India",
+      "confidence": 0.75
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Indian Elm (Holoptelea integrifolia) is commonly found in India and has been traditionally used in making furniture due to its tough wood.",
+    "confidence": 0.75,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": true,
+  "is_edible": false,
+  "is_toxic_to_pets": null,
+  "plant_type": "tree",
+  "environment": "tropical and subtropical regions",
+  "difficulty": "easy to moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103820123.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:46:07.563460Z"
+}

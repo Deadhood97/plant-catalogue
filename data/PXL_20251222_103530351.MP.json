@@ -1,0 +1,60 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Bodhi Tree",
+      "scientific_name": "Ficus religiosa",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Peepal Tree",
+      "scientific_name": "Ficus religiosa",
+      "confidence": 0.7
+    },
+    {
+      "identified_name": "Sacred Fig",
+      "scientific_name": "Ficus religiosa",
+      "confidence": 0.6
+    }
+  ],
+  "identified_name": "Bodhi Tree",
+  "scientific_name": "Ficus religiosa",
+  "local_names": [
+    {
+      "name": "Arasa Maram",
+      "language": "Tamil",
+      "region": "South India",
+      "confidence": 0.85
+    },
+    {
+      "name": "Asvattha",
+      "language": "Sanskrit",
+      "region": "Indian Subcontinent",
+      "confidence": 0.85
+    },
+    {
+      "name": "Peepal",
+      "language": "Hindi",
+      "region": "North India",
+      "confidence": 0.85
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "The Bodhi tree is famously known as the sacred fig under which Siddhartha Gautama, the Buddha, attained enlightenment.",
+    "confidence": 0.9,
+    "category": "historical"
+  },
+  "is_flowering": null,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "Tree",
+  "environment": "Tropical and subtropical regions",
+  "difficulty": "Moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103530351.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:55:09.769936Z"
+}

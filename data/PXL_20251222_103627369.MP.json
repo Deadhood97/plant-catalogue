@@ -1,0 +1,43 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Rose",
+      "scientific_name": "Rosa indica",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Chinese Rose",
+      "scientific_name": "Hibiscus rosa-sinensis",
+      "confidence": 0.4
+    }
+  ],
+  "identified_name": "Rose",
+  "scientific_name": "Rosa indica",
+  "local_names": [
+    {
+      "name": "गुलाब",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.9
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "The rose is often considered the national flower of India and symbolizes love and beauty in many cultures worldwide.",
+    "confidence": 0.8,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": true,
+  "is_edible": false,
+  "is_toxic_to_pets": false,
+  "plant_type": "shrub",
+  "environment": "gardens, temperate to tropical outdoor environments",
+  "difficulty": "moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103627369.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:55:41.105273Z"
+}

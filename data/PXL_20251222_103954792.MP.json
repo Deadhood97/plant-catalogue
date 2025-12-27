@@ -1,0 +1,54 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Indian Borage",
+      "scientific_name": "Plectranthus amboinicus",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "Cuban Oregano",
+      "scientific_name": "Plectranthus barbatus",
+      "confidence": 0.7
+    },
+    {
+      "identified_name": "Mexican Mint",
+      "scientific_name": "Plectranthus coleoides",
+      "confidence": 0.5
+    }
+  ],
+  "identified_name": "Indian Borage",
+  "scientific_name": "Plectranthus amboinicus",
+  "local_names": [
+    {
+      "name": "Patharchatta",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.9
+    },
+    {
+      "name": "Gollukura",
+      "language": "Telugu",
+      "region": "India",
+      "confidence": 0.85
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "Indian Borage is often grown indoors for its aromatic leaves which are used in traditional cooking and folk remedies in India.",
+    "confidence": 0.85,
+    "category": "Cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": true,
+  "is_edible": true,
+  "is_toxic_to_pets": null,
+  "plant_type": "Herb",
+  "environment": "Tropical and subtropical gardens, indoor pots",
+  "difficulty": "Easy to moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103954792.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:48:27.917802Z"
+}

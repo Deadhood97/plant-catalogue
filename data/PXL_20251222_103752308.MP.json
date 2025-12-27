@@ -1,0 +1,54 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Portulacaria afra",
+      "scientific_name": "Portulacaria afra",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "String of Hearts",
+      "scientific_name": "Ceropegia woodii",
+      "confidence": 0.4
+    },
+    {
+      "identified_name": "Dischidia nummularia",
+      "scientific_name": "Dischidia nummularia",
+      "confidence": 0.3
+    }
+  ],
+  "identified_name": "Portulacaria afra",
+  "scientific_name": "Portulacaria afra",
+  "local_names": [
+    {
+      "name": "Elephant Bush",
+      "language": "English",
+      "region": "Global",
+      "confidence": 0.9
+    },
+    {
+      "name": "Raktachand",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "Portulacaria afra is often used in bonsai and as a drought-resistant succulent in xeriscaping gardens.",
+    "confidence": 0.9,
+    "category": "gardening"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "succulent",
+  "environment": "indoor and outdoor, prefers sunny to semi-shaded areas",
+  "difficulty": "easy",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103752308.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:40:31.898621Z"
+}

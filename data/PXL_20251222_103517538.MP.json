@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Spider Plant",
+      "scientific_name": "Chlorophytum comosum",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "Variegated Lilyturf",
+      "scientific_name": "Liriope muscari",
+      "confidence": 0.75
+    },
+    {
+      "identified_name": "Variegated Pandan",
+      "scientific_name": "Pandanus amaryllifolius",
+      "confidence": 0.6
+    }
+  ],
+  "identified_name": "Spider Plant",
+  "scientific_name": "Chlorophytum comosum",
+  "local_names": [
+    {
+      "name": "Safed Mohari",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "Spider plants are popular houseplants known for their air-purifying properties and their ability to grow baby plants called 'spiderettes' that hang from the mother plant.",
+    "confidence": 0.9,
+    "category": "gardening"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": true,
+  "plant_type": "Herbaceous perennial",
+  "environment": "Indoor and shaded outdoor",
+  "difficulty": "Easy",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103517538.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:43:34.880243Z"
+}

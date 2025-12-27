@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Lady Palm",
+      "scientific_name": "Rhapis excelsa",
+      "confidence": 0.9
+    },
+    {
+      "identified_name": "Chinese Fan Palm",
+      "scientific_name": "Livistona chinensis",
+      "confidence": 0.6
+    },
+    {
+      "identified_name": "European Fan Palm",
+      "scientific_name": "Chamaerops humilis",
+      "confidence": 0.4
+    }
+  ],
+  "identified_name": "Lady Palm",
+  "scientific_name": "Rhapis excelsa",
+  "local_names": [
+    {
+      "name": "Lady Palm",
+      "language": "English",
+      "region": "Global",
+      "confidence": 0.9
+    }
+  ],
+  "confidence": 0.9,
+  "fun_fact": {
+    "text": "Lady Palm is popular as an indoor ornamental plant due to its elegant fan-shaped leaves and ability to thrive in low light, making it a favorite for offices and homes.",
+    "confidence": 0.9,
+    "category": "gardening-related"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "Indoor ornamental palm",
+  "environment": "Indoor/ shaded outdoor environments",
+  "difficulty": "Easy to moderate care",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103844913.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:50:11.764212Z"
+}

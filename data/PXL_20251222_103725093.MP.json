@@ -1,0 +1,49 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Indian Kino Tree",
+      "scientific_name": "Pterocarpus marsupium",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Rain Tree",
+      "scientific_name": "Samanea saman",
+      "confidence": 0.6
+    }
+  ],
+  "identified_name": "Indian Kino Tree",
+  "scientific_name": "Pterocarpus marsupium",
+  "local_names": [
+    {
+      "name": "Vijaysar",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.8
+    },
+    {
+      "name": "Indian Kino",
+      "language": "English",
+      "region": "India",
+      "confidence": 0.75
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "The Indian Kino Tree is valued for its heartwood which produces a rich red dye called 'kino' used traditionally in textiles.",
+    "confidence": 0.8,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": true,
+  "is_edible": false,
+  "is_toxic_to_pets": null,
+  "plant_type": "tree",
+  "environment": "tropical and subtropical regions",
+  "difficulty": "moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103725093.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:35:33.002228Z"
+}

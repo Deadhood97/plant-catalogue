@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Sago Palm",
+      "scientific_name": "Cycas revoluta",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "Cardboard Palm",
+      "scientific_name": "Zamia furfuracea",
+      "confidence": 0.65
+    },
+    {
+      "identified_name": "Japanese Sago Palm",
+      "scientific_name": "Cycas revoluta var. japonica",
+      "confidence": 0.6
+    }
+  ],
+  "identified_name": "Sago Palm",
+  "scientific_name": "Cycas revoluta",
+  "local_names": [
+    {
+      "name": "Sago Palm",
+      "language": "English",
+      "region": "India",
+      "confidence": 0.9
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "The Sago Palm is widely used as an ornamental plant in homes and gardens, known for its symmetrical and rugged appearance resembling a small palm tree.",
+    "confidence": 0.9,
+    "category": "gardening"
+  },
+  "is_flowering": false,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "gymnosperm",
+  "environment": "indoors, gardens",
+  "difficulty": "moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103803626.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:52:02.786564Z"
+}

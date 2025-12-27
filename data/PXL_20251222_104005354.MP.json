@@ -1,0 +1,54 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Peppermint",
+      "scientific_name": "Mentha × piperita",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "Spearmint",
+      "scientific_name": "Mentha spicata",
+      "confidence": 0.75
+    },
+    {
+      "identified_name": "Apple Mint",
+      "scientific_name": "Mentha suaveolens",
+      "confidence": 0.65
+    }
+  ],
+  "identified_name": "Peppermint",
+  "scientific_name": "Mentha × piperita",
+  "local_names": [
+    {
+      "name": "Pudina",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.9
+    },
+    {
+      "name": "Pudina",
+      "language": "Marathi",
+      "region": "India",
+      "confidence": 0.85
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "Peppermint is widely used in gardening and culinary arts for its refreshing aroma and flavor. It is also famous for attracting beneficial insects like bees.",
+    "confidence": 0.9,
+    "category": "gardening"
+  },
+  "is_flowering": true,
+  "is_medicinal": true,
+  "is_edible": true,
+  "is_toxic_to_pets": null,
+  "plant_type": "herb",
+  "environment": "temperate to subtropical, partial sun",
+  "difficulty": "easy",
+  "reference_image": {
+    "url": "photos/PXL_20251222_104005354.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:36:46.605932Z"
+}

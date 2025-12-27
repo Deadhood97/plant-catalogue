@@ -1,0 +1,55 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Mango Tree",
+      "scientific_name": "Mangifera indica",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "Black Olive",
+      "scientific_name": "Bucida buceras",
+      "confidence": 0.3
+    }
+  ],
+  "identified_name": "Mango Tree",
+  "scientific_name": "Mangifera indica",
+  "local_names": [
+    {
+      "name": "आम",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.9
+    },
+    {
+      "name": "మామిడి",
+      "language": "Telugu",
+      "region": "India",
+      "confidence": 0.9
+    },
+    {
+      "name": "आंबा",
+      "language": "Marathi",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "The mango tree is known as the 'king of fruits' in India and has significant cultural importance, often featured in folklore, festivals, and traditional medicine.",
+    "confidence": 0.9,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": true,
+  "is_edible": true,
+  "is_toxic_to_pets": false,
+  "plant_type": "Tree",
+  "environment": "Tropical and subtropical regions",
+  "difficulty": "Moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103613814.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:48:57.253689Z"
+}

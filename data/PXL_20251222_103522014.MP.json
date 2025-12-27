@@ -1,0 +1,43 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Banana Plant",
+      "scientific_name": "Musa spp.",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "Bird of Paradise",
+      "scientific_name": "Strelitzia reginae",
+      "confidence": 0.5
+    }
+  ],
+  "identified_name": "Banana Plant",
+  "scientific_name": "Musa spp.",
+  "local_names": [
+    {
+      "name": "Kela",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.9
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "The banana plant is not a tree but a large herbaceous flowering plant, and it is widely cultivated in tropical regions around the world for its fruit.",
+    "confidence": 0.8,
+    "category": "botanical"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": true,
+  "is_toxic_to_pets": null,
+  "plant_type": "herbaceous plant",
+  "environment": "tropical, warm climates",
+  "difficulty": "moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103522014.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:44:28.842480Z"
+}

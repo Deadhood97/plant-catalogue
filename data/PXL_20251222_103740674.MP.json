@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Physalis",
+      "scientific_name": "Physalis spp.",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Withania",
+      "scientific_name": "Withania somnifera",
+      "confidence": 0.4
+    },
+    {
+      "identified_name": "Solanum",
+      "scientific_name": "Solanum nigrum",
+      "confidence": 0.3
+    }
+  ],
+  "identified_name": "Physalis",
+  "scientific_name": "Physalis spp.",
+  "local_names": [
+    {
+      "name": "रहस",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.75
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Physalis plants produce distinctive papery husks that resemble lanterns, which is why they are sometimes called 'Chinese lanterns.'",
+    "confidence": 0.8,
+    "category": "aesthetic"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "shrub",
+  "environment": "temperate to tropical regions",
+  "difficulty": "easy",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103740674.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:51:35.445949Z"
+}

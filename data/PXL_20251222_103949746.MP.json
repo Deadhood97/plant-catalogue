@@ -1,0 +1,60 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Snake Plant",
+      "scientific_name": "Sansevieria trifasciata",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "Bowstring Hemp",
+      "scientific_name": "Sansevieria trifasciata",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Mother-in-law's Tongue",
+      "scientific_name": "Sansevieria trifasciata",
+      "confidence": 0.75
+    }
+  ],
+  "identified_name": "Snake Plant",
+  "scientific_name": "Sansevieria trifasciata",
+  "local_names": [
+    {
+      "name": "Sansevieria",
+      "language": "English",
+      "region": "Global",
+      "confidence": 0.9
+    },
+    {
+      "name": "Nandiyavara",
+      "language": "Kannada",
+      "region": "India",
+      "confidence": 0.7
+    },
+    {
+      "name": "Agave Amma",
+      "language": "Tamil",
+      "region": "India",
+      "confidence": 0.7
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "Snake Plants are known for their ability to purify indoor air and are often used as houseplants for improving air quality.",
+    "confidence": 0.9,
+    "category": "Gardening"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": true,
+  "plant_type": "Succulent",
+  "environment": "Indoor and Outdoor",
+  "difficulty": "Easy",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103949746.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:56:27.907969Z"
+}

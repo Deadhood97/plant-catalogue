@@ -1,0 +1,54 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Marigold",
+      "scientific_name": "Tagetes erecta",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "African Marigold",
+      "scientific_name": "Tagetes erecta",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "French Marigold",
+      "scientific_name": "Tagetes patula",
+      "confidence": 0.65
+    }
+  ],
+  "identified_name": "Marigold",
+  "scientific_name": "Tagetes erecta",
+  "local_names": [
+    {
+      "name": "Genda",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.9
+    },
+    {
+      "name": "Barahmasi",
+      "language": "Marathi",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "Marigolds are widely used in traditional Indian festivals and decorations, especially during Diwali and weddings for their vibrant color and fragrance.",
+    "confidence": 0.9,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "Flowering plant",
+  "environment": "Garden, pots, full sunlight",
+  "difficulty": "Easy to cultivate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103634367.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:54:44.476594Z"
+}

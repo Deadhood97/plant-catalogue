@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Kumquat",
+      "scientific_name": "Fortunella spp.",
+      "confidence": 0.9
+    },
+    {
+      "identified_name": "Calamondin Orange",
+      "scientific_name": "Citrus × microcarpa",
+      "confidence": 0.7
+    },
+    {
+      "identified_name": "Mandarin Orange",
+      "scientific_name": "Citrus reticulata",
+      "confidence": 0.6
+    }
+  ],
+  "identified_name": "Kumquat",
+  "scientific_name": "Fortunella spp.",
+  "local_names": [
+    {
+      "name": "Narangi",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.7
+    }
+  ],
+  "confidence": 0.9,
+  "fun_fact": {
+    "text": "Kumquats are unique among citrus fruits because their skin is sweet while the flesh is tart, making them popular for eating whole or as ornamental plants.",
+    "confidence": 0.9,
+    "category": "aesthetic"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": true,
+  "is_toxic_to_pets": null,
+  "plant_type": "Shrub/Small Tree",
+  "environment": "Mediterranean, subtropical to tropical",
+  "difficulty": "Moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103834634.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:53:53.172704Z"
+}

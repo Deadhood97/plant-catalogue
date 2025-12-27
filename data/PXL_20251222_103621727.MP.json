@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Aspidistra",
+      "scientific_name": "Aspidistra elatior",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Cast Iron Plant",
+      "scientific_name": "Aspidistra elatior",
+      "confidence": 0.7
+    },
+    {
+      "identified_name": "Ribbon plant",
+      "scientific_name": "Aspidistra elatior",
+      "confidence": 0.55
+    }
+  ],
+  "identified_name": "Aspidistra",
+  "scientific_name": "Aspidistra elatior",
+  "local_names": [
+    {
+      "name": "Aspidistra",
+      "language": "English",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Aspidistra is commonly known as the 'Cast Iron Plant' due to its ability to survive in low light and neglect, making it a popular houseplant worldwide.",
+    "confidence": 0.9,
+    "category": "gardening"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "perennial evergreen",
+  "environment": "shade to partial shade, indoor and garden",
+  "difficulty": "easy",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103621727.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:37:47.127965Z"
+}

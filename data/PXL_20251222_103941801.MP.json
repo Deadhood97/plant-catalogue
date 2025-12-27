@@ -1,0 +1,43 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Crown of Thorns",
+      "scientific_name": "Euphorbia milii",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "Lotus Thorn",
+      "scientific_name": "Euphorbia lactea",
+      "confidence": 0.6
+    }
+  ],
+  "identified_name": "Crown of Thorns",
+  "scientific_name": "Euphorbia milii",
+  "local_names": [
+    {
+      "name": "Makkatam",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "The Crown of Thorns is said to symbolize the crown of thorns worn by Jesus Christ during the crucifixion, which is how the plant got its common name.",
+    "confidence": 0.9,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "succulent",
+  "environment": "indoor and outdoor, warm climates",
+  "difficulty": "moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103941801.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:35:55.506220Z"
+}

@@ -1,0 +1,54 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Madagascar Periwinkle",
+      "scientific_name": "Catharanthus roseus",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Vinca",
+      "scientific_name": "Vinca minor",
+      "confidence": 0.4
+    },
+    {
+      "identified_name": "Common Periwinkle",
+      "scientific_name": "Catharanthus roseus",
+      "confidence": 0.35
+    }
+  ],
+  "identified_name": "Madagascar Periwinkle",
+  "scientific_name": "Catharanthus roseus",
+  "local_names": [
+    {
+      "name": "Sadabahar",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.9
+    },
+    {
+      "name": "Nithyakalyani",
+      "language": "Tamil",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Madagascar Periwinkle is widely grown as an ornamental plant for its pretty flowers and is known for its use in traditional medicine. It also inspired research for cancer-fighting compounds.",
+    "confidence": 0.8,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": true,
+  "is_edible": false,
+  "is_toxic_to_pets": true,
+  "plant_type": "herbaceous perennial",
+  "environment": "tropical and subtropical regions",
+  "difficulty": "easy to moderate care",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103513668.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:53:28.201380Z"
+}

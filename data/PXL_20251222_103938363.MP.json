@@ -1,0 +1,54 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Oleander",
+      "scientific_name": "Nerium oleander",
+      "confidence": 0.95
+    },
+    {
+      "identified_name": "Desert Rose",
+      "scientific_name": "Adenium obesum",
+      "confidence": 0.45
+    },
+    {
+      "identified_name": "Hibiscus",
+      "scientific_name": "Hibiscus rosa-sinensis",
+      "confidence": 0.3
+    }
+  ],
+  "identified_name": "Oleander",
+  "scientific_name": "Nerium oleander",
+  "local_names": [
+    {
+      "name": "Kaner",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.85
+    },
+    {
+      "name": "Arali",
+      "language": "Tamil",
+      "region": "India",
+      "confidence": 0.75
+    }
+  ],
+  "confidence": 0.95,
+  "fun_fact": {
+    "text": "Oleander is often used in public landscaping around the world for its drought tolerance and evergreen foliage despite its toxicity.",
+    "confidence": 0.85,
+    "category": "gardening"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": true,
+  "plant_type": "shrub",
+  "environment": "outdoor, warm climates",
+  "difficulty": "moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103938363.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:46:31.725841Z"
+}

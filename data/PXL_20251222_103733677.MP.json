@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Pandanus",
+      "scientific_name": "Pandanus amaryllifolius",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Dracaena",
+      "scientific_name": "Dracaena reflexa",
+      "confidence": 0.6
+    },
+    {
+      "identified_name": "Spider Plant",
+      "scientific_name": "Chlorophytum comosum",
+      "confidence": 0.4
+    }
+  ],
+  "identified_name": "Pandanus",
+  "scientific_name": "Pandanus amaryllifolius",
+  "local_names": [
+    {
+      "name": "Kewra",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Pandanus leaves are widely used in Southeast Asian cooking for their unique aroma, often likened to vanilla.",
+    "confidence": 0.8,
+    "category": "Cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": true,
+  "is_edible": true,
+  "is_toxic_to_pets": false,
+  "plant_type": "Herbaceous",
+  "environment": "Tropical/Subtropical",
+  "difficulty": "Easy",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103733677.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:44:01.554293Z"
+}

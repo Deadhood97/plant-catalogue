@@ -1,0 +1,54 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Arrowhead Plant",
+      "scientific_name": "Syngonium podophyllum",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Alocasia",
+      "scientific_name": "Alocasia spp.",
+      "confidence": 0.4
+    },
+    {
+      "identified_name": "Dieffenbachia",
+      "scientific_name": "Dieffenbachia spp.",
+      "confidence": 0.3
+    }
+  ],
+  "identified_name": "Arrowhead Plant",
+  "scientific_name": "Syngonium podophyllum",
+  "local_names": [
+    {
+      "name": "Neelakolu",
+      "language": "Malayalam",
+      "region": "Kerala",
+      "confidence": 0.7
+    },
+    {
+      "name": "Syngonium",
+      "language": "English",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Syngonium, or Arrowhead Plant, was historically popular as a decorative indoor plant in Victorian homes due to its elegant arrow-shaped leaves.",
+    "confidence": 0.8,
+    "category": "historical"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": true,
+  "plant_type": "Perennial evergreen climber",
+  "environment": "Prefers indirect sunlight and humid conditions",
+  "difficulty": "Easy to moderate care",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103848980.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:47:19.040912Z"
+}

@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Sweet Lemon",
+      "scientific_name": "Citrus limettioides",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Lime Tree",
+      "scientific_name": "Citrus aurantiifolia",
+      "confidence": 0.4
+    },
+    {
+      "identified_name": "Pomelo",
+      "scientific_name": "Citrus maxima",
+      "confidence": 0.3
+    }
+  ],
+  "identified_name": "Sweet Lemon",
+  "scientific_name": "Citrus limettioides",
+  "local_names": [
+    {
+      "name": "Mosambi",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.9
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Sweet lemon (Mosambi) is a popular citrus fruit in India, well-liked for its sweet juice used frequently in beverages.",
+    "confidence": 0.8,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": true,
+  "is_toxic_to_pets": null,
+  "plant_type": "Tree",
+  "environment": "Tropical and subtropical",
+  "difficulty": "Moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_115420676.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:52:57.717881Z"
+}

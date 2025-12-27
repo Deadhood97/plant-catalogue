@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Thuja",
+      "scientific_name": "Thuja spp.",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Cupressus",
+      "scientific_name": "Cupressus spp.",
+      "confidence": 0.65
+    },
+    {
+      "identified_name": "Platycladus orientalis",
+      "scientific_name": "Platycladus orientalis",
+      "confidence": 0.5
+    }
+  ],
+  "identified_name": "Thuja",
+  "scientific_name": "Thuja spp.",
+  "local_names": [
+    {
+      "name": "Arar",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Thuja trees are often used in landscaping for their dense, evergreen foliage, providing year-round privacy and windbreaks in gardens.",
+    "confidence": 0.8,
+    "category": "gardening"
+  },
+  "is_flowering": false,
+  "is_medicinal": null,
+  "is_edible": false,
+  "is_toxic_to_pets": null,
+  "plant_type": "coniferous evergreen shrub/tree",
+  "environment": "Garden, outdoor, temperate climates",
+  "difficulty": "easy to moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103454567.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:37:19.656766Z"
+}

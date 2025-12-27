@@ -1,0 +1,54 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Cockscomb",
+      "scientific_name": "Celosia argentea var. cristata",
+      "confidence": 0.92
+    },
+    {
+      "identified_name": "Celosia",
+      "scientific_name": "Celosia argentea",
+      "confidence": 0.75
+    },
+    {
+      "identified_name": "Amaranth",
+      "scientific_name": "Amaranthus tricolor",
+      "confidence": 0.45
+    }
+  ],
+  "identified_name": "Cockscomb",
+  "scientific_name": "Celosia argentea var. cristata",
+  "local_names": [
+    {
+      "name": "Murugam poo",
+      "language": "Tamil",
+      "region": "South India",
+      "confidence": 0.85
+    },
+    {
+      "name": "Kokila",
+      "language": "Kannada",
+      "region": "Karnataka",
+      "confidence": 0.75
+    }
+  ],
+  "confidence": 0.92,
+  "fun_fact": {
+    "text": "Cockscomb flowers have been used traditionally in many cultures for ornamental and religious purposes, symbolizing affection and uniqueness due to their distinctive crested appearance.",
+    "confidence": 0.85,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": true,
+  "is_edible": true,
+  "is_toxic_to_pets": false,
+  "plant_type": "Herbaceous annual",
+  "environment": "Gardens, pots, full sun to partial shade",
+  "difficulty": "Easy to grow",
+  "reference_image": {
+    "url": "photos/PXL_20251222_104010799.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:54:15.262619Z"
+}

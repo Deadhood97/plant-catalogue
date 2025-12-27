@@ -1,1 +1,11 @@
+# Ignore Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Ignore photos/videos if too large
+photos/*.MP4
+photos/*.mp3
+
+# Ignore any sensitive keys
 .env

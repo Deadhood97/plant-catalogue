@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Fingered citron",
+      "scientific_name": "Citrus medica var. sarcodactylis",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Curry leaf tree",
+      "scientific_name": "Murraya koenigii",
+      "confidence": 0.4
+    },
+    {
+      "identified_name": "Neem",
+      "scientific_name": "Azadirachta indica",
+      "confidence": 0.3
+    }
+  ],
+  "identified_name": "Fingered citron",
+  "scientific_name": "Citrus medica var. sarcodactylis",
+  "local_names": [
+    {
+      "name": "Buddha's Hand",
+      "language": "English",
+      "region": "Common",
+      "confidence": 0.9
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Fingered citron, also known as Buddha's Hand, has been used in religious offerings and as a natural air freshener in various cultures, prized for its unique fragrant aroma.",
+    "confidence": 0.8,
+    "category": "cultural"
+  },
+  "is_flowering": null,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "tree",
+  "environment": "subtropical to tropical",
+  "difficulty": "moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_115753364.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:38:46.319115Z"
+}

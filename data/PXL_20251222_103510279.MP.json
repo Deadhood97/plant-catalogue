@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Variegated Yucca",
+      "scientific_name": "Yucca filamentosa",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Dracaena",
+      "scientific_name": "Dracaena fragrans",
+      "confidence": 0.5
+    },
+    {
+      "identified_name": "Agave",
+      "scientific_name": "Agave americana",
+      "confidence": 0.4
+    }
+  ],
+  "identified_name": "Variegated Yucca",
+  "scientific_name": "Yucca filamentosa",
+  "local_names": [
+    {
+      "name": "Yucca",
+      "language": "English",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Yucca plants were used by Native American tribes for making rope, baskets, and sandals due to their strong fibers.",
+    "confidence": 0.8,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "Shrub",
+  "environment": "Outdoor garden, well-drained soil, full sun to partial shade",
+  "difficulty": "Easy to moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103510279.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:52:30.394138Z"
+}

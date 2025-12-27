@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Rose",
+      "scientific_name": "Rosa",
+      "confidence": 0.9
+    },
+    {
+      "identified_name": "Blackberry",
+      "scientific_name": "Rubus fruticosus",
+      "confidence": 0.4
+    },
+    {
+      "identified_name": "Raspberry",
+      "scientific_name": "Rubus idaeus",
+      "confidence": 0.3
+    }
+  ],
+  "identified_name": "Rose",
+  "scientific_name": "Rosa",
+  "local_names": [
+    {
+      "name": "Gulab",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.9
+    }
+  ],
+  "confidence": 0.9,
+  "fun_fact": {
+    "text": "Roses have long been symbols of love and beauty and are among the most popular flowers worldwide.",
+    "confidence": 0.8,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "shrub",
+  "environment": "gardens, pots",
+  "difficulty": "moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103639630.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:41:18.286681Z"
+}

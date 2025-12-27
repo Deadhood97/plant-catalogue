@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Key Lime",
+      "scientific_name": "Citrus aurantiifolia",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Kaffir Lime",
+      "scientific_name": "Citrus hystrix",
+      "confidence": 0.6
+    },
+    {
+      "identified_name": "Lemon",
+      "scientific_name": "Citrus limon",
+      "confidence": 0.4
+    }
+  ],
+  "identified_name": "Key Lime",
+  "scientific_name": "Citrus aurantiifolia",
+  "local_names": [
+    {
+      "name": "Nimbu",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.8
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Key lime was popularized in the United States by the Florida Keys and is the main ingredient in the famous Key lime pie.",
+    "confidence": 0.75,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": true,
+  "is_toxic_to_pets": null,
+  "plant_type": "Fruit shrub/small tree",
+  "environment": "Tropical and subtropical climates",
+  "difficulty": "Moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103501387.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:40:08.328700Z"
+}

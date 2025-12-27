@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Haworthia",
+      "scientific_name": "Haworthia spp.",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Aloe Vera",
+      "scientific_name": "Aloe barbadensis miller",
+      "confidence": 0.4
+    },
+    {
+      "identified_name": "Gasteria",
+      "scientific_name": "Gasteria spp.",
+      "confidence": 0.3
+    }
+  ],
+  "identified_name": "Haworthia",
+  "scientific_name": "Haworthia spp.",
+  "local_names": [
+    {
+      "name": "Haworthia",
+      "language": "English",
+      "region": "Global",
+      "confidence": 0.9
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Haworthia plants are popular in indoor gardening due to their attractive rosette shape and low maintenance needs, often used in succulent collections.",
+    "confidence": 0.8,
+    "category": "gardening"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": false,
+  "is_toxic_to_pets": false,
+  "plant_type": "Succulent",
+  "environment": "Indoor or outdoor, well-drained soil, full to partial sun",
+  "difficulty": "Easy",
+  "reference_image": {
+    "url": "photos/PXL_20251222_104018284.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:56:05.069471Z"
+}

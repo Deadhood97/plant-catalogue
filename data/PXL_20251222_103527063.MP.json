@@ -1,0 +1,48 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Kratom",
+      "scientific_name": "Mitragyna speciosa",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Indian Kino Tree",
+      "scientific_name": "Pterocarpus marsupium",
+      "confidence": 0.4
+    },
+    {
+      "identified_name": "Krishna Tulsi",
+      "scientific_name": "Ocimum tenuiflorum",
+      "confidence": 0.3
+    }
+  ],
+  "identified_name": "Kratom",
+  "scientific_name": "Mitragyna speciosa",
+  "local_names": [
+    {
+      "name": "Kratom",
+      "language": "English",
+      "region": "Southeast Asia",
+      "confidence": 0.9
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Kratom leaves have been traditionally used in Southeast Asia for their stimulating and pain-relieving properties. The plant has a notable cultural significance in local communities.",
+    "confidence": 0.8,
+    "category": "cultural"
+  },
+  "is_flowering": null,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "Tree/Vine",
+  "environment": "Tropical, indoor/outdoor in pots",
+  "difficulty": "Moderate",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103527063.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:45:40.838604Z"
+}

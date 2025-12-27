@@ -1,0 +1,54 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Ficus benjamina",
+      "scientific_name": "Ficus benjamina",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Ficus retusa",
+      "scientific_name": "Ficus retusa",
+      "confidence": 0.65
+    },
+    {
+      "identified_name": "Ficus microcarpa",
+      "scientific_name": "Ficus microcarpa",
+      "confidence": 0.55
+    }
+  ],
+  "identified_name": "Ficus benjamina",
+  "scientific_name": "Ficus benjamina",
+  "local_names": [
+    {
+      "name": "Weeping fig",
+      "language": "English",
+      "region": "Global",
+      "confidence": 0.9
+    },
+    {
+      "name": "अंजन",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.75
+    }
+  ],
+  "confidence": 0.85,
+  "fun_fact": {
+    "text": "Ficus benjamina is often used as a decorative indoor plant worldwide and is known for its graceful drooping branches.",
+    "confidence": 0.8,
+    "category": "gardening"
+  },
+  "is_flowering": true,
+  "is_medicinal": false,
+  "is_edible": false,
+  "is_toxic_to_pets": true,
+  "plant_type": "Tree",
+  "environment": "Indoor and outdoor tropical and subtropical environments",
+  "difficulty": "Medium",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103606492.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-27T07:42:41.804515Z"
+}
