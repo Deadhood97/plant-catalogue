@@ -36,25 +36,24 @@
   <div class="grid" id="plantGrid"></div>
 
   <script>
-    async function loadPlants() {
-      const plantGrid = document.getElementById('plantGrid');
+  async function loadPlants() {
+    const plantGrid = document.getElementById('plantGrid');
 
-      // List your JSON files here
-      const jsonFiles = [
-        'data/PXL_20251222_103454567.json',
-        'data/PXL_20251222_103713089.json'
-        // Add all other JSON paths
-      ];
+    try {
+      // Step 1: Fetch the JSON index file
+      const indexRes = await fetch('data/index.json');
+      const jsonFiles = await indexRes.json(); // array of JSON file names
 
-      for (const file of jsonFiles) {
+      // Step 2: Loop through each JSON file
+      for (const filename of jsonFiles) {
         try {
-          const res = await fetch(file);
+          const res = await fetch(`data/${filename}`);
           const plant = await res.json();
 
           const card = document.createElement('div');
           card.className = 'card';
 
-          // Thumbnail image
+          // Thumbnail
           const img = document.createElement('img');
           img.src = plant.reference_image.url;
           card.appendChild(img);
@@ -93,12 +92,16 @@
 
           plantGrid.appendChild(card);
         } catch (e) {
-          console.error(`Failed to load ${file}:`, e);
+          console.error(`Failed to load data/${filename}:`, e);
         }
       }
+    } catch (e) {
+      console.error('Failed to load data/index.json:', e);
     }
+  }
 
-    loadPlants();
-  </script>
+  loadPlants();
+</script>
+
 </body>
 </html>
