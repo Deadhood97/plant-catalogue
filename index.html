@@ -3,105 +3,205 @@
 <head>
   <meta charset="UTF-8">
   <title>My Plant Catalogue</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
-      margin: 0;
-      padding: 20px;
+      font-family: 'Merriweather', serif;
     }
-    h1 { text-align: center; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
+    /* Optional subtle leaf pattern */
+    body::before {
+      content: "";
+      position: fixed;
+      top:0; left:0; right:0; bottom:0;
+      background: url('https://www.transparenttextures.com/patterns/leaf.png') repeat;
+      opacity: 0.05;
+      pointer-events: none;
+      z-index: -1;
     }
-    .card {
-      background: #fff;
-      border-radius: 10px;
-      padding: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-    .card:hover { transform: scale(1.03); }
-    .card img { width: 100%; border-radius: 8px; }
-    .card h2 { font-size: 18px; margin: 10px 0 5px; }
-    .card p { margin: 5px 0; font-size: 14px; }
-    .attributes { font-size: 12px; color: #555; }
   </style>
 </head>
-<body>
-  <h1>My Plant Catalogue</h1>
-  <div class="grid" id="plantGrid"></div>
+<body class="bg-green-50">
+
+  <!-- Header -->
+  <header class="text-center py-6 bg-green-700 text-white shadow-lg">
+    <h1 class="text-4xl font-bold">🌿 My Plant Catalogue 🌿</h1>
+  </header>
+
+  <!-- Description Section -->
+  <section class="max-w-3xl mx-auto text-center bg-green-100 rounded-xl p-4 mt-6 shadow-inner">
+    <p class="text-green-800 text-lg">
+      Welcome to my home plant catalogue! 🌱 These plants are all from my home garden. 
+      Identification has been assisted by AI, so there may be some inaccuracies. 
+      Enjoy exploring the greenery! 🍃
+    </p>
+  </section>
+
+  <main class="p-6 max-w-7xl mx-auto">
+
+    <!-- Search / Filter -->
+    <div class="mb-6 flex justify-center">
+      <input id="searchInput" type="text" placeholder="Search plants..." class="rounded-full px-4 py-2 w-full sm:w-1/2 border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400">
+    </div>
+
+    <!-- Plant Grid -->
+    <div id="plantGrid" class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"></div>
+  </main>
 
   <script>
-async function loadPlants() {
-  const plantGrid = document.getElementById('plantGrid');
+    async function loadPlants() {
+      const plantGrid = document.getElementById('plantGrid');
+      const searchInput = document.getElementById('searchInput');
 
-  try {
-    const indexRes = await fetch('data/index.json');
-    const jsonFiles = await indexRes.json();
+      let plants = [];
 
-    for (const filename of jsonFiles) {
       try {
-        const res = await fetch(`data/${filename}`);
-        const plant = await res.json();
+        const indexRes = await fetch('data/index.json');
+        const jsonFiles = await indexRes.json();
 
-        const card = document.createElement('div');
-        card.className = 'card';
-
-        // Thumbnail
-        const img = document.createElement('img');
-        const thumbPath = plant.reference_image.url.replace("photos/", "thumbnails/");
-        img.src = thumbPath;
-        card.appendChild(img);
-
-        // Plant name
-        const title = document.createElement('h2');
-        title.textContent = plant.identified_name;
-        card.appendChild(title);
-
-        // Scientific name
-        const sci = document.createElement('p');
-        sci.textContent = `(${plant.scientific_name})`;
-        card.appendChild(sci);
-
-        // Local names
-        if (plant.local_names && plant.local_names.length) {
-          const local = document.createElement('p');
-          local.textContent = 'Local: ' + plant.local_names.map(l => l.name).join(', ');
-          card.appendChild(local);
+        for (const filename of jsonFiles) {
+          try {
+            const res = await fetch(`data/${filename}`);
+            const plant = await res.json();
+            plants.push(plant);
+          } catch (e) {
+            console.error(`Failed to load data/${filename}:`, e);
+          }
         }
 
-        // Attributes
-        const attr = document.createElement('p');
-        attr.className = 'attributes';
-        attr.textContent = `Flowering: ${plant.is_flowering} | Medicinal: ${plant.is_medicinal} | Edible: ${plant.is_edible} | Toxic to pets: ${plant.is_toxic_to_pets}`;
-        card.appendChild(attr);
+        function renderGrid(filteredPlants) {
+          plantGrid.innerHTML = "";
+          const fragment = document.createDocumentFragment();
 
-        // Fun fact
-        if (plant.fun_fact && plant.fun_fact.text) {
-          const fact = document.createElement('p');
-          fact.style.fontSize = '12px';
-          fact.style.fontStyle = 'italic';
-          fact.textContent = `Fun fact: ${plant.fun_fact.text}`;
-          card.appendChild(fact);
-        }
+          filteredPlants.forEach(plant => {
+            const card = document.createElement('div');
+            card.className = "bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col";
 
-        plantGrid.appendChild(card);
-      } catch (e) {
-        console.error(`Failed to load data/${filename}:`, e);
-      }
-    }
-  } catch (e) {
-    console.error('Failed to load data/index.json:', e);
-  }
+            // Circular thumbnail
+            const img = document.createElement('img');
+            const thumbPath = plant.reference_image.url.replace("photos/", "thumbnails/");
+            img.src = thumbPath;
+            img.alt = `Photo of ${plant.identified_name}`;
+            img.className = "rounded-full w-full h-48 object-cover mb-4";
+            img.loading = "lazy";
+            card.appendChild(img);
+
+            // Plant name container
+            const titleContainer = document.createElement('div');
+            titleContainer.className = "flex items-center justify-between";
+
+            // Primary identification
+            const title = document.createElement('h2');
+            title.textContent = plant.identified_name;
+            title.className = "font-bold text-xl text-green-800 mb-1";
+            titleContainer.appendChild(title);
+
+            // AI info icon
+            const infoIcon = document.createElement('span');
+            infoIcon.textContent = "ℹ️";
+            infoIcon.title = "Identified by AI, may contain inaccuracies";
+            infoIcon.className = "cursor-help ml-2 text-green-600";
+            titleContainer.appendChild(infoIcon);
+
+            // Confidence badge for primary
+            // Confidence badge for primary
+if (plant.confidence !== undefined) {
+  const confBadge = document.createElement('span');
+  const confPercent = Math.round(plant.confidence * 100);
+  confBadge.textContent = `Confidence: ${confPercent}%`;
+
+  // New color scale
+  let bgColor = confPercent >= 95 ? "green" : confPercent >= 90 ? "yellow" : "red";
+
+  confBadge.className = `text-white text-xs px-2 py-1 rounded-full bg-${bgColor}-500 ml-2`;
+  confBadge.title = "AI confidence in this identification";
+  titleContainer.appendChild(confBadge);
 }
 
-loadPlants();
-</script>
 
+            card.appendChild(titleContainer);
+
+            // Candidate guesses
+            if (plant.candidate_identifications && plant.candidate_identifications.length > 1) {
+              const otherGuesses = plant.candidate_identifications.slice(1);
+              const guessList = document.createElement('ul');
+              guessList.className = "text-sm text-green-700 italic mb-2";
+              otherGuesses.forEach(g => {
+                const li = document.createElement('li');
+                const gPercent = Math.round(g.confidence * 100);
+                li.textContent = `${g.identified_name} (${gPercent}%)`;
+                guessList.appendChild(li);
+              });
+              card.appendChild(guessList);
+            }
+
+            // Scientific name
+            const sci = document.createElement('p');
+            sci.textContent = `(${plant.scientific_name})`;
+            sci.className = "text-green-600 italic text-sm mb-2";
+            card.appendChild(sci);
+
+            // Local names
+            if (plant.local_names && plant.local_names.length) {
+              const local = document.createElement('p');
+              local.textContent = 'Local: ' + plant.local_names.map(l => l.name).join(', ');
+              local.className = "text-green-700 text-sm mb-2";
+              card.appendChild(local);
+            }
+
+            // Attribute badges
+            const attrContainer = document.createElement('div');
+            attrContainer.className = "flex flex-wrap gap-2 mb-2";
+            const attrs = [
+              {label: "Flowering", value: plant.is_flowering, color: "green"},
+              {label: "Medicinal", value: plant.is_medicinal, color: "blue"},
+              {label: "Edible", value: plant.is_edible, color: "yellow"},
+              {label: "Toxic", value: plant.is_toxic_to_pets, color: "red"}
+            ];
+            attrs.forEach(a => {
+              if (a.value !== null) {
+                const span = document.createElement('span');
+                span.textContent = `${a.label}: ${a.value}`;
+                span.className = `text-white text-xs px-2 py-1 rounded-full bg-${a.color}-500`;
+                attrContainer.appendChild(span);
+              }
+            });
+            card.appendChild(attrContainer);
+
+            // Fun fact
+            if (plant.fun_fact && plant.fun_fact.text) {
+              const fact = document.createElement('p');
+              fact.textContent = `🌱 ${plant.fun_fact.text}`;
+              fact.className = "text-green-800 italic text-sm mt-auto";
+              card.appendChild(fact);
+            }
+
+            fragment.appendChild(card);
+          });
+
+          plantGrid.appendChild(fragment);
+        }
+
+        renderGrid(plants);
+
+        // Search filter
+        searchInput.addEventListener('input', () => {
+          const query = searchInput.value.toLowerCase();
+          const filtered = plants.filter(p =>
+            p.identified_name.toLowerCase().includes(query) ||
+            (p.local_names && p.local_names.some(l => l.name.toLowerCase().includes(query)))
+          );
+          renderGrid(filtered);
+        });
+
+      } catch (e) {
+        console.error('Failed to load data/index.json:', e);
+      }
+    }
+
+    loadPlants();
+  </script>
 
 </body>
 </html>
