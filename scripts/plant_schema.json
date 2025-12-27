@@ -1,0 +1,22 @@
+{
+  "identified_name": "",
+  "scientific_name": "",
+  "confidence": 0,
+
+  "is_flowering": null,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+
+  "plant_type": "",
+  "environment": "",
+  "difficulty": "",
+
+  "reference_image": {
+    "url": "",
+    "source": "",
+    "license": ""
+  },
+
+  "date_added": ""
+}
