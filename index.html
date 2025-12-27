@@ -36,72 +36,72 @@
   <div class="grid" id="plantGrid"></div>
 
   <script>
-  async function loadPlants() {
-    const plantGrid = document.getElementById('plantGrid');
+async function loadPlants() {
+  const plantGrid = document.getElementById('plantGrid');
 
-    try {
-      // Step 1: Fetch the JSON index file
-      const indexRes = await fetch('data/index.json');
-      const jsonFiles = await indexRes.json(); // array of JSON file names
+  try {
+    const indexRes = await fetch('data/index.json');
+    const jsonFiles = await indexRes.json();
 
-      // Step 2: Loop through each JSON file
-      for (const filename of jsonFiles) {
-        try {
-          const res = await fetch(`data/${filename}`);
-          const plant = await res.json();
+    for (const filename of jsonFiles) {
+      try {
+        const res = await fetch(`data/${filename}`);
+        const plant = await res.json();
 
-          const card = document.createElement('div');
-          card.className = 'card';
+        const card = document.createElement('div');
+        card.className = 'card';
 
-          // Thumbnail
-          const img = document.createElement('img');
-          img.src = plant.reference_image.url;
-          card.appendChild(img);
+        // Thumbnail
+        const img = document.createElement('img');
+        const thumbPath = plant.reference_image.url.replace("photos/", "thumbnails/");
+        img.src = thumbPath;
+        card.appendChild(img);
 
-          // Plant name
-          const title = document.createElement('h2');
-          title.textContent = plant.identified_name;
-          card.appendChild(title);
+        // Plant name
+        const title = document.createElement('h2');
+        title.textContent = plant.identified_name;
+        card.appendChild(title);
 
-          // Scientific name
-          const sci = document.createElement('p');
-          sci.textContent = `(${plant.scientific_name})`;
-          card.appendChild(sci);
+        // Scientific name
+        const sci = document.createElement('p');
+        sci.textContent = `(${plant.scientific_name})`;
+        card.appendChild(sci);
 
-          // Local names
-          if (plant.local_names && plant.local_names.length) {
-            const local = document.createElement('p');
-            local.textContent = 'Local: ' + plant.local_names.map(l => l.name).join(', ');
-            card.appendChild(local);
-          }
-
-          // Attributes
-          const attr = document.createElement('p');
-          attr.className = 'attributes';
-          attr.textContent = `Flowering: ${plant.is_flowering} | Medicinal: ${plant.is_medicinal} | Edible: ${plant.is_edible} | Toxic to pets: ${plant.is_toxic_to_pets}`;
-          card.appendChild(attr);
-
-          // Fun fact
-          if (plant.fun_fact && plant.fun_fact.text) {
-            const fact = document.createElement('p');
-            fact.style.fontSize = '12px';
-            fact.style.fontStyle = 'italic';
-            fact.textContent = `Fun fact: ${plant.fun_fact.text}`;
-            card.appendChild(fact);
-          }
-
-          plantGrid.appendChild(card);
-        } catch (e) {
-          console.error(`Failed to load data/${filename}:`, e);
+        // Local names
+        if (plant.local_names && plant.local_names.length) {
+          const local = document.createElement('p');
+          local.textContent = 'Local: ' + plant.local_names.map(l => l.name).join(', ');
+          card.appendChild(local);
         }
-      }
-    } catch (e) {
-      console.error('Failed to load data/index.json:', e);
-    }
-  }
 
-  loadPlants();
+        // Attributes
+        const attr = document.createElement('p');
+        attr.className = 'attributes';
+        attr.textContent = `Flowering: ${plant.is_flowering} | Medicinal: ${plant.is_medicinal} | Edible: ${plant.is_edible} | Toxic to pets: ${plant.is_toxic_to_pets}`;
+        card.appendChild(attr);
+
+        // Fun fact
+        if (plant.fun_fact && plant.fun_fact.text) {
+          const fact = document.createElement('p');
+          fact.style.fontSize = '12px';
+          fact.style.fontStyle = 'italic';
+          fact.textContent = `Fun fact: ${plant.fun_fact.text}`;
+          card.appendChild(fact);
+        }
+
+        plantGrid.appendChild(card);
+      } catch (e) {
+        console.error(`Failed to load data/${filename}:`, e);
+      }
+    }
+  } catch (e) {
+    console.error('Failed to load data/index.json:', e);
+  }
+}
+
+loadPlants();
 </script>
+
 
 </body>
 </html>
