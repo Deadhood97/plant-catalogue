@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Plant Catalogue</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 { text-align: center; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: scale(1.03); }
+    .card img { width: 100%; border-radius: 8px; }
+    .card h2 { font-size: 18px; margin: 10px 0 5px; }
+    .card p { margin: 5px 0; font-size: 14px; }
+    .attributes { font-size: 12px; color: #555; }
+  </style>
+</head>
+<body>
+  <h1>My Plant Catalogue</h1>
+  <div class="grid" id="plantGrid"></div>
+
+  <script>
+    async function loadPlants() {
+      const plantGrid = document.getElementById('plantGrid');
+
+      // List your JSON files here
+      const jsonFiles = [
+        'data/PXL_20251222_103454567.json',
+        'data/PXL_20251222_103713089.json'
+        // Add all other JSON paths
+      ];
+
+      for (const file of jsonFiles) {
+        try {
+          const res = await fetch(file);
+          const plant = await res.json();
+
+          const card = document.createElement('div');
+          card.className = 'card';
+
+          // Thumbnail image
+          const img = document.createElement('img');
+          img.src = plant.reference_image.url;
+          card.appendChild(img);
+
+          // Plant name
+          const title = document.createElement('h2');
+          title.textContent = plant.identified_name;
+          card.appendChild(title);
+
+          // Scientific name
+          const sci = document.createElement('p');
+          sci.textContent = `(${plant.scientific_name})`;
+          card.appendChild(sci);
+
+          // Local names
+          if (plant.local_names && plant.local_names.length) {
+            const local = document.createElement('p');
+            local.textContent = 'Local: ' + plant.local_names.map(l => l.name).join(', ');
+            card.appendChild(local);
+          }
+
+          // Attributes
+          const attr = document.createElement('p');
+          attr.className = 'attributes';
+          attr.textContent = `Flowering: ${plant.is_flowering} | Medicinal: ${plant.is_medicinal} | Edible: ${plant.is_edible} | Toxic to pets: ${plant.is_toxic_to_pets}`;
+          card.appendChild(attr);
+
+          // Fun fact
+          if (plant.fun_fact && plant.fun_fact.text) {
+            const fact = document.createElement('p');
+            fact.style.fontSize = '12px';
+            fact.style.fontStyle = 'italic';
+            fact.textContent = `Fun fact: ${plant.fun_fact.text}`;
+            card.appendChild(fact);
+          }
+
+          plantGrid.appendChild(card);
+        } catch (e) {
+          console.error(`Failed to load ${file}:`, e);
+        }
+      }
+    }
+
+    loadPlants();
+  </script>
+</body>
+</html>
