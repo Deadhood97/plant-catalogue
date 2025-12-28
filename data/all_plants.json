@@ -1,0 +1,3217 @@
+[
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Arborvitae",
+        "scientific_name": "Thuja occidentalis",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Leyland Cypress",
+        "scientific_name": "Cupressus \u00d7 leylandii",
+        "confidence": 0.75
+      },
+      {
+        "identified_name": "Juniper",
+        "scientific_name": "Juniperus spp.",
+        "confidence": 0.6
+      }
+    ],
+    "identified_name": "Arborvitae",
+    "scientific_name": "Thuja occidentalis",
+    "local_names": [
+      {
+        "name": "Thuja",
+        "language": "English",
+        "region": "India",
+        "confidence": 0.9
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Arborvitae means 'tree of life' in Latin and was historically used for its medicinal properties as well as ornamental hedges.",
+      "confidence": 0.9,
+      "category": "cultural"
+    },
+    "is_flowering": false,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Coniferous evergreen shrub/tree",
+    "environment": "Prefers well-drained soil and full sun to partial shade",
+    "difficulty": "Low maintenance",
+    "care": {
+      "watering_frequency": "Water regularly during dry spells; avoid waterlogging",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-drained, moist soil",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "3-7"
+    },
+    "origin_region": "Northeastern North America",
+    "plant_personality": "Sturdy and Reliable",
+    "fragrance": "Mild, fresh conifer scent",
+    "symbolism": "Symbolizes longevity, protection, and endurance in various cultures",
+    "lifespan": "Several decades with proper care",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103454567.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T04:56:23.995144Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Kaffir Lime",
+        "scientific_name": "Citrus hystrix",
+        "confidence": 0.9
+      },
+      {
+        "identified_name": "Calamansi",
+        "scientific_name": "Citrus microcarpa",
+        "confidence": 0.6
+      },
+      {
+        "identified_name": "Key Lime",
+        "scientific_name": "Citrus aurantiifolia",
+        "confidence": 0.5
+      }
+    ],
+    "identified_name": "Kaffir Lime",
+    "scientific_name": "Citrus hystrix",
+    "local_names": [
+      {
+        "name": "Magalapong",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.8
+      },
+      {
+        "name": "Maurya",
+        "language": "Sanskrit",
+        "region": "India",
+        "confidence": 0.7
+      }
+    ],
+    "confidence": 0.9,
+    "fun_fact": {
+      "text": "Kaffir lime leaves are highly valued in Southeast Asian cuisine for their distinct citrus fragrance and flavor.",
+      "confidence": 0.9,
+      "category": "Cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": true,
+    "is_toxic_to_pets": null,
+    "plant_type": "Shrub",
+    "environment": "Tropical and subtropical climates, can be grown in containers indoors or outdoors in warm regions.",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Water regularly but allow the soil to dry between watering",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-draining, fertile soil",
+      "growth_rate": "Slow to moderate",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Southeast Asia",
+    "plant_personality": "Fragrant Culinary Star",
+    "fragrance": "Strong citrus aroma, especially from leaves",
+    "symbolism": "Symbolizes cleansing and purification in some Southeast Asian cultures",
+    "lifespan": "Several years with proper care",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103501387.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T04:59:28.009088Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Variegated Yucca",
+        "scientific_name": "Yucca filamentosa 'Variegata'",
+        "confidence": 0.9
+      },
+      {
+        "identified_name": "Dracaena fragrans 'Warneckii'",
+        "scientific_name": "Dracaena fragrans 'Warneckii'",
+        "confidence": 0.6
+      },
+      {
+        "identified_name": "Agave americana 'Marginata'",
+        "scientific_name": "Agave americana 'Marginata'",
+        "confidence": 0.4
+      }
+    ],
+    "identified_name": "Variegated Yucca",
+    "scientific_name": "Yucca filamentosa 'Variegata'",
+    "local_names": [
+      {
+        "name": "Yucca",
+        "language": "English",
+        "region": "Global",
+        "confidence": 0.9
+      }
+    ],
+    "confidence": 0.9,
+    "fun_fact": {
+      "text": "Yucca plants have been used by Native Americans for centuries for making rope, baskets, and soap from their fibrous leaves and roots.",
+      "confidence": 0.9,
+      "category": "Cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Succulent / Shrub",
+    "environment": "Sun-loving, well-drained soil",
+    "difficulty": "Low to Moderate",
+    "care": {
+      "watering_frequency": "Water sparingly; allow soil to dry out between watering",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-draining sandy or rocky soil",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "4-11 (USDA zones)"
+    },
+    "origin_region": "Southeastern United States",
+    "plant_personality": "Hardy Desert Survivor",
+    "fragrance": "Mildly fragrant flowers when blooming",
+    "symbolism": "Symbolizes protection, bravery, and steadfastness in various cultures",
+    "lifespan": "Perennial, can live for many years with proper care",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103510279.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:13:19.085278Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Periwinkle",
+        "scientific_name": "Catharanthus roseus",
+        "confidence": 0.9
+      },
+      {
+        "identified_name": "Vinca",
+        "scientific_name": "Vinca minor",
+        "confidence": 0.6
+      }
+    ],
+    "identified_name": "Periwinkle",
+    "scientific_name": "Catharanthus roseus",
+    "local_names": [
+      {
+        "name": "Sadabahar",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Nithya Mallige",
+        "language": "Kannada",
+        "region": "India",
+        "confidence": 0.7
+      }
+    ],
+    "confidence": 0.9,
+    "fun_fact": {
+      "text": "Periwinkle is known for its medicinal alkaloids vincristine and vinblastine, used in cancer treatment.",
+      "confidence": 0.8,
+      "category": "Medicinal"
+    },
+    "is_flowering": true,
+    "is_medicinal": true,
+    "is_edible": false,
+    "is_toxic_to_pets": true,
+    "plant_type": "Herbaceous perennial",
+    "environment": "Tropical and subtropical climates",
+    "difficulty": "Low",
+    "care": {
+      "watering_frequency": "Water when soil is dry, avoid overwatering",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-draining soil",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Madagascar",
+    "plant_personality": "Hardy Bloomer",
+    "fragrance": "Mild, slightly sweet",
+    "symbolism": "Symbolizes friendship and remembrance in various cultures",
+    "lifespan": "Perennial, but often grown as an annual in cooler climates",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103513668.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:14:20.421968Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Spider Plant",
+        "scientific_name": "Chlorophytum comosum",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Variegated Lilyturf",
+        "scientific_name": "Liriope muscari",
+        "confidence": 0.6
+      },
+      {
+        "identified_name": "Variegated Society Garlic",
+        "scientific_name": "Tulbaghia violacea 'Variegata'",
+        "confidence": 0.55
+      }
+    ],
+    "identified_name": "Spider Plant",
+    "scientific_name": "Chlorophytum comosum",
+    "local_names": [
+      {
+        "name": "Safed Moona",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "The Spider Plant is known for its air-purifying abilities and is a popular indoor plant worldwide for improving indoor air quality.",
+      "confidence": 0.9,
+      "category": "gardening"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": false,
+    "plant_type": "Herbaceous perennial",
+    "environment": "Indoor, shade to partial sun",
+    "difficulty": "Easy",
+    "care": {
+      "watering_frequency": "Water moderately; keep soil slightly moist",
+      "sunlight_requirement": "Indirect sunlight to partial shade",
+      "soil_type": "Well-draining, loamy soil",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Tropical and Southern Africa",
+    "plant_personality": "Low Maintenance Buddy",
+    "fragrance": "None",
+    "symbolism": "Symbolizes purity and good health in various cultures",
+    "lifespan": "Several years with proper care",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103517538.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:03:16.979720Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Banana Plant",
+        "scientific_name": "Musa spp.",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Traveler's Palm",
+        "scientific_name": "Ravenala madagascariensis",
+        "confidence": 0.3
+      },
+      {
+        "identified_name": "Bird of Paradise",
+        "scientific_name": "Strelitzia reginae",
+        "confidence": 0.2
+      }
+    ],
+    "identified_name": "Banana Plant",
+    "scientific_name": "Musa spp.",
+    "local_names": [
+      {
+        "name": "\u0915\u0947\u0932\u093e \u0915\u093e \u092a\u0947\u0921\u093c",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "\u0baa\u0bb4\u0bb5\u0bb3\u0bcd\u0bb3\u0bbf",
+        "language": "Tamil",
+        "region": "India",
+        "confidence": 0.8
+      },
+      {
+        "name": "\u0cac\u0cbe\u0cb3\u0cc6",
+        "language": "Kannada",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Banana plants are technically giant herbs, not trees.",
+      "confidence": 0.9,
+      "category": "botany"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": true,
+    "is_toxic_to_pets": null,
+    "plant_type": "Herbaceous perennial plant",
+    "environment": "Tropical and subtropical regions",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Regular, keep soil consistently moist but not waterlogged",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-draining, rich in organic matter",
+      "growth_rate": "Fast",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Southeast Asia",
+    "plant_personality": "Tropical Showstopper",
+    "fragrance": "Mild or none from leaves; banana fruit has a sweet scent",
+    "symbolism": "Symbolizes prosperity, fertility, and abundance in many cultures",
+    "lifespan": "Around 6-25 years depending on variety and conditions",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103522014.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:04:18.622434Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Kratom",
+        "scientific_name": "Mitragyna speciosa",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Indian Mulberry",
+        "scientific_name": "Murraya koenigii",
+        "confidence": 0.4
+      },
+      {
+        "identified_name": "Guava",
+        "scientific_name": "Psidium guajava",
+        "confidence": 0.3
+      }
+    ],
+    "identified_name": "Kratom",
+    "scientific_name": "Mitragyna speciosa",
+    "local_names": [
+      {
+        "name": "Kratom",
+        "language": "English",
+        "region": "Southeast Asia",
+        "confidence": 0.9
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "Kratom leaves have been traditionally used in Southeast Asia for their stimulant effects and cultural significance in social rituals.",
+      "confidence": 0.7,
+      "category": "Cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Tree",
+    "environment": "Tropical, humid environment",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Keep soil consistently moist but not waterlogged",
+      "sunlight_requirement": "Partial shade to full sun",
+      "soil_type": "Well-draining, fertile soil",
+      "growth_rate": "Moderate to fast",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Southeast Asia",
+    "plant_personality": "Exotic Climber",
+    "fragrance": "Mild, earthy scent when leaves are crushed",
+    "symbolism": "In Southeast Asia, kratom symbolizes strength and endurance, often linked to traditional laborers and cultural ceremonies.",
+    "lifespan": "Decades when grown in suitable conditions",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103527063.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:05:43.927068Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Peepal Tree",
+        "scientific_name": "Ficus religiosa",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Bodhi Tree",
+        "scientific_name": "Ficus religiosa",
+        "confidence": 0.75
+      },
+      {
+        "identified_name": "Sacred Fig",
+        "scientific_name": "Ficus religiosa",
+        "confidence": 0.65
+      }
+    ],
+    "identified_name": "Peepal Tree",
+    "scientific_name": "Ficus religiosa",
+    "local_names": [
+      {
+        "name": "\u092a\u0940\u092a\u0932",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Ashvattha",
+        "language": "Sanskrit",
+        "region": "India",
+        "confidence": 0.85
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "The Peepal Tree is historically sacred in India and is often associated with enlightenment, as it is believed Gautama Buddha attained enlightenment while meditating under such a tree.",
+      "confidence": 0.9,
+      "category": "cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "tree",
+    "environment": "outdoor",
+    "difficulty": "moderate",
+    "care": {
+      "watering_frequency": "Water regularly but do not overwater; allow soil to dry slightly between watering",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-drained, fertile soil",
+      "growth_rate": "Moderate to fast",
+      "hardiness_zone": "Zone 9 through 11"
+    },
+    "origin_region": "Indian subcontinent",
+    "plant_personality": "Sacred Guardian",
+    "fragrance": "Mild, not notably fragrant",
+    "symbolism": "Symbol of enlightenment, fertility, and longevity in Indian culture",
+    "lifespan": "Decades to centuries",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103530351.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:16:03.642073Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Guava",
+        "scientific_name": "Psidium guajava",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Strawberry Guava",
+        "scientific_name": "Psidium cattleyanum",
+        "confidence": 0.6
+      }
+    ],
+    "identified_name": "Guava",
+    "scientific_name": "Psidium guajava",
+    "local_names": [
+      {
+        "name": "Amrood",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.95
+      },
+      {
+        "name": "Peru",
+        "language": "Kannada",
+        "region": "Karnataka, India",
+        "confidence": 0.85
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Guava trees are considered auspicious in some Indian cultures and are often planted near homes. The fruit is highly valued for its rich vitamin C content.",
+      "confidence": 0.9,
+      "category": "Cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": true,
+    "is_toxic_to_pets": null,
+    "plant_type": "Fruit tree",
+    "environment": "Tropical and subtropical regions",
+    "difficulty": "Easy to moderate",
+    "care": {
+      "watering_frequency": "Moderate; water regularly but avoid waterlogging",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-drained soil, can tolerate poor soil",
+      "growth_rate": "Moderate to fast",
+      "hardiness_zone": "10 to 11"
+    },
+    "origin_region": "Central America and northern South America",
+    "plant_personality": "Hardy and productive",
+    "fragrance": "Mildly sweet and fresh fragrance from the fruit",
+    "symbolism": "In some cultures, guava symbolizes health and prosperity.",
+    "lifespan": "Medium to long-lived (up to 40 years in favorable conditions)",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103545462.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T04:57:24.708164Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Holy Basil",
+        "scientific_name": "Ocimum tenuiflorum",
+        "confidence": 0.9
+      },
+      {
+        "identified_name": "Thai Basil",
+        "scientific_name": "Ocimum basilicum var. thyrsiflora",
+        "confidence": 0.5
+      }
+    ],
+    "identified_name": "Holy Basil",
+    "scientific_name": "Ocimum tenuiflorum",
+    "local_names": [
+      {
+        "name": "Tulsi",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 1.0
+      },
+      {
+        "name": "Tulasi",
+        "language": "Telugu",
+        "region": "Southern India",
+        "confidence": 0.9
+      }
+    ],
+    "confidence": 0.9,
+    "fun_fact": {
+      "text": "Holy Basil (Tulsi) is revered in Hindu culture and often grown in or near homes for its spiritual significance and air-purifying properties.",
+      "confidence": 0.95,
+      "category": "Cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": true,
+    "is_edible": true,
+    "is_toxic_to_pets": null,
+    "plant_type": "Herb",
+    "environment": "Tropical to subtropical climates, prefers sunny locations",
+    "difficulty": "Easy to moderate",
+    "care": {
+      "watering_frequency": "Water daily in hot weather; keep soil moist but not waterlogged",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-drained, fertile soil",
+      "growth_rate": "Moderate to fast",
+      "hardiness_zone": "10-11"
+    },
+    "origin_region": "Indian subcontinent",
+    "plant_personality": "Sacred Guardian",
+    "fragrance": "Aromatic, spicy, and clove-like scent",
+    "symbolism": "Symbolizes purity, protection, and spiritual devotion in Hindu tradition",
+    "lifespan": "Perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103550447.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T04:58:50.020038Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Holy Basil",
+        "scientific_name": "Ocimum tenuiflorum",
+        "confidence": 0.9
+      },
+      {
+        "identified_name": "Common Basil",
+        "scientific_name": "Ocimum basilicum",
+        "confidence": 0.5
+      },
+      {
+        "identified_name": "Wild Basil",
+        "scientific_name": "Ocimum gratissimum",
+        "confidence": 0.3
+      }
+    ],
+    "identified_name": "Holy Basil",
+    "scientific_name": "Ocimum tenuiflorum",
+    "local_names": [
+      {
+        "name": "Tulsi",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.95
+      },
+      {
+        "name": "Thulasi",
+        "language": "Tamil",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Tulasi",
+        "language": "Kannada",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.9,
+    "fun_fact": {
+      "text": "Holy Basil or Tulsi is considered sacred in Hindu culture and is often grown in homes for its religious significance and medicinal properties.",
+      "confidence": 0.9,
+      "category": "Cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": true,
+    "is_edible": false,
+    "is_toxic_to_pets": null,
+    "plant_type": "Herb",
+    "environment": "Tropical to subtropical climates, outdoor garden or pots",
+    "difficulty": "Easy",
+    "care": {
+      "watering_frequency": "Moderate; keep soil moist but not waterlogged",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-drained, fertile soil",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "10-11"
+    },
+    "origin_region": "Indian subcontinent",
+    "plant_personality": "Sacred Healer",
+    "fragrance": "Strong, spicy aromatic scent",
+    "symbolism": "Symbolizes purity, protection, and spiritual connection in Hinduism",
+    "lifespan": "Perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103603293.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:11:18.372042Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Ficus benjamina",
+        "scientific_name": "Ficus benjamina",
+        "confidence": 0.9
+      },
+      {
+        "identified_name": "Indian Laurel",
+        "scientific_name": "Ficus microcarpa",
+        "confidence": 0.6
+      },
+      {
+        "identified_name": "Ficus retusa",
+        "scientific_name": "Ficus retusa",
+        "confidence": 0.5
+      }
+    ],
+    "identified_name": "Ficus benjamina",
+    "scientific_name": "Ficus benjamina",
+    "local_names": [
+      {
+        "name": "Weeping Fig",
+        "language": "English",
+        "region": "Global",
+        "confidence": 0.8
+      },
+      {
+        "name": "Benjamin Ficus",
+        "language": "English",
+        "region": "Global",
+        "confidence": 0.7
+      }
+    ],
+    "confidence": 0.9,
+    "fun_fact": {
+      "text": "Ficus benjamina is a popular indoor ornamental plant worldwide, often used for its graceful shape and ease of shaping into bonsai.",
+      "confidence": 0.8,
+      "category": "gardening"
+    },
+    "is_flowering": false,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Tree",
+    "environment": "Indoor and outdoor in tropical and subtropical climates",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Keep soil moist, reduce watering in winter",
+      "sunlight_requirement": "Bright indirect light",
+      "soil_type": "Well-draining, fertile soil",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "10-12"
+    },
+    "origin_region": "Southeast Asia and Australia",
+    "plant_personality": "Low Maintenance Buddy",
+    "fragrance": "None",
+    "symbolism": "Symbolizes abundance, happiness, and prosperity in many cultures",
+    "lifespan": "Several decades with proper care",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103606492.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:02:17.489833Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Mango Tree",
+        "scientific_name": "Mangifera indica",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Black Olive",
+        "scientific_name": "Bucida buceras",
+        "confidence": 0.3
+      }
+    ],
+    "identified_name": "Mango Tree",
+    "scientific_name": "Mangifera indica",
+    "local_names": [
+      {
+        "name": "\u0906\u092e",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "\u0c2e\u0c3e\u0c2e\u0c3f\u0c21\u0c3f",
+        "language": "Telugu",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "\u0906\u0902\u092c\u093e",
+        "language": "Marathi",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "The mango tree is known as the 'king of fruits' in India and has significant cultural importance, often featured in folklore, festivals, and traditional medicine.",
+      "confidence": 0.9,
+      "category": "cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": true,
+    "is_edible": true,
+    "is_toxic_to_pets": false,
+    "plant_type": "Tree",
+    "environment": "Tropical and subtropical regions",
+    "difficulty": "Moderate",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103613814.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-27T07:48:57.253689Z",
+    "plant_personality": "Mystery Vibe \u2728",
+    "care": {
+      "watering_frequency": "Check soil",
+      "sunlight_requirement": "Needs light",
+      "soil_type": "Standard mix",
+      "growth_rate": "Varies",
+      "hardiness_zone": "Unknown"
+    },
+    "origin_region": "Earth \ud83c\udf0d",
+    "symbolism": "Growth and Renewal"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Indian Head Ginger",
+        "scientific_name": "Curcuma amada",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Turmeric",
+        "scientific_name": "Curcuma longa",
+        "confidence": 0.3
+      },
+      {
+        "identified_name": "Cardamom",
+        "scientific_name": "Elettaria cardamomum",
+        "confidence": 0.1
+      }
+    ],
+    "identified_name": "Indian Head Ginger",
+    "scientific_name": "Curcuma amada",
+    "local_names": [
+      {
+        "name": "Aduwa Sanna",
+        "language": "Kannada",
+        "region": "Karnataka, India",
+        "confidence": 0.7
+      },
+      {
+        "name": "Mangor",
+        "language": "Hindi",
+        "region": "Northern India",
+        "confidence": 0.65
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "Indian Head Ginger is well appreciated for its mango-like fragrance in the rhizome, and it is used as a culinary spice and traditional flavoring in parts of India.",
+      "confidence": 0.8,
+      "category": "Cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": true,
+    "is_edible": true,
+    "is_toxic_to_pets": false,
+    "plant_type": "Herbaceous perennial",
+    "environment": "Tropical and subtropical regions, thrives in shade",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Keep soil consistently moist but not waterlogged",
+      "sunlight_requirement": "Prefers partial shade",
+      "soil_type": "Well-drained, fertile loamy soil",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "India and Southeast Asia",
+    "plant_personality": "Aromatic Flavorful Companion",
+    "fragrance": "Mango-like, sweet and fruity",
+    "symbolism": "In Indian culture, it symbolizes auspiciousness and is sometimes used in rituals and traditional medicine.",
+    "lifespan": "Perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103621727.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T04:56:53.689708Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Rose",
+        "scientific_name": "Rosa",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Jasmine",
+        "scientific_name": "Jasminum",
+        "confidence": 0.3
+      },
+      {
+        "identified_name": "Bougainvillea",
+        "scientific_name": "Bougainvillea glabra",
+        "confidence": 0.2
+      }
+    ],
+    "identified_name": "Rose",
+    "scientific_name": "Rosa",
+    "local_names": [
+      {
+        "name": "\u0917\u0941\u0932\u093e\u092c",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "\u0b95\u0bc1\u0bb2\u0bbe\u0baa\u0bcd",
+        "language": "Tamil",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Roses have been symbols of love and beauty for thousands of years and are featured prominently in art, mythology, and literature.",
+      "confidence": 0.9,
+      "category": "cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "shrub",
+    "environment": "garden, temperate to tropical climates",
+    "difficulty": "moderate",
+    "care": {
+      "watering_frequency": "regular but well-drained soil; avoid waterlogging",
+      "sunlight_requirement": "full sun to partial shade",
+      "soil_type": "well-draining, rich in organic matter",
+      "growth_rate": "moderate",
+      "hardiness_zone": "3-11"
+    },
+    "origin_region": "Asia, Europe, North America",
+    "plant_personality": "Romantic Classic",
+    "fragrance": "Sweet and floral fragrance",
+    "symbolism": "Love, passion, beauty, and grace across many cultures",
+    "lifespan": "Perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103627369.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:16:37.024666Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Dahlia",
+        "scientific_name": "Dahlia pinnata",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Chrysanthemum",
+        "scientific_name": "Chrysanthemum morifolium",
+        "confidence": 0.5
+      },
+      {
+        "identified_name": "Zinnia",
+        "scientific_name": "Zinnia elegans",
+        "confidence": 0.3
+      }
+    ],
+    "identified_name": "Dahlia",
+    "scientific_name": "Dahlia pinnata",
+    "local_names": [
+      {
+        "name": "\u0921\u093e\u0939\u0932\u093f\u092f\u093e",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "Dahlias are native to Mexico and Central America and were brought to Europe in the 18th century where they became popular garden plants.",
+      "confidence": 0.75,
+      "category": "Cultural/Historical"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Flowering perennial",
+    "environment": "Gardens, pots, outdoor sunny areas",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Water regularly but avoid waterlogging; keep soil moist",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-drained, fertile soil rich in organic matter",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "8-11"
+    },
+    "origin_region": "Mexico and Central America",
+    "plant_personality": "Showy Performer",
+    "fragrance": "Light to none",
+    "symbolism": "Symbolizes elegance, dignity, and lasting bonds",
+    "lifespan": "Perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103630815.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:02:46.156693Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Marigold",
+        "scientific_name": "Tagetes erecta",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "African Marigold",
+        "scientific_name": "Tagetes erecta",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Mexican Marigold",
+        "scientific_name": "Tagetes erecta",
+        "confidence": 0.7
+      }
+    ],
+    "identified_name": "Marigold",
+    "scientific_name": "Tagetes erecta",
+    "local_names": [
+      {
+        "name": "Genda",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Buphala",
+        "language": "Kannada",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Marigold flowers are widely used in Indian festivals and religious ceremonies, especially during Diwali and funerals, symbolizing auspiciousness and remembrance.",
+      "confidence": 0.9,
+      "category": "Cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Flowering annual",
+    "environment": "Full sun to partial shade, warm climates",
+    "difficulty": "Easy",
+    "care": {
+      "watering_frequency": "Moderate; water when the top inch of soil dries",
+      "sunlight_requirement": "Full sun",
+      "soil_type": "Well-draining, moderately fertile soil",
+      "growth_rate": "Fast",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Mexico and Central America",
+    "plant_personality": "Bright and cheerful festival favorite",
+    "fragrance": "Mildly pungent and musky",
+    "symbolism": "Symbolizes creativity, passion, and positive energy in various cultures",
+    "lifespan": "Annual",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103634367.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:15:37.940555Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Rose",
+        "scientific_name": "Rosa",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Japanese Rose",
+        "scientific_name": "Rosa rugosa",
+        "confidence": 0.6
+      },
+      {
+        "identified_name": "Multiflora Rose",
+        "scientific_name": "Rosa multiflora",
+        "confidence": 0.55
+      }
+    ],
+    "identified_name": "Rose",
+    "scientific_name": "Rosa",
+    "local_names": [
+      {
+        "name": "Gulab",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Gulabi",
+        "language": "Bengali",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "The rose is the national flower of several countries including the United States, United Kingdom, and Iran, and is often associated with love and romance.",
+      "confidence": 0.9,
+      "category": "cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Shrub",
+    "environment": "Outdoor garden, temperate to subtropical climates",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Water regularly but allow soil to dry between watering",
+      "sunlight_requirement": "Full sun for at least 6 hours a day",
+      "soil_type": "Well-drained, loamy soil with good organic content",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "USDA zones 5-9"
+    },
+    "origin_region": "Asia",
+    "plant_personality": "Romantic Classic",
+    "fragrance": "Sweet and fragrant",
+    "symbolism": "Love, beauty, passion, purity",
+    "lifespan": "Perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103639630.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:00:50.237870Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Black Nightshade",
+        "scientific_name": "Solanum nigrum",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Eggplant (small round variety)",
+        "scientific_name": "Solanum melongena",
+        "confidence": 0.6
+      },
+      {
+        "identified_name": "Deadly Nightshade (Atropa belladonna)",
+        "scientific_name": "Atropa belladonna",
+        "confidence": 0.4
+      }
+    ],
+    "identified_name": "Black Nightshade",
+    "scientific_name": "Solanum nigrum",
+    "local_names": [
+      {
+        "name": "Makoi",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Kakamachi",
+        "language": "Kannada",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "Black Nightshade is often used in traditional herbal medicines in various cultures, but some parts are toxic if ingested improperly.",
+      "confidence": 0.8,
+      "category": "cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": true,
+    "is_edible": false,
+    "is_toxic_to_pets": null,
+    "plant_type": "herbaceous shrub",
+    "environment": "grows wild in temperate and tropical regions, often in disturbed soils",
+    "difficulty": "easy",
+    "care": {
+      "watering_frequency": "moderate; keep soil evenly moist",
+      "sunlight_requirement": "partial to full sun",
+      "soil_type": "well-drained soil, tolerates a range of soil types",
+      "growth_rate": "medium",
+      "hardiness_zone": "7-11"
+    },
+    "origin_region": "Eurasia",
+    "plant_personality": "Mysterious Wild Child",
+    "fragrance": "None",
+    "symbolism": "Historically associated with protection and healing in folklore, but also with caution due to toxicity",
+    "lifespan": "Annual or short-lived perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103648979.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:04:46.683745Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Olea europaea (Olive Plant)",
+        "scientific_name": "Olea europaea",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Nerium oleander",
+        "scientific_name": "Nerium oleander",
+        "confidence": 0.4
+      },
+      {
+        "identified_name": "Ficus elastica (Rubber Plant)",
+        "scientific_name": "Ficus elastica",
+        "confidence": 0.3
+      }
+    ],
+    "identified_name": "Olea europaea (Olive Plant)",
+    "scientific_name": "Olea europaea",
+    "local_names": [
+      {
+        "name": "Jaitun",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.8
+      },
+      {
+        "name": "Jaitra",
+        "language": "Marathi",
+        "region": "India",
+        "confidence": 0.6
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "Olive trees have been cultivated for thousands of years and are symbolic of peace and prosperity, often seen in Mediterranean culture and mythology.",
+      "confidence": 0.85,
+      "category": "cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Shrub / Small Tree",
+    "environment": "Mediterranean, subtropical to temperate regions",
+    "difficulty": "Moderate care",
+    "care": {
+      "watering_frequency": "Water every 1-2 weeks, allow soil to dry between watering",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-drained, sandy or loamy soil",
+      "growth_rate": "Slow to moderate",
+      "hardiness_zone": "8-11"
+    },
+    "origin_region": "Mediterranean Basin",
+    "plant_personality": "Resilient Classic",
+    "fragrance": "Mild, slightly fruity when flowering",
+    "symbolism": "Symbol of peace, wisdom, and victory in many cultures",
+    "lifespan": "Long-lived, can live for hundreds of years",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103656466.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:01:18.297873Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Monstera",
+        "scientific_name": "Monstera deliciosa",
+        "confidence": 0.9
+      },
+      {
+        "identified_name": "Philodendron",
+        "scientific_name": "Philodendron bipinnatifidum",
+        "confidence": 0.6
+      }
+    ],
+    "identified_name": "Monstera",
+    "scientific_name": "Monstera deliciosa",
+    "local_names": [
+      {
+        "name": "Swiss Cheese Plant",
+        "language": "English",
+        "region": "Global",
+        "confidence": 0.9
+      },
+      {
+        "name": "\u0928\u093e\u0917\u092b\u0928\u0940",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.7
+      }
+    ],
+    "confidence": 0.9,
+    "fun_fact": {
+      "text": "Monstera deliciosa is famous for its unique perforated leaves which have inspired many ornamental designs and art around the world.",
+      "confidence": 0.9,
+      "category": "aesthetic"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": true,
+    "plant_type": "Tropical vine",
+    "environment": "Indoor and shaded outdoor environments",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Water when the top inch of soil feels dry",
+      "sunlight_requirement": "Bright indirect light",
+      "soil_type": "Well-draining potting soil",
+      "growth_rate": "Moderate to fast",
+      "hardiness_zone": "10-12"
+    },
+    "origin_region": "Tropical rainforests of southern Mexico",
+    "plant_personality": "Tropical Trendsetter",
+    "fragrance": "None",
+    "symbolism": "Represents long life and respect in some cultures",
+    "lifespan": "Several years to decades with proper care",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103703560.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T04:53:44.345070Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Sweet Orange",
+        "scientific_name": "Citrus sinensis",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Mandarin Orange",
+        "scientific_name": "Citrus reticulata",
+        "confidence": 0.7
+      },
+      {
+        "identified_name": "Grapefruit",
+        "scientific_name": "Citrus \u00d7 paradisi",
+        "confidence": 0.5
+      }
+    ],
+    "identified_name": "Sweet Orange",
+    "scientific_name": "Citrus sinensis",
+    "local_names": [
+      {
+        "name": "Santra",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Kinnow",
+        "language": "Punjabi",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Sweet orange trees have been cultivated for centuries and are believed to have originated in China. They are now one of the most widely grown fruit trees globally.",
+      "confidence": 0.9,
+      "category": "Historical"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": true,
+    "is_toxic_to_pets": false,
+    "plant_type": "Tree",
+    "environment": "Subtropical to tropical climates",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Water deeply once or twice a week, depending on weather",
+      "sunlight_requirement": "Full sun",
+      "soil_type": "Well-drained sandy loam",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "China, Southeast Asia",
+    "plant_personality": "Sunny and Vibrant",
+    "fragrance": "Citrusy and sweet",
+    "symbolism": "Symbolizes good fortune and prosperity in many cultures",
+    "lifespan": "50+ years",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103713089.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T04:52:53.676154Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Indian Kino Tree",
+        "scientific_name": "Pterocarpus marsupium",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Kiwi Vine",
+        "scientific_name": "Actinidia deliciosa",
+        "confidence": 0.4
+      },
+      {
+        "identified_name": "Yellow Flame Tree",
+        "scientific_name": "Peltophorum pterocarpum",
+        "confidence": 0.3
+      }
+    ],
+    "identified_name": "Indian Kino Tree",
+    "scientific_name": "Pterocarpus marsupium",
+    "local_names": [
+      {
+        "name": "Arjuna",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Vijaysar",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "The Indian Kino tree is known for its reddish resin called 'kino' that was historically used as a dye and traditional medicine in India.",
+      "confidence": 0.75,
+      "category": "Historical"
+    },
+    "is_flowering": true,
+    "is_medicinal": true,
+    "is_edible": false,
+    "is_toxic_to_pets": null,
+    "plant_type": "Tree",
+    "environment": "Tropical and Subtropical climates",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Moderate; water regularly but avoid waterlogging",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-drained, loamy or sandy soils",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "India and Sri Lanka",
+    "plant_personality": "Sturdy Traditionalist",
+    "fragrance": "Mild, earthy scent from bark resin",
+    "symbolism": "In Indian culture, it is often associated with healing and protection due to its medicinal properties.",
+    "lifespan": "Decades to over 100 years",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103725093.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T04:54:25.202033Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Pandanus",
+        "scientific_name": "Pandanus amaryllifolius",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Dracaena",
+        "scientific_name": "Dracaena reflexa",
+        "confidence": 0.5
+      },
+      {
+        "identified_name": "Yucca",
+        "scientific_name": "Yucca filamentosa",
+        "confidence": 0.4
+      }
+    ],
+    "identified_name": "Pandanus",
+    "scientific_name": "Pandanus amaryllifolius",
+    "local_names": [
+      {
+        "name": "Pandan",
+        "language": "English",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Kewda",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "Pandan leaves are widely used in Southeast Asian cooking for their sweet aroma and flavor, often compared to vanilla or almond.",
+      "confidence": 0.8,
+      "category": "Cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Herbaceous tropical plant",
+    "environment": "Tropical to subtropical climates",
+    "difficulty": "Low to medium care",
+    "care": {
+      "watering_frequency": "Keep soil consistently moist but not waterlogged",
+      "sunlight_requirement": "Partial shade to full sun",
+      "soil_type": "Well-draining, fertile soil",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "10-12"
+    },
+    "origin_region": "Southeast Asia",
+    "plant_personality": "Fragrant Culinary Star",
+    "fragrance": "Sweet, vanilla-like aroma",
+    "symbolism": "Associated with purity and auspiciousness in Southeast Asian cultures",
+    "lifespan": "Perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103733677.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:03:47.289205Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Chrysanthemum",
+        "scientific_name": "Chrysanthemum morifolium",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Asters",
+        "scientific_name": "Asteraceae",
+        "confidence": 0.6
+      }
+    ],
+    "identified_name": "Chrysanthemum",
+    "scientific_name": "Chrysanthemum morifolium",
+    "local_names": [
+      {
+        "name": "\u0917\u0947\u0902\u0926\u0947 \u0915\u093e \u092b\u0942\u0932",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Chrysanthemums are symbols of longevity and rejuvenation in many Asian cultures and are often used in festivals and decorations.",
+      "confidence": 0.9,
+      "category": "cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Herbaceous perennial",
+    "environment": "Prefers well-drained soil and partial to full sunlight",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Water regularly, keep soil moist but not soggy",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-drained, fertile soil",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "5-9"
+    },
+    "origin_region": "East Asia",
+    "plant_personality": "Cheerful Bloom Buddy",
+    "fragrance": "Light, fresh floral scent",
+    "symbolism": "Represents longevity, rejuvenation, and optimism in many cultures",
+    "lifespan": "Perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103737429.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:07:01.853397Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Corchorus olitorius",
+        "scientific_name": "Corchorus olitorius",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Corchorus capsularis",
+        "scientific_name": "Corchorus capsularis",
+        "confidence": 0.6
+      }
+    ],
+    "identified_name": "Corchorus olitorius",
+    "scientific_name": "Corchorus olitorius",
+    "local_names": [
+      {
+        "name": "Jute",
+        "language": "English",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Molokhia",
+        "language": "Arabic",
+        "region": "Middle East",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "Corchorus olitorius is commonly known as jute and is a major fiber crop used worldwide for making burlap, hessian, and gunny sacks. It is also valued for its edible leaves, used in traditional dishes in the Middle East, Africa, and South Asia.",
+      "confidence": 0.8,
+      "category": "cultural and economic importance"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": true,
+    "is_toxic_to_pets": null,
+    "plant_type": "Shrub/Herbaceous plant",
+    "environment": "Tropical and subtropical regions",
+    "difficulty": "Easy",
+    "care": {
+      "watering_frequency": "Moderate; keep soil moist but well-drained",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Fertile, loamy, well-draining soil",
+      "growth_rate": "Fast",
+      "hardiness_zone": "10-12"
+    },
+    "origin_region": "South Asia, Tropical Asia",
+    "plant_personality": "Versatile and useful",
+    "fragrance": "None",
+    "symbolism": "Symbolizes prosperity and utility due to its use as a fiber and food source",
+    "lifespan": "Annual",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103740674.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:12:16.373927Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Gardenia",
+        "scientific_name": "Gardenia jasminoides",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Hibiscus",
+        "scientific_name": "Hibiscus rosa-sinensis",
+        "confidence": 0.3
+      },
+      {
+        "identified_name": "Indian Almond",
+        "scientific_name": "Terminalia catappa",
+        "confidence": 0.1
+      }
+    ],
+    "identified_name": "Gardenia",
+    "scientific_name": "Gardenia jasminoides",
+    "local_names": [
+      {
+        "name": "Chameli",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.7
+      },
+      {
+        "name": "Malli",
+        "language": "Tamil",
+        "region": "India",
+        "confidence": 0.6
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "Gardenias are valued in gardens for their glossy green leaves and fragrant white flowers, often symbolizing purity and sweetness.",
+      "confidence": 0.8,
+      "category": "Cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Shrub",
+    "environment": "Tropical and subtropical climates",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Keep soil moist but not waterlogged, water regularly",
+      "sunlight_requirement": "Partial shade to full sun",
+      "soil_type": "Well-drained, acidic soil",
+      "growth_rate": "Slow to moderate",
+      "hardiness_zone": "8-11"
+    },
+    "origin_region": "Asia, particularly China and Japan",
+    "plant_personality": "Elegant and fragrant charm",
+    "fragrance": "Sweet, strong, and pleasing scent",
+    "symbolism": "Symbolizes purity, love, and refinement in many cultures",
+    "lifespan": "Perennial, can live many years with proper care",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103744908.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:09:42.863240Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Hibiscus",
+        "scientific_name": "Hibiscus rosa-sinensis",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Rosemallow",
+        "scientific_name": "Hibiscus mutabilis",
+        "confidence": 0.65
+      },
+      {
+        "identified_name": "Chinese hibiscus",
+        "scientific_name": "Hibiscus rosa-sinensis var.",
+        "confidence": 0.55
+      }
+    ],
+    "identified_name": "Hibiscus",
+    "scientific_name": "Hibiscus rosa-sinensis",
+    "local_names": [
+      {
+        "name": "Gudhal",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Japa mala",
+        "language": "Kannada",
+        "region": "India",
+        "confidence": 0.8
+      },
+      {
+        "name": "Chevuru",
+        "language": "Telugu",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "Hibiscus flowers are culturally significant in many countries and are often used in traditional ceremonies, including in Hindu worship where they are offered to deities.",
+      "confidence": 0.85,
+      "category": "Cultural Significance"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Shrub",
+    "environment": "Tropical and subtropical regions",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Regular watering, allowing soil to dry between waterings",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-draining, fertile soil",
+      "growth_rate": "Moderate to fast",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Asia",
+    "plant_personality": "Bright and Cheerful",
+    "fragrance": "Mild, sometimes sweet floral scent",
+    "symbolism": "Symbolizes beauty, love, and femininity in many cultures",
+    "lifespan": "Perennial, typically several years",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103747711.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:01:48.401393Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Portulacaria afra",
+        "scientific_name": "Portulacaria afra",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Peperomia rotundifolia",
+        "scientific_name": "Peperomia rotundifolia",
+        "confidence": 0.5
+      },
+      {
+        "identified_name": "Dischidia nummularia",
+        "scientific_name": "Dischidia nummularia",
+        "confidence": 0.3
+      }
+    ],
+    "identified_name": "Portulacaria afra",
+    "scientific_name": "Portulacaria afra",
+    "local_names": [
+      {
+        "name": "Elephant Bush",
+        "language": "English",
+        "region": "Global",
+        "confidence": 0.9
+      },
+      {
+        "name": "Spekboom",
+        "language": "Afrikaans",
+        "region": "South Africa",
+        "confidence": 0.9
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Portulacaria afra, known as Elephant Bush, is widely used in bonsai and succulent gardens because of its miniature, fleshy leaves and ease of pruning to shape.",
+      "confidence": 0.9,
+      "category": "gardening"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": false,
+    "plant_type": "Succulent shrub",
+    "environment": "Prefers warm, dry climates; often used as a drought-tolerant houseplant or garden plant",
+    "difficulty": "Low maintenance",
+    "care": {
+      "watering_frequency": "Water sparingly; allow soil to dry between waterings",
+      "sunlight_requirement": "Thrives in bright indirect light to full sun",
+      "soil_type": "Well-draining succulent or cactus mix",
+      "growth_rate": "Moderate growth rate",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "South Africa",
+    "plant_personality": "Low Maintenance Buddy",
+    "fragrance": "None",
+    "symbolism": "Symbol of resilience and sustainability in arid climates",
+    "lifespan": "Perennial, potentially decades with good care",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103752308.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T04:59:54.634994Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Murraya paniculata",
+        "scientific_name": "Murraya paniculata",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Boxwood",
+        "scientific_name": "Buxus sempervirens",
+        "confidence": 0.5
+      },
+      {
+        "identified_name": "Jasmine",
+        "scientific_name": "Jasminum sambac",
+        "confidence": 0.3
+      }
+    ],
+    "identified_name": "Murraya paniculata",
+    "scientific_name": "Murraya paniculata",
+    "local_names": [
+      {
+        "name": "Kunti",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.8
+      },
+      {
+        "name": "Kamini",
+        "language": "Kannada",
+        "region": "India",
+        "confidence": 0.75
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "Murraya paniculata is often called the 'Mock Orange' due to its fragrant white flowers resembling those of orange blossoms.",
+      "confidence": 0.8,
+      "category": "botanical"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Shrub",
+    "environment": "Tropical and subtropical climates, commonly grown as an ornamental hedge or bonsai",
+    "difficulty": "Low",
+    "care": {
+      "watering_frequency": "Moderate; water when the topsoil is dry",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-drained, fertile soil",
+      "growth_rate": "Moderate to fast",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Asia, particularly Indian subcontinent and Southeast Asia",
+    "plant_personality": "Fragrant and Neat Gardener",
+    "fragrance": "Sweet, citrus-like, similar to orange blossoms",
+    "symbolism": "Associated with purity and beauty in many Asian cultures; often used in temple gardens",
+    "lifespan": "Perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103800092.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T04:58:24.978828Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Sago Palm",
+        "scientific_name": "Cycas revoluta",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Cardboard Palm",
+        "scientific_name": "Zamia furfuracea",
+        "confidence": 0.75
+      },
+      {
+        "identified_name": "King Sago Palm",
+        "scientific_name": "Cycas circinalis",
+        "confidence": 0.65
+      }
+    ],
+    "identified_name": "Sago Palm",
+    "scientific_name": "Cycas revoluta",
+    "local_names": [
+      {
+        "name": "Sago Palm",
+        "language": "English",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "\u0938\u093e\u0917 \u092a\u093e\u092e",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "The Sago Palm is often mistaken for a true palm but is actually a cycad, an ancient group of plants that existed long before the dinosaurs.",
+      "confidence": 0.9,
+      "category": "Botanical History"
+    },
+    "is_flowering": false,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": true,
+    "plant_type": "Cycad",
+    "environment": "Indoor or outdoor in warm climates",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Water sparingly; allow soil to dry between watering",
+      "sunlight_requirement": "Bright, indirect sunlight",
+      "soil_type": "Well-draining soil, sandy or loamy",
+      "growth_rate": "Slow",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Japan and southern China",
+    "plant_personality": "Ancient Elegance",
+    "fragrance": "None",
+    "symbolism": "Symbolizes longevity and resilience in many cultures.",
+    "lifespan": "Several decades to centuries",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103803626.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:12:49.286506Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Black Pearl Pepper",
+        "scientific_name": "Capsicum annuum",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Purple Heart",
+        "scientific_name": "Tradescantia pallida",
+        "confidence": 0.4
+      },
+      {
+        "identified_name": "Purple Basil",
+        "scientific_name": "Ocimum basilicum 'Purpurascens'",
+        "confidence": 0.3
+      }
+    ],
+    "identified_name": "Black Pearl Pepper",
+    "scientific_name": "Capsicum annuum",
+    "local_names": [
+      {
+        "name": "Black Pearl Pepper",
+        "language": "English",
+        "region": "Global",
+        "confidence": 0.95
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Black Pearl Pepper is popular for its striking deep purple to black foliage and bright red peppers, often grown as an ornamental and sometimes used in cooking.",
+      "confidence": 0.9,
+      "category": "Gardening and aesthetics"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": true,
+    "is_toxic_to_pets": null,
+    "plant_type": "Annual/Perennial herb",
+    "environment": "Prefers warm climates and grows well indoors or outdoors in pots",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Water regularly but allow soil to dry slightly between watering",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-draining fertile soil",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Native to Central and South America",
+    "plant_personality": "Bold and dramatic with a spicy twist",
+    "fragrance": "Mild aroma typical of pepper plants",
+    "symbolism": "Symbolizes vibrant energy and protection in some cultures",
+    "lifespan": "Typically grown as an annual, but can be perennial in suitable climates",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103813101.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:07:53.960009Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Kiwifruit Vine",
+        "scientific_name": "Actinidia deliciosa",
+        "confidence": 0.75
+      },
+      {
+        "identified_name": "Chinese Gooseberry",
+        "scientific_name": "Actinidia chinensis",
+        "confidence": 0.6
+      }
+    ],
+    "identified_name": "Kiwifruit Vine",
+    "scientific_name": "Actinidia deliciosa",
+    "local_names": [
+      {
+        "name": "\u0915\u0940\u0935\u0940",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.7
+      }
+    ],
+    "confidence": 0.75,
+    "fun_fact": {
+      "text": "The kiwifruit vine was originally known as Chinese gooseberry and was renamed for marketing purposes to associate it with New Zealand, where it became widely cultivated.",
+      "confidence": 0.7,
+      "category": "Cultural/History"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": true,
+    "is_toxic_to_pets": null,
+    "plant_type": "Climbing Vine",
+    "environment": "Outdoor garden, temperate climate",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Regular, keep soil moist but not waterlogged",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-drained, fertile soil rich in organic matter",
+      "growth_rate": "Fast growing",
+      "hardiness_zone": "7-9"
+    },
+    "origin_region": "China",
+    "plant_personality": "Adventurous Climber",
+    "fragrance": "Mildly sweet",
+    "symbolism": "Symbolizes fertility and abundance in some cultures due to its many seeds",
+    "lifespan": "Perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103820123.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:06:09.095756Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Calamondin Orange",
+        "scientific_name": "Citrofortunella microcarpa",
+        "confidence": 0.9
+      },
+      {
+        "identified_name": "Kumquat",
+        "scientific_name": "Fortunella spp.",
+        "confidence": 0.7
+      },
+      {
+        "identified_name": "Mandarin Orange",
+        "scientific_name": "Citrus reticulata",
+        "confidence": 0.6
+      }
+    ],
+    "identified_name": "Calamondin Orange",
+    "scientific_name": "Citrofortunella microcarpa",
+    "local_names": [
+      {
+        "name": " calamansi",
+        "language": "Filipino",
+        "region": "India (also Philippines)",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.9,
+    "fun_fact": {
+      "text": "Calamondins are often grown as ornamental plants and are popular for container gardening because of their small size and bright fruit.",
+      "confidence": 0.75,
+      "category": "gardening"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": true,
+    "is_toxic_to_pets": null,
+    "plant_type": "small citrus tree",
+    "environment": "tropical and subtropical climates",
+    "difficulty": "moderate",
+    "care": {
+      "watering_frequency": "Water moderately, allowing soil to dry slightly between watering",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-drained sandy loam",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Southeast Asia",
+    "plant_personality": "Bright and Cheerful Miniature",
+    "fragrance": "Mild citrus scent",
+    "symbolism": "Symbolizes prosperity and good luck in some Asian cultures",
+    "lifespan": "Can live for several years with proper care",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103834634.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:14:47.147017Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Lady Palm",
+        "scientific_name": "Rhapis excelsa",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Bamboo Palm",
+        "scientific_name": "Chamaedorea seifrizii",
+        "confidence": 0.55
+      },
+      {
+        "identified_name": "Fishtail Palm",
+        "scientific_name": "Caryota mitis",
+        "confidence": 0.3
+      }
+    ],
+    "identified_name": "Lady Palm",
+    "scientific_name": "Rhapis excelsa",
+    "local_names": [
+      {
+        "name": "Chappal Khaali",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.7
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "Lady Palm is popular as an ornamental indoor plant because of its elegant fan-shaped leaves and its ability to improve indoor air quality.",
+      "confidence": 0.9,
+      "category": "cultural & gardening"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Palm",
+    "environment": "Indoor and shaded outdoor areas",
+    "difficulty": "Easy to moderate",
+    "care": {
+      "watering_frequency": "Water when the top inch of soil feels dry, about once a week",
+      "sunlight_requirement": "Indirect or filtered light, avoid direct sunlight",
+      "soil_type": "Well-draining potting mix, slightly acidic to neutral",
+      "growth_rate": "Slow to moderate",
+      "hardiness_zone": "9b to 11"
+    },
+    "origin_region": "Southern China and Taiwan",
+    "plant_personality": "Elegant & Air-Purifying Buddy",
+    "fragrance": "None",
+    "symbolism": "Represents beauty, protection, and good luck in feng shui",
+    "lifespan": "Several years to decades under proper care",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103837822.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:05:10.429108Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Swiss Cheese Plant",
+        "scientific_name": "Monstera deliciosa",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Split-leaf Philodendron",
+        "scientific_name": "Monstera deliciosa",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Philodendron bipinnatifidum",
+        "scientific_name": "Philodendron bipinnatifidum",
+        "confidence": 0.75
+      }
+    ],
+    "identified_name": "Swiss Cheese Plant",
+    "scientific_name": "Monstera deliciosa",
+    "local_names": [
+      {
+        "name": "Split Leaf Philodendron",
+        "language": "English",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Monstera deliciosa is named for the unique perforations in its leaves (monstera means 'monstrous' or 'abnormal' in Latin), and 'deliciosa' refers to its edible fruit which tastes like a mix of banana and pineapple.",
+      "confidence": 0.9,
+      "category": "Botanical History"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": true,
+    "is_toxic_to_pets": true,
+    "plant_type": "Tropical perennial vine",
+    "environment": "Indoor, tropical or subtropical climates",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Water when the top 1-2 inches of soil are dry",
+      "sunlight_requirement": "Bright, indirect sunlight",
+      "soil_type": "Well-draining potting mix rich in organic matter",
+      "growth_rate": "Moderate to fast under ideal conditions",
+      "hardiness_zone": "10-12"
+    },
+    "origin_region": "Southern Mexico and Panama",
+    "plant_personality": "Tropical Trendsetter",
+    "fragrance": "None",
+    "symbolism": "Represents long life and respect in some cultures, admired for its unique leaf pattern symbolizing growth and renewal.",
+    "lifespan": "Perennial, can live many years with proper care",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103841665.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:00:22.074779Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Lady Palm",
+        "scientific_name": "Rhapis excelsa",
+        "confidence": 0.9
+      },
+      {
+        "identified_name": "Rhapis laosensis",
+        "scientific_name": "Rhapis laosensis",
+        "confidence": 0.6
+      }
+    ],
+    "identified_name": "Lady Palm",
+    "scientific_name": "Rhapis excelsa",
+    "local_names": [
+      {
+        "name": "Nariyal Pati",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.7
+      }
+    ],
+    "confidence": 0.9,
+    "fun_fact": {
+      "text": "Lady Palm is often used in office and indoor spaces for its air-purifying qualities and elegant fan-like leaves.",
+      "confidence": 0.8,
+      "category": "gardening"
+    },
+    "is_flowering": false,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Palm",
+    "environment": "Indoor, Tropical/Subtropical",
+    "difficulty": "Low",
+    "care": {
+      "watering_frequency": "Moderate, water when top inch of soil is dry",
+      "sunlight_requirement": "Indirect light to partial shade",
+      "soil_type": "Well-drained, fertile soil",
+      "growth_rate": "Slow to moderate",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Southern China and Southeast Asia",
+    "plant_personality": "Elegant Indoor Classic",
+    "fragrance": "None",
+    "symbolism": "Symbolizes elegance and good fortune in East Asian cultures",
+    "lifespan": "Long-lived perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103844913.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:10:42.411030Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Arrowhead Plant",
+        "scientific_name": "Syngonium podophyllum",
+        "confidence": 0.9
+      },
+      {
+        "identified_name": "Alocasia",
+        "scientific_name": "Alocasia spp.",
+        "confidence": 0.6
+      },
+      {
+        "identified_name": "Dieffenbachia",
+        "scientific_name": "Dieffenbachia spp.",
+        "confidence": 0.5
+      }
+    ],
+    "identified_name": "Arrowhead Plant",
+    "scientific_name": "Syngonium podophyllum",
+    "local_names": [
+      {
+        "name": "Neelakoduveli",
+        "language": "Malayalam",
+        "region": "Kerala, India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.9,
+    "fun_fact": {
+      "text": "Arrowhead plants are popular as indoor plants for their attractive, arrow-shaped leaves and are known for their air-purifying qualities.",
+      "confidence": 0.8,
+      "category": "gardening"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": true,
+    "plant_type": "Herbaceous perennial",
+    "environment": "Indoor/shaded outdoor, warm and humid",
+    "difficulty": "Low maintenance",
+    "care": {
+      "watering_frequency": "Keep soil consistently moist but not waterlogged; reduce watering in winter",
+      "sunlight_requirement": "Indirect bright light; tolerate low light",
+      "soil_type": "Well-draining potting mix rich in organic matter",
+      "growth_rate": "Moderate to fast",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Tropical forests of Central and South America",
+    "plant_personality": "Low Maintenance Buddy",
+    "fragrance": "None",
+    "symbolism": "Represents growth and protection in some cultures due to its arrow-shaped leaves",
+    "lifespan": "Several years with proper care",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103848980.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:07:26.987790Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Turmeric",
+        "scientific_name": "Curcuma longa",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Cardamom",
+        "scientific_name": "Elettaria cardamomum",
+        "confidence": 0.35
+      },
+      {
+        "identified_name": "Ginger",
+        "scientific_name": "Zingiber officinale",
+        "confidence": 0.3
+      }
+    ],
+    "identified_name": "Turmeric",
+    "scientific_name": "Curcuma longa",
+    "local_names": [
+      {
+        "name": "\u0939\u0932\u094d\u0926\u0940",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Manjal",
+        "language": "Tamil",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "Turmeric is known as the 'golden spice' and holds significant cultural and medicinal importance in India, often used in rituals and traditional medicine.",
+      "confidence": 0.9,
+      "category": "Cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": true,
+    "is_edible": true,
+    "is_toxic_to_pets": null,
+    "plant_type": "Herbaceous perennial",
+    "environment": "Tropical and subtropical climates, warm and humid",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Keep soil moist but not waterlogged; water 2-3 times per week depending on climate",
+      "sunlight_requirement": "Partial shade to filtered sunlight",
+      "soil_type": "Well-draining, rich in organic matter",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "8-11"
+    },
+    "origin_region": "South Asia",
+    "plant_personality": "Golden Healer",
+    "fragrance": "Earthy, warm, and pungent aroma",
+    "symbolism": "Symbolizes purity, prosperity, and fertility in Indian culture",
+    "lifespan": "Several years when cultivated as a perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103905016.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T04:53:17.311210Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Fennel",
+        "scientific_name": "Foeniculum vulgare",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Dill",
+        "scientific_name": "Anethum graveolens",
+        "confidence": 0.7
+      },
+      {
+        "identified_name": "Caraway",
+        "scientific_name": "Carum carvi",
+        "confidence": 0.5
+      }
+    ],
+    "identified_name": "Fennel",
+    "scientific_name": "Foeniculum vulgare",
+    "local_names": [
+      {
+        "name": "Sauf",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Perumjeerakam",
+        "language": "Malayalam",
+        "region": "Kerala, India",
+        "confidence": 0.85
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Fennel has been used since ancient times both as a culinary herb and a medicinal plant, and it was considered a symbol of longevity in ancient Rome.",
+      "confidence": 0.9,
+      "category": "historical"
+    },
+    "is_flowering": true,
+    "is_medicinal": true,
+    "is_edible": true,
+    "is_toxic_to_pets": false,
+    "plant_type": "Herb",
+    "environment": "Thrives in full sun with well-drained soil",
+    "difficulty": "Easy to moderate",
+    "care": {
+      "watering_frequency": "Moderate; water regularly but avoid waterlogging",
+      "sunlight_requirement": "Full sun",
+      "soil_type": "Well-drained, fertile soil",
+      "growth_rate": "Fast",
+      "hardiness_zone": "4-9"
+    },
+    "origin_region": "Mediterranean region",
+    "plant_personality": "Fragrant and versatile kitchen companion",
+    "fragrance": "Sweet, anise-like licorice scent",
+    "symbolism": "Symbolizes longevity, strength, and courage in various cultures",
+    "lifespan": "Biennial or perennial depending on climate",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103919625.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:10:17.425556Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Oleander",
+        "scientific_name": "Nerium oleander",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Nerium",
+        "scientific_name": "Nerium",
+        "confidence": 0.75
+      },
+      {
+        "identified_name": "Desert Rose",
+        "scientific_name": "Adenium obesum",
+        "confidence": 0.4
+      }
+    ],
+    "identified_name": "Oleander",
+    "scientific_name": "Nerium oleander",
+    "local_names": [
+      {
+        "name": "Kaner",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Karonda",
+        "language": "Marathi",
+        "region": "India",
+        "confidence": 0.7
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Oleander is a highly toxic plant but has been often used as an ornamental shrub for its beautiful flowers, common in Mediterranean gardens.",
+      "confidence": 0.88,
+      "category": "gardening"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": false,
+    "is_toxic_to_pets": true,
+    "plant_type": "Shrub",
+    "environment": "Outdoor garden plant, prefers warm climates",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Water moderately, allowing soil to dry between watering",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-drained soil",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "8 to 10"
+    },
+    "origin_region": "Mediterranean region",
+    "plant_personality": "Tough and Beautiful",
+    "fragrance": "Mild, pleasant fragrance",
+    "symbolism": "Symbolizes caution and danger due to its toxicity but also beauty",
+    "lifespan": "Perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103938363.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:06:35.840653Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Crown of Thorns",
+        "scientific_name": "Euphorbia milii",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Christ Plant",
+        "scientific_name": "Euphorbia milii",
+        "confidence": 0.8
+      },
+      {
+        "identified_name": "Thorned Euphorbia",
+        "scientific_name": "Euphorbia milii",
+        "confidence": 0.6
+      }
+    ],
+    "identified_name": "Crown of Thorns",
+    "scientific_name": "Euphorbia milii",
+    "local_names": [
+      {
+        "name": "\u092e\u093e\u0915\u094b\u092f (Makoy)",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.85
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Crown of Thorns is said to be named because the thorns resemble the crown of thorns worn by Jesus in the crucifixion story.",
+      "confidence": 0.9,
+      "category": "cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Succulent",
+    "environment": "Indoor and outdoor; prefers warm, sunny locations",
+    "difficulty": "Easy to moderate; drought tolerant",
+    "care": {
+      "watering_frequency": "Water moderately; allow soil to dry between waterings",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-draining soil",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Madagascar",
+    "plant_personality": "Tough Survivor with a Sharp Edge",
+    "fragrance": "None",
+    "symbolism": "Symbolizes endurance and protection, often associated with the biblical crown of thorns",
+    "lifespan": "Perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103941801.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T04:54:51.876650Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Snake Plant",
+        "scientific_name": "Sansevieria trifasciata",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Mother-in-Law's Tongue",
+        "scientific_name": "Sansevieria trifasciata",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Viper's Bowstring Hemp",
+        "scientific_name": "Sansevieria trifasciata",
+        "confidence": 0.6
+      }
+    ],
+    "identified_name": "Snake Plant",
+    "scientific_name": "Sansevieria trifasciata",
+    "local_names": [
+      {
+        "name": "Sansevieria",
+        "language": "English",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Nagfani",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Snake Plants are known for their air-purifying qualities and are often called 'Mother-in-Law's Tongue' due to the sharpness of their leaves.",
+      "confidence": 0.9,
+      "category": "Cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": false,
+    "is_toxic_to_pets": true,
+    "plant_type": "Succulent",
+    "environment": "Indoor, low light",
+    "difficulty": "Low",
+    "care": {
+      "watering_frequency": "Every 2-6 weeks",
+      "sunlight_requirement": "Indirect sunlight to low light",
+      "soil_type": "Well-draining potting mix",
+      "growth_rate": "Slow",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "West Africa",
+    "plant_personality": "Low Maintenance Buddy",
+    "fragrance": "None",
+    "symbolism": "Symbolizes resilience and protective energy in various cultures.",
+    "lifespan": "Several years to decades",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103949746.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:17:33.038479Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Indian Borage",
+        "scientific_name": "Plectranthus amboinicus",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Mexican Mint",
+        "scientific_name": "Plectranthus neochilus",
+        "confidence": 0.65
+      },
+      {
+        "identified_name": "Cuban Oregano",
+        "scientific_name": "Plectranthus barbatus",
+        "confidence": 0.6
+      }
+    ],
+    "identified_name": "Indian Borage",
+    "scientific_name": "Plectranthus amboinicus",
+    "local_names": [
+      {
+        "name": "Patharchatta",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Vallarai",
+        "language": "Tamil",
+        "region": "India",
+        "confidence": 0.85
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Indian Borage is often kept in homes in India for its pleasant aroma and is believed to ward off mosquitoes and purify the air.",
+      "confidence": 0.9,
+      "category": "cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": true,
+    "is_edible": false,
+    "is_toxic_to_pets": null,
+    "plant_type": "Herb",
+    "environment": "Tropical and subtropical regions, grows well in pots indoors or in shaded outdoor areas",
+    "difficulty": "Easy to grow",
+    "care": {
+      "watering_frequency": "Moderate, allow soil to dry between waterings",
+      "sunlight_requirement": "Partial shade to full sun",
+      "soil_type": "Well-draining soil, prefers sandy or loamy",
+      "growth_rate": "Moderate to fast",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Southern Africa and India",
+    "plant_personality": "Aromatic Protector",
+    "fragrance": "Strong, pungent, oregano-like aroma",
+    "symbolism": "Associated with protection and health in folklore",
+    "lifespan": "Perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_103954792.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:08:42.998918Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Peppermint",
+        "scientific_name": "Mentha \u00d7 piperita",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Spearmint",
+        "scientific_name": "Mentha spicata",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Apple Mint",
+        "scientific_name": "Mentha suaveolens",
+        "confidence": 0.7
+      }
+    ],
+    "identified_name": "Peppermint",
+    "scientific_name": "Mentha \u00d7 piperita",
+    "local_names": [
+      {
+        "name": "Pudina",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.95
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Peppermint has been used historically for its aromatic and medicinal properties, often found in ancient Egyptian tombs and classical Greek and Roman texts.",
+      "confidence": 0.9,
+      "category": "historical"
+    },
+    "is_flowering": true,
+    "is_medicinal": true,
+    "is_edible": true,
+    "is_toxic_to_pets": false,
+    "plant_type": "Herb",
+    "environment": "Prefers moderate sunlight and moist, well-drained soil",
+    "difficulty": "Easy",
+    "care": {
+      "watering_frequency": "Water regularly to keep soil moist but not soggy",
+      "sunlight_requirement": "Partial to full sunlight",
+      "soil_type": "Loamy, well-drained soil",
+      "growth_rate": "Fast",
+      "hardiness_zone": "3-11"
+    },
+    "origin_region": "Europe and Middle East",
+    "plant_personality": "Refreshing and Energizing Buddy",
+    "fragrance": "Strong, refreshing minty aroma",
+    "symbolism": "Symbol of hospitality and wisdom in ancient cultures",
+    "lifespan": "Perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_104005354.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T04:55:46.169856Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Cockscomb",
+        "scientific_name": "Celosia argentea var. cristata",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Celosia",
+        "scientific_name": "Celosia argentia",
+        "confidence": 0.7
+      }
+    ],
+    "identified_name": "Cockscomb",
+    "scientific_name": "Celosia argentea var. cristata",
+    "local_names": [
+      {
+        "name": "Kali Mirchi",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.8
+      },
+      {
+        "name": "Nagachampala",
+        "language": "Kannada",
+        "region": "India",
+        "confidence": 0.7
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "The Cockscomb flower resembles a rooster's comb and is often used in floral arrangements and decorations in various cultures, symbolizing boldness and uniqueness.",
+      "confidence": 0.9,
+      "category": "cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Annual flowering plant",
+    "environment": "Prefers full sun and well-drained soil",
+    "difficulty": "Easy to moderate",
+    "care": {
+      "watering_frequency": "Water moderately, allowing soil to dry between watering",
+      "sunlight_requirement": "Full sun",
+      "soil_type": "Well-draining, fertile soil",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "Zone 10-11"
+    },
+    "origin_region": "Tropics and subtropics of Asia and Africa",
+    "plant_personality": "Bold and Eye-catching",
+    "fragrance": "None",
+    "symbolism": "Symbol of boldness, uniqueness, and affection in various cultures",
+    "lifespan": "Annual",
+    "reference_image": {
+      "url": "photos/PXL_20251222_104010799.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:15:11.725657Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Murraya paniculata",
+        "scientific_name": "Murraya paniculata",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Citrus plant",
+        "scientific_name": "Citrus spp.",
+        "confidence": 0.5
+      }
+    ],
+    "identified_name": "Murraya paniculata",
+    "scientific_name": "Murraya paniculata",
+    "local_names": [
+      {
+        "name": "Kamini",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.8
+      },
+      {
+        "name": "Sankat Mochan",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.7
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "Murraya paniculata is widely used in hedges and bonsai practice due to its dense evergreen foliage and aromatic flowers which are often said to bring good luck.",
+      "confidence": 0.8,
+      "category": "gardening"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Shrub",
+    "environment": "Tropical and subtropical climates, often grown in gardens and as ornamental plants",
+    "difficulty": "Low to moderate care",
+    "care": {
+      "watering_frequency": "Moderate; keep soil moist but not waterlogged",
+      "sunlight_requirement": "Full sun to partial shade",
+      "soil_type": "Well-draining, fertile soil",
+      "growth_rate": "Moderate to fast",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "South and Southeast Asia",
+    "plant_personality": "Charming Hedge Enthusiast",
+    "fragrance": "Sweet, aromatic blossoms",
+    "symbolism": "Often symbolizes good luck and prosperity in Asian cultures",
+    "lifespan": "Several years, generally long-lived as a shrub",
+    "reference_image": {
+      "url": "photos/PXL_20251222_104012343.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T04:55:17.950219Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Haworthia",
+        "scientific_name": "Haworthia spp.",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Aloe Vera",
+        "scientific_name": "Aloe barbadensis",
+        "confidence": 0.1
+      },
+      {
+        "identified_name": "Agave",
+        "scientific_name": "Agave spp.",
+        "confidence": 0.05
+      }
+    ],
+    "identified_name": "Haworthia",
+    "scientific_name": "Haworthia spp.",
+    "local_names": [
+      {
+        "name": "Haworthia",
+        "language": "English",
+        "region": "India",
+        "confidence": 0.9
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "Haworthia is often used as a decorative houseplant due to its low maintenance and intriguing rosette form.",
+      "confidence": 0.8,
+      "category": "gardening"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": false,
+    "plant_type": "Succulent",
+    "environment": "Indoor or outdoor in partial shade",
+    "difficulty": "Easy",
+    "care": {
+      "watering_frequency": "Water sparingly, allowing soil to dry out between watering",
+      "sunlight_requirement": "Bright indirect light to partial shade",
+      "soil_type": "Well-draining succulent or cactus mix",
+      "growth_rate": "Slow",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Southern Africa",
+    "plant_personality": "Low Maintenance Buddy",
+    "fragrance": "None",
+    "symbolism": "Represents endurance and resilience, often symbolizing the ability to thrive in harsh conditions.",
+    "lifespan": "Several years with proper care",
+    "reference_image": {
+      "url": "photos/PXL_20251222_104018284.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:17:05.084597Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Euphorbia trigona",
+        "scientific_name": "Euphorbia trigona",
+        "confidence": 0.95
+      },
+      {
+        "identified_name": "Cactus Euphorbia",
+        "scientific_name": "Euphorbia",
+        "confidence": 0.75
+      },
+      {
+        "identified_name": "African Milk Tree",
+        "scientific_name": "Euphorbia trigona",
+        "confidence": 0.6
+      }
+    ],
+    "identified_name": "Euphorbia trigona",
+    "scientific_name": "Euphorbia trigona",
+    "local_names": [
+      {
+        "name": "African Milk Tree",
+        "language": "English",
+        "region": "Global",
+        "confidence": 0.9
+      }
+    ],
+    "confidence": 0.95,
+    "fun_fact": {
+      "text": "Euphorbia trigona, often called the African Milk Tree, is a popular ornamental plant known for its striking upright stems and attractive variegated leaves. It exudes a milky sap that was historically used as a natural insecticide in some African cultures.",
+      "confidence": 0.9,
+      "category": "Cultural and Gardening"
+    },
+    "is_flowering": false,
+    "is_medicinal": null,
+    "is_edible": false,
+    "is_toxic_to_pets": true,
+    "plant_type": "Succulent",
+    "environment": "Indoor/Outdoor, warm climates",
+    "difficulty": "Low to Moderate",
+    "care": {
+      "watering_frequency": "Allow soil to dry between watering; water moderately in growing season, less in winter",
+      "sunlight_requirement": "Bright, indirect light; can tolerate some direct sun",
+      "soil_type": "Well-draining succulent or cactus soil",
+      "growth_rate": "Moderate",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Central Africa",
+    "plant_personality": "Architectural Showstopper",
+    "fragrance": "None",
+    "symbolism": "Symbolizes endurance and resilience due to its hardy nature and ability to thrive in tough conditions.",
+    "lifespan": "Perennial",
+    "reference_image": {
+      "url": "photos/PXL_20251222_104044316.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:11:44.687688Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Bael Tree",
+        "scientific_name": "Aegle marmelos",
+        "confidence": 0.9
+      },
+      {
+        "identified_name": "Indian Bael",
+        "scientific_name": "Aegle marmelos",
+        "confidence": 0.75
+      }
+    ],
+    "identified_name": "Bael Tree",
+    "scientific_name": "Aegle marmelos",
+    "local_names": [
+      {
+        "name": "Bel",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.9
+      },
+      {
+        "name": "Bilva",
+        "language": "Sanskrit",
+        "region": "India",
+        "confidence": 0.85
+      }
+    ],
+    "confidence": 0.9,
+    "fun_fact": {
+      "text": "The Bael tree is considered sacred in Hindu culture and is often associated with Lord Shiva. Its wood and leaves are used in religious rituals.",
+      "confidence": 0.9,
+      "category": "cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Tree",
+    "environment": "Tropical and subtropical regions",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Moderate; water regularly but allow soil to dry between waterings",
+      "sunlight_requirement": "Full sun",
+      "soil_type": "Well-drained, sandy or loamy soil",
+      "growth_rate": "Slow to moderate",
+      "hardiness_zone": "9-11"
+    },
+    "origin_region": "Indian Subcontinent",
+    "plant_personality": "Sacred Old Soul",
+    "fragrance": "Mild, pleasant fragrance especially from flowers",
+    "symbolism": "Sacred tree in Hinduism symbolizing purity and prosperity",
+    "lifespan": "Long-lived, several decades",
+    "reference_image": {
+      "url": "photos/PXL_20251222_115420676.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T05:13:49.498702Z"
+  },
+  {
+    "candidate_identifications": [
+      {
+        "identified_name": "Mahogany",
+        "scientific_name": "Swietenia macrophylla",
+        "confidence": 0.85
+      },
+      {
+        "identified_name": "Andhra Mahogany",
+        "scientific_name": "Swietenia mahagoni",
+        "confidence": 0.6
+      }
+    ],
+    "identified_name": "Mahogany",
+    "scientific_name": "Swietenia macrophylla",
+    "local_names": [
+      {
+        "name": "Mahagani",
+        "language": "Hindi",
+        "region": "India",
+        "confidence": 0.8
+      }
+    ],
+    "confidence": 0.85,
+    "fun_fact": {
+      "text": "Mahogany is highly prized for its hard, reddish-brown timber which is used in high-quality furniture and musical instruments.",
+      "confidence": 0.9,
+      "category": "cultural"
+    },
+    "is_flowering": true,
+    "is_medicinal": null,
+    "is_edible": null,
+    "is_toxic_to_pets": null,
+    "plant_type": "Tree",
+    "environment": "Tropical and subtropical climates",
+    "difficulty": "Moderate",
+    "care": {
+      "watering_frequency": "Moderate; prefers moist but well-drained soil",
+      "sunlight_requirement": "Full sun",
+      "soil_type": "Rich, well-drained soil",
+      "growth_rate": "Fast-growing",
+      "hardiness_zone": "10-12"
+    },
+    "origin_region": "Central and South America",
+    "plant_personality": "Elegant and Stately",
+    "fragrance": "Mild and woody fragrance",
+    "symbolism": "Symbolizes strength and durability; valued historically in shipbuilding and fine woodworking",
+    "lifespan": "Long-lived tree",
+    "reference_image": {
+      "url": "photos/PXL_20251222_115753364.MP.jpg",
+      "source": "local",
+      "license": ""
+    },
+    "date_added": "2025-12-28T04:57:59.218862Z"
+  }
+]

@@ -568,20 +568,23 @@
       // --- Data Fetching ---
 
       try {
-        const indexRes = await fetch('data/index.json?v=' + Date.now());
-        const jsonFiles = await indexRes.json();
-
-        for (const filename of jsonFiles) {
-          try {
-            const res = await fetch(`data/${filename}?v=` + Date.now());
-            const plant = await res.json();
-            plants.push(plant);
-          } catch (e) {
-            console.error(`Failed to load data/${filename}:`, e);
-          }
-        }
+        // Fetch bundled data for performance
+        const res = await fetch('data/all_plants.json?v=' + Date.now());
+        if (!res.ok) throw new Error('Bundle not found');
+        plants = await res.json();
       } catch (e) {
-        console.error('Failed to load data/index.json:', e);
+        console.warn('Bundle load failed, falling back to individual files:', e);
+        // Fallback to legacy loading
+        try {
+          const indexRes = await fetch('data/index.json?v=' + Date.now());
+          const jsonFiles = await indexRes.json();
+          for (const filename of jsonFiles) {
+            try {
+              const res = await fetch(`data/${filename}?v=` + Date.now());
+              plants.push(await res.json());
+            } catch (err) { console.error(err); }
+          }
+        } catch (err) { console.error('Critical: Failed to load any plant data', err); }
       }
 
       // --- Initialization ---
