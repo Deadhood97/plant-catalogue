@@ -88,7 +88,36 @@
 
       to {
         transform: scale(1);
-        opacity: 1;
+      }
+    }
+
+    /* Loader Styles */
+    #loader {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background-color: #fcfbf7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.5s ease;
+    }
+
+    .sprout-icon {
+      font-size: 4rem;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
       }
     }
   </style>
@@ -96,6 +125,12 @@
 
 <body
   class="text-gray-800 font-sans antialiased min-h-screen flex flex-col selection:bg-terracotta selection:text-white">
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="sprout-icon">🌱</div>
+    <p class="mt-4 text-jungle font-serif text-xl animate-pulse">Curating your garden...</p>
+  </div>
 
   <!-- Hero Section -->
   <header class="relative pt-20 pb-16 px-6 text-center overflow-hidden">
@@ -557,8 +592,16 @@
       confFilter.addEventListener('change', render);
       attrCheckboxes.forEach(cb => cb.addEventListener('change', render));
 
+
       // Initial Render
       render();
+
+      // Hide Loader
+      const loader = document.getElementById('loader');
+      setTimeout(() => {
+        loader.style.opacity = '0';
+        setTimeout(() => loader.remove(), 500);
+      }, 500); // Small delay for smoothness
 
     }
 
