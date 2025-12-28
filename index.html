@@ -236,6 +236,28 @@
       <!-- Cards injected here -->
     </div>
 
+    <!-- Public Section -->
+    <div class="mt-24 mb-12">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-3xl font-serif text-jungle">Public Collection</h2>
+        <label
+          class="cursor-pointer bg-terracotta text-white px-6 py-3 rounded-full hover:bg-terracotta/90 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
+          <span>📸</span> Add Your Plant
+          <input type="file" id="uploadInput" accept="image/*" class="hidden">
+        </label>
+      </div>
+
+      <!-- Upload Spinner -->
+      <div id="uploadLoader" class="hidden w-full text-center py-12">
+        <div class="inline-block animate-bounce text-4xl">🌱</div>
+        <p class="text-leaf/60 mt-4">Identifying your plant...</p>
+      </div>
+
+      <div id="publicGrid" class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+        <!-- Public Cards injected here -->
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer class="mt-24 text-center text-leaf/40 text-sm font-light">
       <p>Cultivated with <span class="text-terracotta animate-pulse">❤</span> in the digital garden.</p>
@@ -379,10 +401,10 @@
         return result;
       }
 
-      function renderGrid(filteredPlants) {
-        plantGrid.innerHTML = "";
+      function renderGrid(filteredPlants, container = plantGrid) {
+        container.innerHTML = "";
         if (filteredPlants.length === 0) {
-          plantGrid.innerHTML = `
+          container.innerHTML = `
                 <div class="col-span-full py-20 text-center text-leaf/60">
                     <p class="text-2xl font-serif mb-2">🌿</p>
                     <p class="text-lg">No plants found matching these filters.</p>
@@ -406,7 +428,11 @@
           imgContainer.className = "relative h-2/3 overflow-hidden bg-stone-100";
 
           const img = document.createElement('img');
-          const thumbPath = plant.reference_image.url.replace("photos/", "thumbnails/");
+          // Handle both local photos/thumbnails and public absolute URLs
+          let thumbPath = plant.reference_image.url;
+          if (!thumbPath.startsWith('http')) {
+            thumbPath = thumbPath.replace("photos/", "thumbnails/");
+          }
           img.src = thumbPath;
           img.className = "w-full h-full object-cover transition-transform duration-700 group-hover:scale-110";
           img.loading = "lazy";
@@ -464,7 +490,7 @@
           fragment.appendChild(card);
         });
 
-        plantGrid.appendChild(fragment);
+        container.appendChild(fragment);
       }
 
       // --- Modal Logic ---
@@ -587,10 +613,56 @@
         } catch (err) { console.error('Critical: Failed to load any plant data', err); }
       }
 
+      // --- Public Backend Integration ---
+      const API_URL = 'http://localhost:8001';
+
+      async function loadPublicPlants() {
+        try {
+          const res = await fetch(`${API_URL}/api/public-plants`);
+          if (!res.ok) return;
+          const publicPlants = await res.json();
+          renderGrid(publicPlants, document.getElementById('publicGrid'));
+        } catch (e) {
+          console.warn('Backend not available:', e);
+        }
+      }
+
+      async function handleUpload(e) {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        const loader = document.getElementById('uploadLoader');
+        loader.classList.remove('hidden');
+
+        const formData = new FormData();
+        formData.append('file', file);
+
+        try {
+          const res = await fetch(`${API_URL}/api/upload`, {
+            method: 'POST',
+            body: formData
+          });
+
+          if (!res.ok) throw new Error('Upload failed');
+
+          // Refresh public list
+          await loadPublicPlants();
+
+          // Reset
+          e.target.value = '';
+          alert('Plant identified and added to public collection! 🌿');
+        } catch (err) {
+          alert('Failed to upload plant: ' + err.message);
+        } finally {
+          loader.classList.add('hidden');
+        }
+      }
+
       // --- Initialization ---
 
       // Attach Event Listeners
       document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
+      document.getElementById('uploadInput').addEventListener('change', handleUpload);
       searchInput.addEventListener('input', render);
       sortSelect.addEventListener('change', render);
       confFilter.addEventListener('change', render);
@@ -599,6 +671,7 @@
 
       // Initial Render
       render();
+      loadPublicPlants();
 
       // Hide Loader
       const loader = document.getElementById('loader');
