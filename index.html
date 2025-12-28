@@ -3,120 +3,188 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>My Plant Catalogue</title>
-  <!-- Tailwind CSS CDN -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenery | Plant Catalogue</title>
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Outfit"', 'sans-serif'],
+          },
+          colors: {
+            jungle: '#1a4731',
+            sage: '#8da399',
+            terracotta: '#e07a5f',
+            cream: '#fcfbf7',
+            leaf: '#4a7c59',
+            sand: '#e8e6df'
+          }
+        }
+      }
+    }
+  </script>
+
   <style>
     body {
-      font-family: 'Merriweather', serif;
+      background-color: #fcfbf7;
+      /* Subtle texture */
+      background-image: radial-gradient(#8da399 0.5px, transparent 0.5px);
+      background-size: 24px 24px;
     }
 
-    /* Optional subtle leaf pattern */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url('https://www.transparenttextures.com/patterns/leaf.png') repeat;
-      opacity: 0.05;
-      pointer-events: none;
-      z-index: -1;
+    .glass {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+    }
+
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    /* Hide scrollbar for clean horizontal scrolling if needed */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
     }
   </style>
 </head>
 
-<body class="bg-green-50">
+<body
+  class="text-gray-800 font-sans antialiased min-h-screen flex flex-col selection:bg-terracotta selection:text-white">
 
-  <!-- Header -->
-  <header class="text-center py-6 bg-green-700 text-white shadow-lg">
-    <h1 class="text-4xl font-bold">🌿 My Plant Catalogue 🌿</h1>
+  <!-- Hero Section -->
+  <header class="relative pt-20 pb-16 px-6 text-center overflow-hidden">
+    <!-- Decorative Backdrop Blobs -->
+    <div
+      class="absolute top-0 left-1/4 w-96 h-96 bg-sage/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+    </div>
+    <div
+      class="absolute top-10 right-1/4 w-80 h-80 bg-terracotta/10 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3 pointer-events-none">
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto">
+      <h1 class="font-serif text-6xl md:text-7xl font-bold text-jungle mb-4 tracking-tight drop-shadow-sm">
+        The Conservatory
+      </h1>
+      <p class="font-sans text-xl md:text-2xl text-leaf font-light max-w-2xl mx-auto tracking-wide">
+        A digital herbarium of my home garden, curated by AI.
+      </p>
+    </div>
   </header>
 
-  <!-- Description Section -->
-  <section class="max-w-3xl mx-auto text-center bg-green-100 rounded-xl p-4 mt-6 shadow-inner">
-    <p class="text-green-800 text-lg">
-      Welcome to my home plant catalogue! 🌱 These plants are all from my home garden.
-      Identification has been assisted by AI, so there may be some inaccuracies.
-      Enjoy exploring the greenery! 🍃
-    </p>
-  </section>
+  <main class="flex-grow px-4 md:px-8 max-w-[1600px] mx-auto w-full pb-20">
 
-  <main class="p-6 max-w-7xl mx-auto">
+    <!-- Controls Bar -->
+    <div
+      class="glass sticky top-6 z-40 rounded-2xl shadow-lg p-3 md:p-5 mb-12 transition-all duration-300 border border-white/50">
+      <div class="flex flex-col xl:flex-row gap-5 items-center justify-between">
 
-    <!-- Controls Section: Search, Filter, Sort -->
-    <div class="mb-8 bg-white p-6 rounded-2xl shadow-sm border border-green-100">
-
-      <!-- Top Row: Search & Sort -->
-      <div class="flex flex-col md:flex-row gap-4 mb-4 justify-between items-center">
         <!-- Search -->
-        <div class="w-full md:w-1/2">
-          <input id="searchInput" type="text" placeholder="Search plants by name..."
-            class="w-full rounded-full px-4 py-2 border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400">
+        <div class="w-full xl:w-1/3 relative group">
+          <span
+            class="absolute left-4 top-1/2 -translate-y-1/2 text-leaf/60 group-focus-within:text-jungle transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </span>
+          <input id="searchInput" type="text" placeholder="Search species, local names..."
+            class="w-full pl-11 pr-4 py-3 bg-white/60 border border-sage/20 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-jungle/10 focus:border-jungle/30 text-jungle placeholder-leaf/50 transition-all font-medium">
         </div>
 
-        <!-- Sort -->
-        <div class="flex items-center gap-2 w-full md:w-auto">
-          <label for="sortSelect" class="text-green-800 font-semibold whitespace-nowrap">Sort by:</label>
-          <select id="sortSelect"
-            class="w-full md:w-auto rounded-lg px-3 py-2 border border-green-300 text-green-800 bg-white focus:outline-none focus:ring-2 focus:ring-green-400">
-            <option value="name_asc">Name (A-Z)</option>
-            <option value="name_desc">Name (Z-A)</option>
-            <option value="date_desc">Newest First</option>
-            <option value="date_asc">Oldest First</option>
-            <option value="conf_desc">Confidence (High-Low)</option>
-            <option value="conf_asc">Confidence (Low-High)</option>
-          </select>
+        <!-- Filters & Sort -->
+        <div class="flex flex-col md:flex-row gap-4 w-full xl:w-auto items-center justify-center lg:justify-end">
+
+          <!-- Attributes -->
+          <div class="flex flex-wrap gap-2 justify-center">
+            <label class="cursor-pointer select-none group">
+              <input type="checkbox" class="filter-attr peer sr-only" value="is_flowering">
+              <div
+                class="px-4 py-2 rounded-lg border border-sage/20 text-leaf/80 bg-white/40 peer-checked:bg-pink-50 peer-checked:text-pink-700 peer-checked:border-pink-200 transition-all hover:bg-white/80 group-hover:shadow-sm text-sm font-medium flex items-center gap-2">
+                <span>🌸</span> Flowering
+              </div>
+            </label>
+            <label class="cursor-pointer select-none group">
+              <input type="checkbox" class="filter-attr peer sr-only" value="is_medicinal">
+              <div
+                class="px-4 py-2 rounded-lg border border-sage/20 text-leaf/80 bg-white/40 peer-checked:bg-blue-50 peer-checked:text-blue-700 peer-checked:border-blue-200 transition-all hover:bg-white/80 group-hover:shadow-sm text-sm font-medium flex items-center gap-2">
+                <span>💊</span> Medicinal
+              </div>
+            </label>
+            <label class="cursor-pointer select-none group">
+              <input type="checkbox" class="filter-attr peer sr-only" value="is_edible">
+              <div
+                class="px-4 py-2 rounded-lg border border-sage/20 text-leaf/80 bg-white/40 peer-checked:bg-amber-50 peer-checked:text-amber-700 peer-checked:border-amber-200 transition-all hover:bg-white/80 group-hover:shadow-sm text-sm font-medium flex items-center gap-2">
+                <span>🥗</span> Edible
+              </div>
+            </label>
+            <label class="cursor-pointer select-none group">
+              <input type="checkbox" class="filter-attr peer sr-only" value="is_toxic_to_pets">
+              <div
+                class="px-4 py-2 rounded-lg border border-sage/20 text-leaf/80 bg-white/40 peer-checked:bg-red-50 peer-checked:text-red-700 peer-checked:border-red-200 transition-all hover:bg-white/80 group-hover:shadow-sm text-sm font-medium flex items-center gap-2">
+                <span>⚠️</span> Toxic
+              </div>
+            </label>
+          </div>
+
+          <div class="w-full h-px md:w-px md:h-8 bg-sage/20 mx-2 hidden md:block"></div>
+
+          <!-- Dropdowns -->
+          <div class="flex w-full md:w-auto gap-3">
+            <select id="confFilter"
+              class="flex-1 md:flex-none px-4 py-2 rounded-lg border border-sage/20 bg-white/60 text-jungle focus:outline-none focus:ring-2 focus:ring-jungle/10 cursor-pointer text-sm font-medium hover:bg-white transition-colors">
+              <option value="0">All Confidence</option>
+              <option value="0.9">High (90%+)</option>
+              <option value="0.8">Medium (80%+)</option>
+            </select>
+
+            <select id="sortSelect"
+              class="flex-1 md:flex-none px-4 py-2 rounded-lg border border-sage/20 bg-white/60 text-jungle focus:outline-none focus:ring-2 focus:ring-jungle/10 cursor-pointer text-sm font-medium hover:bg-white transition-colors">
+              <option value="date_desc">Newest First</option>
+              <option value="name_asc">Name (A-Z)</option>
+              <option value="name_desc">Name (Z-A)</option>
+              <option value="conf_desc">Most Confident</option>
+            </select>
+          </div>
         </div>
-      </div>
-
-      <!-- Bottom Row: Filters -->
-      <div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
-
-        <!-- Attribute Filters -->
-        <div class="flex flex-wrap gap-4">
-          <span class="text-green-800 font-semibold">Attributes:</span>
-          <label class="flex items-center gap-2 cursor-pointer">
-            <input type="checkbox" class="filter-attr w-4 h-4 text-green-600 rounded focus:ring-green-500"
-              value="is_flowering">
-            <span class="text-green-700">Flowering</span>
-          </label>
-          <label class="flex items-center gap-2 cursor-pointer">
-            <input type="checkbox" class="filter-attr w-4 h-4 text-green-600 rounded focus:ring-green-500"
-              value="is_medicinal">
-            <span class="text-green-700">Medicinal</span>
-          </label>
-          <label class="flex items-center gap-2 cursor-pointer">
-            <input type="checkbox" class="filter-attr w-4 h-4 text-green-600 rounded focus:ring-green-500"
-              value="is_edible">
-            <span class="text-green-700">Edible</span>
-          </label>
-          <label class="flex items-center gap-2 cursor-pointer">
-            <input type="checkbox" class="filter-attr w-4 h-4 text-green-600 rounded focus:ring-green-500"
-              value="is_toxic_to_pets">
-            <span class="text-red-600">Toxic to Pets</span>
-          </label>
-        </div>
-
-        <!-- Confidence Filter -->
-        <div class="flex items-center gap-2">
-          <label for="confFilter" class="text-green-800 font-semibold whitespace-nowrap">Min Confidence:</label>
-          <select id="confFilter"
-            class="rounded-lg px-2 py-1 border border-green-300 text-green-800 bg-white focus:outline-none focus:ring-2 focus:ring-green-400">
-            <option value="0">All</option>
-            <option value="0.9">90%+</option>
-            <option value="0.8">80%+</option>
-            <option value="0.5">50%+</option>
-          </select>
-        </div>
-
       </div>
     </div>
 
-    <!-- Plant Grid -->
-    <div id="plantGrid" class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"></div>
+    <!-- Grid -->
+    <div id="plantGrid" class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+      <!-- Cards injected here -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-24 text-center text-leaf/40 text-sm font-light">
+      <p>Cultivated with <span class="text-terracotta animate-pulse">❤</span> in the digital garden.</p>
+    </footer>
+
   </main>
 
   <script>
@@ -128,6 +196,209 @@
       const attrCheckboxes = document.querySelectorAll('.filter-attr');
 
       let plants = [];
+
+      // --- Helper Functions ---
+
+      function getFilteredAndSortedPlants() {
+        let result = [...plants];
+
+        // 1. Search (Name or Local Name)
+        const query = searchInput.value.toLowerCase();
+        if (query) {
+          result = result.filter(p =>
+            p.identified_name.toLowerCase().includes(query) ||
+            (p.local_names && p.local_names.some(l => l.name.toLowerCase().includes(query)))
+          );
+        }
+
+        // 2. Attributes (AND logic: must match all checked)
+        attrCheckboxes.forEach(cb => {
+          if (cb.checked) {
+            const key = cb.value;
+            result = result.filter(p => p[key] === true);
+          }
+        });
+
+        // 3. Confidence
+        const minConf = parseFloat(confFilter.value);
+        if (minConf > 0) {
+          result = result.filter(p => (p.confidence || 0) >= minConf);
+        }
+
+        // 4. Sort
+        const sortMode = sortSelect.value;
+        result.sort((a, b) => {
+          switch (sortMode) {
+            case 'name_asc':
+              return a.identified_name.localeCompare(b.identified_name);
+            case 'name_desc':
+              return b.identified_name.localeCompare(a.identified_name);
+            case 'conf_desc':
+              return (b.confidence || 0) - (a.confidence || 0);
+            case 'conf_asc':
+              return (a.confidence || 0) - (b.confidence || 0);
+            case 'date_desc':
+              return new Date(b.date_added || 0) - new Date(a.date_added || 0);
+            case 'date_asc':
+              return new Date(a.date_added || 0) - new Date(b.date_added || 0);
+            default:
+              return 0;
+          }
+        });
+
+        return result;
+      }
+
+      function renderGrid(filteredPlants) {
+        plantGrid.innerHTML = "";
+        if (filteredPlants.length === 0) {
+          plantGrid.innerHTML = `
+                <div class="col-span-full py-20 text-center text-leaf/60">
+                    <p class="text-2xl font-serif mb-2">🌿</p>
+                    <p class="text-lg">No plants found matching these filters.</p>
+                </div>`;
+          return;
+        }
+
+        const fragment = document.createDocumentFragment();
+
+        filteredPlants.forEach((plant, index) => {
+          const card = document.createElement('div');
+          // Animation delay for stagger effect
+          card.style.animationDelay = `${index * 50}ms`;
+          card.className = "card-hover group bg-white rounded-3xl overflow-hidden shadow-sm border border-stone-100 flex flex-col relative";
+
+          // --- Image Section ---
+          const imgContainer = document.createElement('div');
+          imgContainer.className = "relative h-64 overflow-hidden bg-stone-100";
+
+          const img = document.createElement('img');
+          const thumbPath = plant.reference_image.url.replace("photos/", "thumbnails/");
+          img.src = thumbPath;
+          img.alt = `Photo of ${plant.identified_name}`;
+          img.className = "w-full h-full object-cover transition-transform duration-700 group-hover:scale-110";
+          img.loading = "lazy";
+
+          // Overlay gradient
+          const overlay = document.createElement('div');
+          overlay.className = "absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60";
+
+          // Confidence Ring/Badge
+          if (plant.confidence) {
+            const confPercent = Math.round(plant.confidence * 100);
+            const badge = document.createElement('div');
+            let color = confPercent >= 90 ? "bg-emerald-500" : confPercent >= 70 ? "bg-amber-500" : "bg-red-500";
+            badge.className = "absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-lg text-xs font-bold text-jungle shadow-sm flex items-center gap-1.5";
+            badge.innerHTML = `<span class="w-2 h-2 rounded-full ${color}"></span> ${confPercent}%`;
+            imgContainer.appendChild(badge);
+          }
+
+          imgContainer.appendChild(img);
+          imgContainer.appendChild(overlay);
+
+          // Title on Image
+          const titleOverlay = document.createElement('div');
+          titleOverlay.className = "absolute bottom-0 left-0 p-5 text-white w-full";
+
+          const title = document.createElement('h2');
+          title.textContent = plant.identified_name;
+          title.className = "font-serif text-2xl font-bold leading-tight drop-shadow-md";
+          titleOverlay.appendChild(title);
+
+          const sci = document.createElement('p');
+          sci.textContent = plant.scientific_name;
+          sci.className = "text-white/80 text-sm italic font-light tracking-wide";
+          titleOverlay.appendChild(sci);
+
+          imgContainer.appendChild(titleOverlay);
+          card.appendChild(imgContainer);
+
+          // --- Content Body ---
+          const body = document.createElement('div');
+          body.className = "p-5 flex flex-col flex-grow";
+
+          // Local Names
+          if (plant.local_names && plant.local_names.length) {
+            const localWrap = document.createElement('div');
+            localWrap.className = "mb-4";
+            const localLabel = document.createElement('span');
+            localLabel.className = "text-xs font-bold text-terracotta uppercase tracking-wider block mb-1";
+            localLabel.textContent = "Also known as";
+
+            const localText = document.createElement('p');
+            localText.className = "text-sm text-leaf/80";
+            localText.textContent = plant.local_names.map(l => l.name).slice(0, 3).join(', ');
+
+            localWrap.appendChild(localLabel);
+            localWrap.appendChild(localText);
+            body.appendChild(localWrap);
+          }
+
+          // Fun Fact
+          if (plant.fun_fact && plant.fun_fact.text) {
+            const factBox = document.createElement('div');
+            factBox.className = "bg-stone-50 p-3 rounded-xl mb-4 border border-stone-100";
+            const factText = document.createElement('p');
+            factText.className = "text-xs text-leaf/90 italic leading-relaxed";
+            factText.textContent = `"${plant.fun_fact.text}"`;
+            factBox.appendChild(factText);
+            body.appendChild(factBox);
+          }
+
+          // Attributes (Footer of card)
+          const attrContainer = document.createElement('div');
+          attrContainer.className = "mt-auto flex flex-wrap gap-2 pt-4 border-t border-stone-100";
+
+          const attrs = [
+            { label: "Flowering", value: plant.is_flowering, icon: "🌸", bg: "bg-pink-50", text: "text-pink-700" },
+            { label: "Medicinal", value: plant.is_medicinal, icon: "💊", bg: "bg-blue-50", text: "text-blue-700" },
+            { label: "Edible", value: plant.is_edible, icon: "🥗", bg: "bg-amber-50", text: "text-amber-700" },
+            { label: "Toxic", value: plant.is_toxic_to_pets, icon: "⚠️", bg: "bg-red-50", text: "text-red-700" }
+          ];
+
+          let hasAttrs = false;
+          attrs.forEach(a => {
+            if (a.value) {
+              hasAttrs = true;
+              const span = document.createElement('span');
+              span.className = `p-1.5 rounded-md ${a.bg} ${a.text} text-xs`;
+              span.title = a.label;
+              span.textContent = a.icon;
+              attrContainer.appendChild(span);
+            }
+          });
+
+          if (!hasAttrs) {
+            const empty = document.createElement('span');
+            empty.className = "text-xs text-stone-400 italic";
+            empty.textContent = "No special traits";
+            attrContainer.appendChild(empty);
+          }
+
+          // Timestamp
+          const dateSpan = document.createElement('span');
+          dateSpan.className = "ml-auto text-xs text-stone-400 pt-1";
+          if (plant.date_added) {
+            const date = new Date(plant.date_added);
+            dateSpan.textContent = date.toLocaleDateString();
+          }
+          attrContainer.appendChild(dateSpan);
+
+          body.appendChild(attrContainer);
+          card.appendChild(body);
+
+          fragment.appendChild(card);
+        });
+
+        plantGrid.appendChild(fragment);
+      }
+
+      function render() {
+        const filtered = getFilteredAndSortedPlants();
+        renderGrid(filtered);
+      }
+
+      // --- Data Fetching ---
 
       try {
         const indexRes = await fetch('data/index.json');
@@ -142,198 +413,25 @@
             console.error(`Failed to load data/${filename}:`, e);
           }
         }
-
-        function getFilteredAndSortedPlants() {
-          let result = [...plants];
-
-          // 1. Search (Name or Local Name)
-          const query = searchInput.value.toLowerCase();
-          if (query) {
-            result = result.filter(p =>
-              p.identified_name.toLowerCase().includes(query) ||
-              (p.local_names && p.local_names.some(l => l.name.toLowerCase().includes(query)))
-            );
-          }
-
-          // 2. Attributes (AND logic: must match all checked)
-          attrCheckboxes.forEach(cb => {
-            if (cb.checked) {
-              const key = cb.value;
-              result = result.filter(p => p[key] === true);
-            }
-          });
-
-          // 3. Confidence
-          const minConf = parseFloat(confFilter.value);
-          if (minConf > 0) {
-            result = result.filter(p => (p.confidence || 0) >= minConf);
-          }
-
-          // 4. Sort
-          const sortMode = sortSelect.value;
-          result.sort((a, b) => {
-            switch (sortMode) {
-              case 'name_asc':
-                return a.identified_name.localeCompare(b.identified_name);
-              case 'name_desc':
-                return b.identified_name.localeCompare(a.identified_name);
-              case 'conf_desc':
-                return (b.confidence || 0) - (a.confidence || 0);
-              case 'conf_asc':
-                return (a.confidence || 0) - (b.confidence || 0);
-              case 'date_desc':
-                return new Date(b.date_added || 0) - new Date(a.date_added || 0);
-              case 'date_asc':
-                return new Date(a.date_added || 0) - new Date(b.date_added || 0);
-              default:
-                return 0;
-            }
-          });
-
-          return result;
-        }
-
-        function render() {
-          const filtered = getFilteredAndSortedPlants();
-          renderGrid(filtered);
-        }
-
-        // Attach Event Listeners
-        searchInput.addEventListener('input', render);
-        sortSelect.addEventListener('change', render);
-        confFilter.addEventListener('change', render);
-        attrCheckboxes.forEach(cb => cb.addEventListener('change', render));
-
-        // Initial Render
-        render();
-
-        function renderGrid(filteredPlants) {
-          plantGrid.innerHTML = "";
-          if (filteredPlants.length === 0) {
-            plantGrid.innerHTML = '<p class="text-center text-gray-500 w-full col-span-full py-8">No plants found matching these filters.</p>';
-            return;
-          }
-
-          const fragment = document.createDocumentFragment();
-
-          filteredPlants.forEach(plant => {
-            // ... (Card creation logic same as before)
-            card.className = "bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col";
-
-            // Circular thumbnail
-            const img = document.createElement('img');
-            const thumbPath = plant.reference_image.url.replace("photos/", "thumbnails/");
-            img.src = thumbPath;
-            img.alt = `Photo of ${plant.identified_name}`;
-            img.className = "rounded-full w-full h-48 object-cover mb-4";
-            img.loading = "lazy";
-            card.appendChild(img);
-
-            // Plant name container
-            const titleContainer = document.createElement('div');
-            titleContainer.className = "flex items-center justify-between";
-
-            // Primary identification
-            const title = document.createElement('h2');
-            title.textContent = plant.identified_name;
-            title.className = "font-bold text-xl text-green-800 mb-1";
-            titleContainer.appendChild(title);
-
-            // AI info icon
-            const infoIcon = document.createElement('span');
-            infoIcon.textContent = "ℹ️";
-            infoIcon.title = "Identified by AI, may contain inaccuracies";
-            infoIcon.className = "cursor-help ml-2 text-green-600";
-            titleContainer.appendChild(infoIcon);
-
-            // Confidence badge for primary
-            // Confidence badge for primary
-            if (plant.confidence !== undefined) {
-              const confBadge = document.createElement('span');
-              const confPercent = Math.round(plant.confidence * 100);
-              confBadge.textContent = `Confidence: ${confPercent}%`;
-
-              // New color scale
-              let bgColor = confPercent >= 95 ? "green" : confPercent >= 90 ? "yellow" : "red";
-
-              confBadge.className = `text-white text-xs px-2 py-1 rounded-full bg-${bgColor}-500 ml-2`;
-              confBadge.title = "AI confidence in this identification";
-              titleContainer.appendChild(confBadge);
-            }
-
-
-            card.appendChild(titleContainer);
-
-            // Candidate guesses
-            if (plant.candidate_identifications && plant.candidate_identifications.length > 1) {
-              const otherGuesses = plant.candidate_identifications.slice(1);
-              const guessList = document.createElement('ul');
-              guessList.className = "text-sm text-green-700 italic mb-2";
-              otherGuesses.forEach(g => {
-                const li = document.createElement('li');
-                const gPercent = Math.round(g.confidence * 100);
-                li.textContent = `${g.identified_name} (${gPercent}%)`;
-                guessList.appendChild(li);
-              });
-              card.appendChild(guessList);
-            }
-
-            // Scientific name
-            const sci = document.createElement('p');
-            sci.textContent = `(${plant.scientific_name})`;
-            sci.className = "text-green-600 italic text-sm mb-2";
-            card.appendChild(sci);
-
-            // Local names
-            if (plant.local_names && plant.local_names.length) {
-              const local = document.createElement('p');
-              local.textContent = 'Local: ' + plant.local_names.map(l => l.name).join(', ');
-              local.className = "text-green-700 text-sm mb-2";
-              card.appendChild(local);
-            }
-
-            // Attribute badges
-            const attrContainer = document.createElement('div');
-            attrContainer.className = "flex flex-wrap gap-2 mb-2";
-            const attrs = [
-              { label: "Flowering", value: plant.is_flowering, color: "green" },
-              { label: "Medicinal", value: plant.is_medicinal, color: "blue" },
-              { label: "Edible", value: plant.is_edible, color: "yellow" },
-              { label: "Toxic", value: plant.is_toxic_to_pets, color: "red" }
-            ];
-            attrs.forEach(a => {
-              if (a.value !== null) {
-                const span = document.createElement('span');
-                span.textContent = `${a.label}: ${a.value}`;
-                span.className = `text-white text-xs px-2 py-1 rounded-full bg-${a.color}-500`;
-                attrContainer.appendChild(span);
-              }
-            });
-            card.appendChild(attrContainer);
-
-            // Fun fact
-            if (plant.fun_fact && plant.fun_fact.text) {
-              const fact = document.createElement('p');
-              fact.textContent = `🌱 ${plant.fun_fact.text}`;
-              fact.className = "text-green-800 italic text-sm mt-auto";
-              card.appendChild(fact);
-            }
-
-            fragment.appendChild(card);
-          });
-
-          plantGrid.appendChild(fragment);
-        }
-
-
       } catch (e) {
         console.error('Failed to load data/index.json:', e);
       }
+
+      // --- Initialization ---
+
+      // Attach Event Listeners
+      searchInput.addEventListener('input', render);
+      sortSelect.addEventListener('change', render);
+      confFilter.addEventListener('change', render);
+      attrCheckboxes.forEach(cb => cb.addEventListener('change', render));
+
+      // Initial Render
+      render();
+
     }
 
     loadPlants();
   </script>
-
 </body>
 
 </html>
