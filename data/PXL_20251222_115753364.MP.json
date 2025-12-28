@@ -1,48 +1,55 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Fingered citron",
-      "scientific_name": "Citrus medica var. sarcodactylis",
+      "identified_name": "Mahogany",
+      "scientific_name": "Swietenia macrophylla",
       "confidence": 0.85
     },
     {
-      "identified_name": "Curry leaf tree",
-      "scientific_name": "Murraya koenigii",
-      "confidence": 0.4
-    },
-    {
-      "identified_name": "Neem",
-      "scientific_name": "Azadirachta indica",
-      "confidence": 0.3
+      "identified_name": "Andhra Mahogany",
+      "scientific_name": "Swietenia mahagoni",
+      "confidence": 0.6
     }
   ],
-  "identified_name": "Fingered citron",
-  "scientific_name": "Citrus medica var. sarcodactylis",
+  "identified_name": "Mahogany",
+  "scientific_name": "Swietenia macrophylla",
   "local_names": [
     {
-      "name": "Buddha's Hand",
-      "language": "English",
-      "region": "Common",
-      "confidence": 0.9
+      "name": "Mahagani",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.8
     }
   ],
   "confidence": 0.85,
   "fun_fact": {
-    "text": "Fingered citron, also known as Buddha's Hand, has been used in religious offerings and as a natural air freshener in various cultures, prized for its unique fragrant aroma.",
-    "confidence": 0.8,
+    "text": "Mahogany is highly prized for its hard, reddish-brown timber which is used in high-quality furniture and musical instruments.",
+    "confidence": 0.9,
     "category": "cultural"
   },
-  "is_flowering": null,
+  "is_flowering": true,
   "is_medicinal": null,
   "is_edible": null,
   "is_toxic_to_pets": null,
-  "plant_type": "tree",
-  "environment": "subtropical to tropical",
-  "difficulty": "moderate",
+  "plant_type": "Tree",
+  "environment": "Tropical and subtropical climates",
+  "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Moderate; prefers moist but well-drained soil",
+    "sunlight_requirement": "Full sun",
+    "soil_type": "Rich, well-drained soil",
+    "growth_rate": "Fast-growing",
+    "hardiness_zone": "10-12"
+  },
+  "origin_region": "Central and South America",
+  "plant_personality": "Elegant and Stately",
+  "fragrance": "Mild and woody fragrance",
+  "symbolism": "Symbolizes strength and durability; valued historically in shipbuilding and fine woodworking",
+  "lifespan": "Long-lived tree",
   "reference_image": {
     "url": "photos/PXL_20251222_115753364.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:38:46.319115Z"
+  "date_added": "2025-12-28T04:57:59.218862Z"
 }

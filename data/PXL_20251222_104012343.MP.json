@@ -1,43 +1,61 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Malabar Nightshade",
-      "scientific_name": "Solanum violaceum",
-      "confidence": 0.75
+      "identified_name": "Murraya paniculata",
+      "scientific_name": "Murraya paniculata",
+      "confidence": 0.85
     },
     {
-      "identified_name": "Chiltepin Pepper",
-      "scientific_name": "Capsicum annuum var. glabriusculum",
-      "confidence": 0.45
+      "identified_name": "Citrus plant",
+      "scientific_name": "Citrus spp.",
+      "confidence": 0.5
     }
   ],
-  "identified_name": "Malabar Nightshade",
-  "scientific_name": "Solanum violaceum",
+  "identified_name": "Murraya paniculata",
+  "scientific_name": "Murraya paniculata",
   "local_names": [
     {
-      "name": "Makoy",
+      "name": "Kamini",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.8
+    },
+    {
+      "name": "Sankat Mochan",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.7
     }
   ],
-  "confidence": 0.75,
+  "confidence": 0.85,
   "fun_fact": {
-    "text": "Malabar Nightshade is known for its small green to yellowish fruits and is found widely in tropical regions, often used in traditional remedies though exact uses vary.",
-    "confidence": 0.65,
-    "category": "cultural"
+    "text": "Murraya paniculata is widely used in hedges and bonsai practice due to its dense evergreen foliage and aromatic flowers which are often said to bring good luck.",
+    "confidence": 0.8,
+    "category": "gardening"
   },
   "is_flowering": true,
-  "is_medicinal": true,
-  "is_edible": false,
+  "is_medicinal": null,
+  "is_edible": null,
   "is_toxic_to_pets": null,
-  "plant_type": "shrub",
-  "environment": "tropical, subtropical",
-  "difficulty": "easy",
+  "plant_type": "Shrub",
+  "environment": "Tropical and subtropical climates, often grown in gardens and as ornamental plants",
+  "difficulty": "Low to moderate care",
+  "care": {
+    "watering_frequency": "Moderate; keep soil moist but not waterlogged",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-draining, fertile soil",
+    "growth_rate": "Moderate to fast",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "South and Southeast Asia",
+  "plant_personality": "Charming Hedge Enthusiast",
+  "fragrance": "Sweet, aromatic blossoms",
+  "symbolism": "Often symbolizes good luck and prosperity in Asian cultures",
+  "lifespan": "Several years, generally long-lived as a shrub",
   "reference_image": {
     "url": "photos/PXL_20251222_104012343.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:36:18.242866Z"
+  "date_added": "2025-12-28T04:55:17.950219Z"
 }

@@ -3,41 +3,64 @@
     {
       "identified_name": "Murraya paniculata",
       "scientific_name": "Murraya paniculata",
-      "confidence": 0.9
+      "confidence": 0.85
     },
     {
       "identified_name": "Boxwood",
       "scientific_name": "Buxus sempervirens",
       "confidence": 0.5
+    },
+    {
+      "identified_name": "Jasmine",
+      "scientific_name": "Jasminum sambac",
+      "confidence": 0.3
     }
   ],
   "identified_name": "Murraya paniculata",
   "scientific_name": "Murraya paniculata",
   "local_names": [
     {
-      "name": "Kamini",
+      "name": "Kunti",
       "language": "Hindi",
       "region": "India",
-      "confidence": 0.85
+      "confidence": 0.8
+    },
+    {
+      "name": "Kamini",
+      "language": "Kannada",
+      "region": "India",
+      "confidence": 0.75
     }
   ],
-  "confidence": 0.9,
+  "confidence": 0.85,
   "fun_fact": {
-    "text": "Murraya paniculata, also known as orange jasmine, is often planted for its fragrant white flowers and is popular in tropical gardens for hedges and borders.",
+    "text": "Murraya paniculata is often called the 'Mock Orange' due to its fragrant white flowers resembling those of orange blossoms.",
     "confidence": 0.8,
-    "category": "gardening"
+    "category": "botanical"
   },
   "is_flowering": true,
   "is_medicinal": null,
   "is_edible": null,
   "is_toxic_to_pets": null,
   "plant_type": "Shrub",
-  "environment": "Tropical and subtropical climates",
-  "difficulty": "Easy to moderate care",
+  "environment": "Tropical and subtropical climates, commonly grown as an ornamental hedge or bonsai",
+  "difficulty": "Low",
+  "care": {
+    "watering_frequency": "Moderate; water when the topsoil is dry",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-drained, fertile soil",
+    "growth_rate": "Moderate to fast",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Asia, particularly Indian subcontinent and Southeast Asia",
+  "plant_personality": "Fragrant and Neat Gardener",
+  "fragrance": "Sweet, citrus-like, similar to orange blossoms",
+  "symbolism": "Associated with purity and beauty in many Asian cultures; often used in temple gardens",
+  "lifespan": "Perennial",
   "reference_image": {
     "url": "photos/PXL_20251222_103800092.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:39:10.686278Z"
+  "date_added": "2025-12-28T04:58:24.978828Z"
 }

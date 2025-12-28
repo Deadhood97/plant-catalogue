@@ -1,48 +1,66 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Key Lime",
-      "scientific_name": "Citrus aurantiifolia",
-      "confidence": 0.85
-    },
-    {
       "identified_name": "Kaffir Lime",
       "scientific_name": "Citrus hystrix",
+      "confidence": 0.9
+    },
+    {
+      "identified_name": "Calamansi",
+      "scientific_name": "Citrus microcarpa",
       "confidence": 0.6
     },
     {
-      "identified_name": "Lemon",
-      "scientific_name": "Citrus limon",
-      "confidence": 0.4
+      "identified_name": "Key Lime",
+      "scientific_name": "Citrus aurantiifolia",
+      "confidence": 0.5
     }
   ],
-  "identified_name": "Key Lime",
-  "scientific_name": "Citrus aurantiifolia",
+  "identified_name": "Kaffir Lime",
+  "scientific_name": "Citrus hystrix",
   "local_names": [
     {
-      "name": "Nimbu",
+      "name": "Magalapong",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.8
+    },
+    {
+      "name": "Maurya",
+      "language": "Sanskrit",
+      "region": "India",
+      "confidence": 0.7
     }
   ],
-  "confidence": 0.85,
+  "confidence": 0.9,
   "fun_fact": {
-    "text": "Key lime was popularized in the United States by the Florida Keys and is the main ingredient in the famous Key lime pie.",
-    "confidence": 0.75,
-    "category": "cultural"
+    "text": "Kaffir lime leaves are highly valued in Southeast Asian cuisine for their distinct citrus fragrance and flavor.",
+    "confidence": 0.9,
+    "category": "Cultural"
   },
   "is_flowering": true,
   "is_medicinal": null,
   "is_edible": true,
   "is_toxic_to_pets": null,
-  "plant_type": "Fruit shrub/small tree",
-  "environment": "Tropical and subtropical climates",
+  "plant_type": "Shrub",
+  "environment": "Tropical and subtropical climates, can be grown in containers indoors or outdoors in warm regions.",
   "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Water regularly but allow the soil to dry between watering",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-draining, fertile soil",
+    "growth_rate": "Slow to moderate",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Southeast Asia",
+  "plant_personality": "Fragrant Culinary Star",
+  "fragrance": "Strong citrus aroma, especially from leaves",
+  "symbolism": "Symbolizes cleansing and purification in some Southeast Asian cultures",
+  "lifespan": "Several years with proper care",
   "reference_image": {
     "url": "photos/PXL_20251222_103501387.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:40:08.328700Z"
+  "date_added": "2025-12-28T04:59:28.009088Z"
 }

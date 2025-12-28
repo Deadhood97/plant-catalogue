@@ -6,14 +6,14 @@
       "confidence": 0.95
     },
     {
-      "identified_name": "Bowstring Hemp",
+      "identified_name": "Mother-in-Law's Tongue",
       "scientific_name": "Sansevieria trifasciata",
       "confidence": 0.85
     },
     {
-      "identified_name": "Mother-in-law's Tongue",
+      "identified_name": "Viper's Bowstring Hemp",
       "scientific_name": "Sansevieria trifasciata",
-      "confidence": 0.75
+      "confidence": 0.6
     }
   ],
   "identified_name": "Snake Plant",
@@ -22,39 +22,45 @@
     {
       "name": "Sansevieria",
       "language": "English",
-      "region": "Global",
+      "region": "India",
       "confidence": 0.9
     },
     {
-      "name": "Nandiyavara",
-      "language": "Kannada",
+      "name": "Nagfani",
+      "language": "Hindi",
       "region": "India",
-      "confidence": 0.7
-    },
-    {
-      "name": "Agave Amma",
-      "language": "Tamil",
-      "region": "India",
-      "confidence": 0.7
+      "confidence": 0.8
     }
   ],
   "confidence": 0.95,
   "fun_fact": {
-    "text": "Snake Plants are known for their ability to purify indoor air and are often used as houseplants for improving air quality.",
+    "text": "Snake Plants are known for their air-purifying qualities and are often called 'Mother-in-Law's Tongue' due to the sharpness of their leaves.",
     "confidence": 0.9,
-    "category": "Gardening"
+    "category": "Cultural"
   },
   "is_flowering": true,
   "is_medicinal": null,
-  "is_edible": null,
+  "is_edible": false,
   "is_toxic_to_pets": true,
   "plant_type": "Succulent",
-  "environment": "Indoor and Outdoor",
-  "difficulty": "Easy",
+  "environment": "Indoor, low light",
+  "difficulty": "Low",
+  "care": {
+    "watering_frequency": "Every 2-6 weeks",
+    "sunlight_requirement": "Indirect sunlight to low light",
+    "soil_type": "Well-draining potting mix",
+    "growth_rate": "Slow",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "West Africa",
+  "plant_personality": "Low Maintenance Buddy",
+  "fragrance": "None",
+  "symbolism": "Symbolizes resilience and protective energy in various cultures.",
+  "lifespan": "Several years to decades",
   "reference_image": {
     "url": "photos/PXL_20251222_103949746.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:56:27.907969Z"
+  "date_added": "2025-12-28T05:17:33.038479Z"
 }

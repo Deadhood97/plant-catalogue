@@ -8,19 +8,19 @@
     {
       "identified_name": "Variegated Lilyturf",
       "scientific_name": "Liriope muscari",
-      "confidence": 0.75
+      "confidence": 0.6
     },
     {
-      "identified_name": "Variegated Pandan",
-      "scientific_name": "Pandanus amaryllifolius",
-      "confidence": 0.6
+      "identified_name": "Variegated Society Garlic",
+      "scientific_name": "Tulbaghia violacea 'Variegata'",
+      "confidence": 0.55
     }
   ],
   "identified_name": "Spider Plant",
   "scientific_name": "Chlorophytum comosum",
   "local_names": [
     {
-      "name": "Safed Mohari",
+      "name": "Safed Moona",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.8
@@ -28,21 +28,33 @@
   ],
   "confidence": 0.95,
   "fun_fact": {
-    "text": "Spider plants are popular houseplants known for their air-purifying properties and their ability to grow baby plants called 'spiderettes' that hang from the mother plant.",
+    "text": "The Spider Plant is known for its air-purifying abilities and is a popular indoor plant worldwide for improving indoor air quality.",
     "confidence": 0.9,
     "category": "gardening"
   },
   "is_flowering": true,
   "is_medicinal": null,
   "is_edible": null,
-  "is_toxic_to_pets": true,
+  "is_toxic_to_pets": false,
   "plant_type": "Herbaceous perennial",
-  "environment": "Indoor and shaded outdoor",
+  "environment": "Indoor, shade to partial sun",
   "difficulty": "Easy",
+  "care": {
+    "watering_frequency": "Water moderately; keep soil slightly moist",
+    "sunlight_requirement": "Indirect sunlight to partial shade",
+    "soil_type": "Well-draining, loamy soil",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Tropical and Southern Africa",
+  "plant_personality": "Low Maintenance Buddy",
+  "fragrance": "None",
+  "symbolism": "Symbolizes purity and good health in various cultures",
+  "lifespan": "Several years with proper care",
   "reference_image": {
     "url": "photos/PXL_20251222_103517538.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:43:34.880243Z"
+  "date_added": "2025-12-28T05:03:16.979720Z"
 }

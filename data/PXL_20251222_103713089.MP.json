@@ -2,7 +2,7 @@
   "candidate_identifications": [
     {
       "identified_name": "Sweet Orange",
-      "scientific_name": "Citrus × sinensis",
+      "scientific_name": "Citrus sinensis",
       "confidence": 0.95
     },
     {
@@ -11,13 +11,13 @@
       "confidence": 0.7
     },
     {
-      "identified_name": "Tangerine",
-      "scientific_name": "Citrus tangerina",
-      "confidence": 0.6
+      "identified_name": "Grapefruit",
+      "scientific_name": "Citrus × paradisi",
+      "confidence": 0.5
     }
   ],
   "identified_name": "Sweet Orange",
-  "scientific_name": "Citrus × sinensis",
+  "scientific_name": "Citrus sinensis",
   "local_names": [
     {
       "name": "Santra",
@@ -26,29 +26,41 @@
       "confidence": 0.9
     },
     {
-      "name": "Naranja",
-      "language": "Spanish",
-      "region": "Latin America",
+      "name": "Kinnow",
+      "language": "Punjabi",
+      "region": "India",
       "confidence": 0.8
     }
   ],
   "confidence": 0.95,
   "fun_fact": {
-    "text": "The sweet orange tree is widely cultivated for its fruit, which is one of the most consumed fruits worldwide, often enjoyed fresh or as juice.",
+    "text": "Sweet orange trees have been cultivated for centuries and are believed to have originated in China. They are now one of the most widely grown fruit trees globally.",
     "confidence": 0.9,
-    "category": "Cultural"
+    "category": "Historical"
   },
   "is_flowering": true,
   "is_medicinal": null,
   "is_edible": true,
-  "is_toxic_to_pets": null,
+  "is_toxic_to_pets": false,
   "plant_type": "Tree",
-  "environment": "Tropical and subtropical climates",
+  "environment": "Subtropical to tropical climates",
   "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Water deeply once or twice a week, depending on weather",
+    "sunlight_requirement": "Full sun",
+    "soil_type": "Well-drained sandy loam",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "China, Southeast Asia",
+  "plant_personality": "Sunny and Vibrant",
+  "fragrance": "Citrusy and sweet",
+  "symbolism": "Symbolizes good fortune and prosperity in many cultures",
+  "lifespan": "50+ years",
   "reference_image": {
     "url": "photos/PXL_20251222_103713089.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:34:09.397923Z"
+  "date_added": "2025-12-28T04:52:53.676154Z"
 }

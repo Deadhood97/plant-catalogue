@@ -11,9 +11,9 @@
       "confidence": 0.85
     },
     {
-      "identified_name": "French Marigold",
-      "scientific_name": "Tagetes patula",
-      "confidence": 0.65
+      "identified_name": "Mexican Marigold",
+      "scientific_name": "Tagetes erecta",
+      "confidence": 0.7
     }
   ],
   "identified_name": "Marigold",
@@ -26,29 +26,41 @@
       "confidence": 0.9
     },
     {
-      "name": "Barahmasi",
-      "language": "Marathi",
+      "name": "Buphala",
+      "language": "Kannada",
       "region": "India",
       "confidence": 0.8
     }
   ],
   "confidence": 0.95,
   "fun_fact": {
-    "text": "Marigolds are widely used in traditional Indian festivals and decorations, especially during Diwali and weddings for their vibrant color and fragrance.",
+    "text": "Marigold flowers are widely used in Indian festivals and religious ceremonies, especially during Diwali and funerals, symbolizing auspiciousness and remembrance.",
     "confidence": 0.9,
-    "category": "cultural"
+    "category": "Cultural"
   },
   "is_flowering": true,
   "is_medicinal": null,
   "is_edible": null,
   "is_toxic_to_pets": null,
-  "plant_type": "Flowering plant",
-  "environment": "Garden, pots, full sunlight",
-  "difficulty": "Easy to cultivate",
+  "plant_type": "Flowering annual",
+  "environment": "Full sun to partial shade, warm climates",
+  "difficulty": "Easy",
+  "care": {
+    "watering_frequency": "Moderate; water when the top inch of soil dries",
+    "sunlight_requirement": "Full sun",
+    "soil_type": "Well-draining, moderately fertile soil",
+    "growth_rate": "Fast",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Mexico and Central America",
+  "plant_personality": "Bright and cheerful festival favorite",
+  "fragrance": "Mildly pungent and musky",
+  "symbolism": "Symbolizes creativity, passion, and positive energy in various cultures",
+  "lifespan": "Annual",
   "reference_image": {
     "url": "photos/PXL_20251222_103634367.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:54:44.476594Z"
+  "date_added": "2025-12-28T05:15:37.940555Z"
 }

@@ -7,13 +7,13 @@
     },
     {
       "identified_name": "Aloe Vera",
-      "scientific_name": "Aloe barbadensis miller",
-      "confidence": 0.4
+      "scientific_name": "Aloe barbadensis",
+      "confidence": 0.1
     },
     {
-      "identified_name": "Gasteria",
-      "scientific_name": "Gasteria spp.",
-      "confidence": 0.3
+      "identified_name": "Agave",
+      "scientific_name": "Agave spp.",
+      "confidence": 0.05
     }
   ],
   "identified_name": "Haworthia",
@@ -22,27 +22,39 @@
     {
       "name": "Haworthia",
       "language": "English",
-      "region": "Global",
+      "region": "India",
       "confidence": 0.9
     }
   ],
   "confidence": 0.85,
   "fun_fact": {
-    "text": "Haworthia plants are popular in indoor gardening due to their attractive rosette shape and low maintenance needs, often used in succulent collections.",
+    "text": "Haworthia is often used as a decorative houseplant due to its low maintenance and intriguing rosette form.",
     "confidence": 0.8,
     "category": "gardening"
   },
   "is_flowering": true,
   "is_medicinal": null,
-  "is_edible": false,
+  "is_edible": null,
   "is_toxic_to_pets": false,
   "plant_type": "Succulent",
-  "environment": "Indoor or outdoor, well-drained soil, full to partial sun",
+  "environment": "Indoor or outdoor in partial shade",
   "difficulty": "Easy",
+  "care": {
+    "watering_frequency": "Water sparingly, allowing soil to dry out between watering",
+    "sunlight_requirement": "Bright indirect light to partial shade",
+    "soil_type": "Well-draining succulent or cactus mix",
+    "growth_rate": "Slow",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Southern Africa",
+  "plant_personality": "Low Maintenance Buddy",
+  "fragrance": "None",
+  "symbolism": "Represents endurance and resilience, often symbolizing the ability to thrive in harsh conditions.",
+  "lifespan": "Several years with proper care",
   "reference_image": {
     "url": "photos/PXL_20251222_104018284.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:56:05.069471Z"
+  "date_added": "2025-12-28T05:17:05.084597Z"
 }

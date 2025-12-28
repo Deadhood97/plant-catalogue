@@ -6,44 +6,61 @@
       "confidence": 0.85
     },
     {
-      "identified_name": "Indian Jasmine",
-      "scientific_name": "Jasminum sambac",
-      "confidence": 0.4
+      "identified_name": "Hibiscus",
+      "scientific_name": "Hibiscus rosa-sinensis",
+      "confidence": 0.3
+    },
+    {
+      "identified_name": "Indian Almond",
+      "scientific_name": "Terminalia catappa",
+      "confidence": 0.1
     }
   ],
   "identified_name": "Gardenia",
   "scientific_name": "Gardenia jasminoides",
   "local_names": [
     {
-      "name": "Chambakka",
-      "language": "Kannada",
-      "region": "Karnataka, India",
+      "name": "Chameli",
+      "language": "Hindi",
+      "region": "India",
       "confidence": 0.7
     },
     {
-      "name": "Gardenia",
-      "language": "Hindi",
+      "name": "Malli",
+      "language": "Tamil",
       "region": "India",
       "confidence": 0.6
     }
   ],
   "confidence": 0.85,
   "fun_fact": {
-    "text": "Gardenias are widely appreciated in gardens for their fragrant white flowers and glossy green leaves, symbolizing purity and sweetness in many cultures.",
-    "confidence": 0.85,
-    "category": "cultural"
+    "text": "Gardenias are valued in gardens for their glossy green leaves and fragrant white flowers, often symbolizing purity and sweetness.",
+    "confidence": 0.8,
+    "category": "Cultural"
   },
   "is_flowering": true,
   "is_medicinal": null,
   "is_edible": null,
   "is_toxic_to_pets": null,
-  "plant_type": "shrub",
-  "environment": "garden/ornamental",
-  "difficulty": "medium",
+  "plant_type": "Shrub",
+  "environment": "Tropical and subtropical climates",
+  "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Keep soil moist but not waterlogged, water regularly",
+    "sunlight_requirement": "Partial shade to full sun",
+    "soil_type": "Well-drained, acidic soil",
+    "growth_rate": "Slow to moderate",
+    "hardiness_zone": "8-11"
+  },
+  "origin_region": "Asia, particularly China and Japan",
+  "plant_personality": "Elegant and fragrant charm",
+  "fragrance": "Sweet, strong, and pleasing scent",
+  "symbolism": "Symbolizes purity, love, and refinement in many cultures",
+  "lifespan": "Perennial, can live many years with proper care",
   "reference_image": {
     "url": "photos/PXL_20251222_103744908.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:49:21.816011Z"
+  "date_added": "2025-12-28T05:09:42.863240Z"
 }

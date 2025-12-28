@@ -6,9 +6,9 @@
       "confidence": 0.95
     },
     {
-      "identified_name": "String of Hearts",
-      "scientific_name": "Ceropegia woodii",
-      "confidence": 0.4
+      "identified_name": "Peperomia rotundifolia",
+      "scientific_name": "Peperomia rotundifolia",
+      "confidence": 0.5
     },
     {
       "identified_name": "Dischidia nummularia",
@@ -26,29 +26,41 @@
       "confidence": 0.9
     },
     {
-      "name": "Raktachand",
-      "language": "Hindi",
-      "region": "India",
-      "confidence": 0.8
+      "name": "Spekboom",
+      "language": "Afrikaans",
+      "region": "South Africa",
+      "confidence": 0.9
     }
   ],
   "confidence": 0.95,
   "fun_fact": {
-    "text": "Portulacaria afra is often used in bonsai and as a drought-resistant succulent in xeriscaping gardens.",
+    "text": "Portulacaria afra, known as Elephant Bush, is widely used in bonsai and succulent gardens because of its miniature, fleshy leaves and ease of pruning to shape.",
     "confidence": 0.9,
     "category": "gardening"
   },
   "is_flowering": true,
   "is_medicinal": null,
   "is_edible": null,
-  "is_toxic_to_pets": null,
-  "plant_type": "succulent",
-  "environment": "indoor and outdoor, prefers sunny to semi-shaded areas",
-  "difficulty": "easy",
+  "is_toxic_to_pets": false,
+  "plant_type": "Succulent shrub",
+  "environment": "Prefers warm, dry climates; often used as a drought-tolerant houseplant or garden plant",
+  "difficulty": "Low maintenance",
+  "care": {
+    "watering_frequency": "Water sparingly; allow soil to dry between waterings",
+    "sunlight_requirement": "Thrives in bright indirect light to full sun",
+    "soil_type": "Well-draining succulent or cactus mix",
+    "growth_rate": "Moderate growth rate",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "South Africa",
+  "plant_personality": "Low Maintenance Buddy",
+  "fragrance": "None",
+  "symbolism": "Symbol of resilience and sustainability in arid climates",
+  "lifespan": "Perennial, potentially decades with good care",
   "reference_image": {
     "url": "photos/PXL_20251222_103752308.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:40:31.898621Z"
+  "date_added": "2025-12-28T04:59:54.634994Z"
 }

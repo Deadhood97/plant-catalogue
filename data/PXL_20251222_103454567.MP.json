@@ -1,48 +1,60 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Thuja",
-      "scientific_name": "Thuja spp.",
-      "confidence": 0.85
+      "identified_name": "Arborvitae",
+      "scientific_name": "Thuja occidentalis",
+      "confidence": 0.95
     },
     {
-      "identified_name": "Cupressus",
-      "scientific_name": "Cupressus spp.",
-      "confidence": 0.65
+      "identified_name": "Leyland Cypress",
+      "scientific_name": "Cupressus × leylandii",
+      "confidence": 0.75
     },
     {
-      "identified_name": "Platycladus orientalis",
-      "scientific_name": "Platycladus orientalis",
-      "confidence": 0.5
+      "identified_name": "Juniper",
+      "scientific_name": "Juniperus spp.",
+      "confidence": 0.6
     }
   ],
-  "identified_name": "Thuja",
-  "scientific_name": "Thuja spp.",
+  "identified_name": "Arborvitae",
+  "scientific_name": "Thuja occidentalis",
   "local_names": [
     {
-      "name": "Arar",
-      "language": "Hindi",
+      "name": "Thuja",
+      "language": "English",
       "region": "India",
-      "confidence": 0.8
+      "confidence": 0.9
     }
   ],
-  "confidence": 0.85,
+  "confidence": 0.95,
   "fun_fact": {
-    "text": "Thuja trees are often used in landscaping for their dense, evergreen foliage, providing year-round privacy and windbreaks in gardens.",
-    "confidence": 0.8,
-    "category": "gardening"
+    "text": "Arborvitae means 'tree of life' in Latin and was historically used for its medicinal properties as well as ornamental hedges.",
+    "confidence": 0.9,
+    "category": "cultural"
   },
   "is_flowering": false,
   "is_medicinal": null,
-  "is_edible": false,
+  "is_edible": null,
   "is_toxic_to_pets": null,
-  "plant_type": "coniferous evergreen shrub/tree",
-  "environment": "Garden, outdoor, temperate climates",
-  "difficulty": "easy to moderate",
+  "plant_type": "Coniferous evergreen shrub/tree",
+  "environment": "Prefers well-drained soil and full sun to partial shade",
+  "difficulty": "Low maintenance",
+  "care": {
+    "watering_frequency": "Water regularly during dry spells; avoid waterlogging",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-drained, moist soil",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "3-7"
+  },
+  "origin_region": "Northeastern North America",
+  "plant_personality": "Sturdy and Reliable",
+  "fragrance": "Mild, fresh conifer scent",
+  "symbolism": "Symbolizes longevity, protection, and endurance in various cultures",
+  "lifespan": "Several decades with proper care",
   "reference_image": {
     "url": "photos/PXL_20251222_103454567.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:37:19.656766Z"
+  "date_added": "2025-12-28T04:56:23.995144Z"
 }

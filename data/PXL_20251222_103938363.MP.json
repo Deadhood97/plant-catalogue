@@ -6,14 +6,14 @@
       "confidence": 0.95
     },
     {
-      "identified_name": "Desert Rose",
-      "scientific_name": "Adenium obesum",
-      "confidence": 0.45
+      "identified_name": "Nerium",
+      "scientific_name": "Nerium",
+      "confidence": 0.75
     },
     {
-      "identified_name": "Hibiscus",
-      "scientific_name": "Hibiscus rosa-sinensis",
-      "confidence": 0.3
+      "identified_name": "Desert Rose",
+      "scientific_name": "Adenium obesum",
+      "confidence": 0.4
     }
   ],
   "identified_name": "Oleander",
@@ -23,32 +23,44 @@
       "name": "Kaner",
       "language": "Hindi",
       "region": "India",
-      "confidence": 0.85
+      "confidence": 0.9
     },
     {
-      "name": "Arali",
-      "language": "Tamil",
+      "name": "Karonda",
+      "language": "Marathi",
       "region": "India",
-      "confidence": 0.75
+      "confidence": 0.7
     }
   ],
   "confidence": 0.95,
   "fun_fact": {
-    "text": "Oleander is often used in public landscaping around the world for its drought tolerance and evergreen foliage despite its toxicity.",
-    "confidence": 0.85,
+    "text": "Oleander is a highly toxic plant but has been often used as an ornamental shrub for its beautiful flowers, common in Mediterranean gardens.",
+    "confidence": 0.88,
     "category": "gardening"
   },
   "is_flowering": true,
   "is_medicinal": null,
-  "is_edible": null,
+  "is_edible": false,
   "is_toxic_to_pets": true,
-  "plant_type": "shrub",
-  "environment": "outdoor, warm climates",
-  "difficulty": "moderate",
+  "plant_type": "Shrub",
+  "environment": "Outdoor garden plant, prefers warm climates",
+  "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Water moderately, allowing soil to dry between watering",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-drained soil",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "8 to 10"
+  },
+  "origin_region": "Mediterranean region",
+  "plant_personality": "Tough and Beautiful",
+  "fragrance": "Mild, pleasant fragrance",
+  "symbolism": "Symbolizes caution and danger due to its toxicity but also beauty",
+  "lifespan": "Perennial",
   "reference_image": {
     "url": "photos/PXL_20251222_103938363.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:46:31.725841Z"
+  "date_added": "2025-12-28T05:06:35.840653Z"
 }

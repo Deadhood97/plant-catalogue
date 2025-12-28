@@ -3,52 +3,64 @@
     {
       "identified_name": "Ficus benjamina",
       "scientific_name": "Ficus benjamina",
-      "confidence": 0.85
+      "confidence": 0.9
+    },
+    {
+      "identified_name": "Indian Laurel",
+      "scientific_name": "Ficus microcarpa",
+      "confidence": 0.6
     },
     {
       "identified_name": "Ficus retusa",
       "scientific_name": "Ficus retusa",
-      "confidence": 0.65
-    },
-    {
-      "identified_name": "Ficus microcarpa",
-      "scientific_name": "Ficus microcarpa",
-      "confidence": 0.55
+      "confidence": 0.5
     }
   ],
   "identified_name": "Ficus benjamina",
   "scientific_name": "Ficus benjamina",
   "local_names": [
     {
-      "name": "Weeping fig",
+      "name": "Weeping Fig",
       "language": "English",
       "region": "Global",
-      "confidence": 0.9
+      "confidence": 0.8
     },
     {
-      "name": "अंजन",
-      "language": "Hindi",
-      "region": "India",
-      "confidence": 0.75
+      "name": "Benjamin Ficus",
+      "language": "English",
+      "region": "Global",
+      "confidence": 0.7
     }
   ],
-  "confidence": 0.85,
+  "confidence": 0.9,
   "fun_fact": {
-    "text": "Ficus benjamina is often used as a decorative indoor plant worldwide and is known for its graceful drooping branches.",
+    "text": "Ficus benjamina is a popular indoor ornamental plant worldwide, often used for its graceful shape and ease of shaping into bonsai.",
     "confidence": 0.8,
     "category": "gardening"
   },
-  "is_flowering": true,
-  "is_medicinal": false,
-  "is_edible": false,
-  "is_toxic_to_pets": true,
+  "is_flowering": false,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
   "plant_type": "Tree",
-  "environment": "Indoor and outdoor tropical and subtropical environments",
-  "difficulty": "Medium",
+  "environment": "Indoor and outdoor in tropical and subtropical climates",
+  "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Keep soil moist, reduce watering in winter",
+    "sunlight_requirement": "Bright indirect light",
+    "soil_type": "Well-draining, fertile soil",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "10-12"
+  },
+  "origin_region": "Southeast Asia and Australia",
+  "plant_personality": "Low Maintenance Buddy",
+  "fragrance": "None",
+  "symbolism": "Symbolizes abundance, happiness, and prosperity in many cultures",
+  "lifespan": "Several decades with proper care",
   "reference_image": {
     "url": "photos/PXL_20251222_103606492.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:42:41.804515Z"
+  "date_added": "2025-12-28T05:02:17.489833Z"
 }

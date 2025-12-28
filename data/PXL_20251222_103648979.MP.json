@@ -6,38 +6,61 @@
       "confidence": 0.85
     },
     {
-      "identified_name": "Eggplant",
+      "identified_name": "Eggplant (small round variety)",
       "scientific_name": "Solanum melongena",
-      "confidence": 0.3
+      "confidence": 0.6
+    },
+    {
+      "identified_name": "Deadly Nightshade (Atropa belladonna)",
+      "scientific_name": "Atropa belladonna",
+      "confidence": 0.4
     }
   ],
   "identified_name": "Black Nightshade",
   "scientific_name": "Solanum nigrum",
   "local_names": [
     {
-      "name": "Kajari Bharangi",
+      "name": "Makoi",
       "language": "Hindi",
       "region": "India",
-      "confidence": 0.7
+      "confidence": 0.9
+    },
+    {
+      "name": "Kakamachi",
+      "language": "Kannada",
+      "region": "India",
+      "confidence": 0.8
     }
   ],
   "confidence": 0.85,
   "fun_fact": {
-    "text": "Black Nightshade is sometimes confused with edible eggplants, but its berries are typically smaller and the plant is considered a weed in many gardens.",
-    "confidence": 0.7,
+    "text": "Black Nightshade is often used in traditional herbal medicines in various cultures, but some parts are toxic if ingested improperly.",
+    "confidence": 0.8,
     "category": "cultural"
   },
-  "is_flowering": null,
-  "is_medicinal": null,
-  "is_edible": null,
+  "is_flowering": true,
+  "is_medicinal": true,
+  "is_edible": false,
   "is_toxic_to_pets": null,
-  "plant_type": "shrub",
-  "environment": "grows in temperate and tropical climates, often as a weed",
-  "difficulty": "moderate",
+  "plant_type": "herbaceous shrub",
+  "environment": "grows wild in temperate and tropical regions, often in disturbed soils",
+  "difficulty": "easy",
+  "care": {
+    "watering_frequency": "moderate; keep soil evenly moist",
+    "sunlight_requirement": "partial to full sun",
+    "soil_type": "well-drained soil, tolerates a range of soil types",
+    "growth_rate": "medium",
+    "hardiness_zone": "7-11"
+  },
+  "origin_region": "Eurasia",
+  "plant_personality": "Mysterious Wild Child",
+  "fragrance": "None",
+  "symbolism": "Historically associated with protection and healing in folklore, but also with caution due to toxicity",
+  "lifespan": "Annual or short-lived perennial",
   "reference_image": {
     "url": "photos/PXL_20251222_103648979.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:44:50.656415Z"
+  "date_added": "2025-12-28T05:04:46.683745Z"
 }

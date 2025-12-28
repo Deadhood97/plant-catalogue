@@ -1,48 +1,66 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Aspidistra",
-      "scientific_name": "Aspidistra elatior",
+      "identified_name": "Indian Head Ginger",
+      "scientific_name": "Curcuma amada",
       "confidence": 0.85
     },
     {
-      "identified_name": "Cast Iron Plant",
-      "scientific_name": "Aspidistra elatior",
+      "identified_name": "Turmeric",
+      "scientific_name": "Curcuma longa",
+      "confidence": 0.3
+    },
+    {
+      "identified_name": "Cardamom",
+      "scientific_name": "Elettaria cardamomum",
+      "confidence": 0.1
+    }
+  ],
+  "identified_name": "Indian Head Ginger",
+  "scientific_name": "Curcuma amada",
+  "local_names": [
+    {
+      "name": "Aduwa Sanna",
+      "language": "Kannada",
+      "region": "Karnataka, India",
       "confidence": 0.7
     },
     {
-      "identified_name": "Ribbon plant",
-      "scientific_name": "Aspidistra elatior",
-      "confidence": 0.55
-    }
-  ],
-  "identified_name": "Aspidistra",
-  "scientific_name": "Aspidistra elatior",
-  "local_names": [
-    {
-      "name": "Aspidistra",
-      "language": "English",
-      "region": "India",
-      "confidence": 0.8
+      "name": "Mangor",
+      "language": "Hindi",
+      "region": "Northern India",
+      "confidence": 0.65
     }
   ],
   "confidence": 0.85,
   "fun_fact": {
-    "text": "Aspidistra is commonly known as the 'Cast Iron Plant' due to its ability to survive in low light and neglect, making it a popular houseplant worldwide.",
-    "confidence": 0.9,
-    "category": "gardening"
+    "text": "Indian Head Ginger is well appreciated for its mango-like fragrance in the rhizome, and it is used as a culinary spice and traditional flavoring in parts of India.",
+    "confidence": 0.8,
+    "category": "Cultural"
   },
   "is_flowering": true,
-  "is_medicinal": null,
-  "is_edible": null,
-  "is_toxic_to_pets": null,
-  "plant_type": "perennial evergreen",
-  "environment": "shade to partial shade, indoor and garden",
-  "difficulty": "easy",
+  "is_medicinal": true,
+  "is_edible": true,
+  "is_toxic_to_pets": false,
+  "plant_type": "Herbaceous perennial",
+  "environment": "Tropical and subtropical regions, thrives in shade",
+  "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Keep soil consistently moist but not waterlogged",
+    "sunlight_requirement": "Prefers partial shade",
+    "soil_type": "Well-drained, fertile loamy soil",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "India and Southeast Asia",
+  "plant_personality": "Aromatic Flavorful Companion",
+  "fragrance": "Mango-like, sweet and fruity",
+  "symbolism": "In Indian culture, it symbolizes auspiciousness and is sometimes used in rituals and traditional medicine.",
+  "lifespan": "Perennial",
   "reference_image": {
     "url": "photos/PXL_20251222_103621727.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:37:47.127965Z"
+  "date_added": "2025-12-28T04:56:53.689708Z"
 }

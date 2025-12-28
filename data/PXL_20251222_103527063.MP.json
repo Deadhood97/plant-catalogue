@@ -6,13 +6,13 @@
       "confidence": 0.85
     },
     {
-      "identified_name": "Indian Kino Tree",
-      "scientific_name": "Pterocarpus marsupium",
+      "identified_name": "Indian Mulberry",
+      "scientific_name": "Murraya koenigii",
       "confidence": 0.4
     },
     {
-      "identified_name": "Krishna Tulsi",
-      "scientific_name": "Ocimum tenuiflorum",
+      "identified_name": "Guava",
+      "scientific_name": "Psidium guajava",
       "confidence": 0.3
     }
   ],
@@ -28,21 +28,33 @@
   ],
   "confidence": 0.85,
   "fun_fact": {
-    "text": "Kratom leaves have been traditionally used in Southeast Asia for their stimulating and pain-relieving properties. The plant has a notable cultural significance in local communities.",
-    "confidence": 0.8,
-    "category": "cultural"
+    "text": "Kratom leaves have been traditionally used in Southeast Asia for their stimulant effects and cultural significance in social rituals.",
+    "confidence": 0.7,
+    "category": "Cultural"
   },
-  "is_flowering": null,
+  "is_flowering": true,
   "is_medicinal": null,
   "is_edible": null,
   "is_toxic_to_pets": null,
-  "plant_type": "Tree/Vine",
-  "environment": "Tropical, indoor/outdoor in pots",
+  "plant_type": "Tree",
+  "environment": "Tropical, humid environment",
   "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Keep soil consistently moist but not waterlogged",
+    "sunlight_requirement": "Partial shade to full sun",
+    "soil_type": "Well-draining, fertile soil",
+    "growth_rate": "Moderate to fast",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Southeast Asia",
+  "plant_personality": "Exotic Climber",
+  "fragrance": "Mild, earthy scent when leaves are crushed",
+  "symbolism": "In Southeast Asia, kratom symbolizes strength and endurance, often linked to traditional laborers and cultural ceremonies.",
+  "lifespan": "Decades when grown in suitable conditions",
   "reference_image": {
     "url": "photos/PXL_20251222_103527063.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:45:40.838604Z"
+  "date_added": "2025-12-28T05:05:43.927068Z"
 }

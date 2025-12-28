@@ -1,13 +1,13 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Kumquat",
-      "scientific_name": "Fortunella spp.",
+      "identified_name": "Calamondin Orange",
+      "scientific_name": "Citrofortunella microcarpa",
       "confidence": 0.9
     },
     {
-      "identified_name": "Calamondin Orange",
-      "scientific_name": "Citrus × microcarpa",
+      "identified_name": "Kumquat",
+      "scientific_name": "Fortunella spp.",
       "confidence": 0.7
     },
     {
@@ -16,33 +16,45 @@
       "confidence": 0.6
     }
   ],
-  "identified_name": "Kumquat",
-  "scientific_name": "Fortunella spp.",
+  "identified_name": "Calamondin Orange",
+  "scientific_name": "Citrofortunella microcarpa",
   "local_names": [
     {
-      "name": "Narangi",
-      "language": "Hindi",
-      "region": "India",
-      "confidence": 0.7
+      "name": " calamansi",
+      "language": "Filipino",
+      "region": "India (also Philippines)",
+      "confidence": 0.8
     }
   ],
   "confidence": 0.9,
   "fun_fact": {
-    "text": "Kumquats are unique among citrus fruits because their skin is sweet while the flesh is tart, making them popular for eating whole or as ornamental plants.",
-    "confidence": 0.9,
-    "category": "aesthetic"
+    "text": "Calamondins are often grown as ornamental plants and are popular for container gardening because of their small size and bright fruit.",
+    "confidence": 0.75,
+    "category": "gardening"
   },
   "is_flowering": true,
   "is_medicinal": null,
   "is_edible": true,
   "is_toxic_to_pets": null,
-  "plant_type": "Shrub/Small Tree",
-  "environment": "Mediterranean, subtropical to tropical",
-  "difficulty": "Moderate",
+  "plant_type": "small citrus tree",
+  "environment": "tropical and subtropical climates",
+  "difficulty": "moderate",
+  "care": {
+    "watering_frequency": "Water moderately, allowing soil to dry slightly between watering",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-drained sandy loam",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Southeast Asia",
+  "plant_personality": "Bright and Cheerful Miniature",
+  "fragrance": "Mild citrus scent",
+  "symbolism": "Symbolizes prosperity and good luck in some Asian cultures",
+  "lifespan": "Can live for several years with proper care",
   "reference_image": {
     "url": "photos/PXL_20251222_103834634.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:53:53.172704Z"
+  "date_added": "2025-12-28T05:14:47.147017Z"
 }

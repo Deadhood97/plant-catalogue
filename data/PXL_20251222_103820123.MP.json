@@ -1,54 +1,55 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Indian Elm",
-      "scientific_name": "Holoptelea integrifolia",
-      "confidence": 0.85
+      "identified_name": "Kiwifruit Vine",
+      "scientific_name": "Actinidia deliciosa",
+      "confidence": 0.75
     },
     {
-      "identified_name": "Mulberry Tree",
-      "scientific_name": "Morus alba",
-      "confidence": 0.4
-    },
-    {
-      "identified_name": "Flame Tree",
-      "scientific_name": "Delonix regia",
-      "confidence": 0.2
+      "identified_name": "Chinese Gooseberry",
+      "scientific_name": "Actinidia chinensis",
+      "confidence": 0.6
     }
   ],
-  "identified_name": "Indian Elm",
-  "scientific_name": "Holoptelea integrifolia",
+  "identified_name": "Kiwifruit Vine",
+  "scientific_name": "Actinidia deliciosa",
   "local_names": [
     {
-      "name": "Aaran",
-      "language": "Kannada",
-      "region": "Karnataka, India",
-      "confidence": 0.8
-    },
-    {
-      "name": "Bugul",
-      "language": "Marathi",
-      "region": "Maharashtra, India",
-      "confidence": 0.75
+      "name": "कीवी",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.7
     }
   ],
-  "confidence": 0.85,
+  "confidence": 0.75,
   "fun_fact": {
-    "text": "Indian Elm (Holoptelea integrifolia) is commonly found in India and has been traditionally used in making furniture due to its tough wood.",
-    "confidence": 0.75,
-    "category": "cultural"
+    "text": "The kiwifruit vine was originally known as Chinese gooseberry and was renamed for marketing purposes to associate it with New Zealand, where it became widely cultivated.",
+    "confidence": 0.7,
+    "category": "Cultural/History"
   },
   "is_flowering": true,
-  "is_medicinal": true,
-  "is_edible": false,
+  "is_medicinal": null,
+  "is_edible": true,
   "is_toxic_to_pets": null,
-  "plant_type": "tree",
-  "environment": "tropical and subtropical regions",
-  "difficulty": "easy to moderate",
+  "plant_type": "Climbing Vine",
+  "environment": "Outdoor garden, temperate climate",
+  "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Regular, keep soil moist but not waterlogged",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-drained, fertile soil rich in organic matter",
+    "growth_rate": "Fast growing",
+    "hardiness_zone": "7-9"
+  },
+  "origin_region": "China",
+  "plant_personality": "Adventurous Climber",
+  "fragrance": "Mildly sweet",
+  "symbolism": "Symbolizes fertility and abundance in some cultures due to its many seeds",
+  "lifespan": "Perennial",
   "reference_image": {
     "url": "photos/PXL_20251222_103820123.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:46:07.563460Z"
+  "date_added": "2025-12-28T05:06:09.095756Z"
 }

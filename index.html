@@ -70,6 +70,27 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
+
+    dialog::backdrop {
+      background: rgba(26, 71, 49, 0.6);
+      backdrop-filter: blur(4px);
+    }
+
+    dialog[open] {
+      animation: zoomIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.95);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
   </style>
 </head>
 
@@ -187,6 +208,80 @@
 
   </main>
 
+  <!-- Detail Modal -->
+  <dialog id="detailModal"
+    class="bg-transparent p-0 w-full max-w-5xl h-[90vh] md:h-auto md:max-h-[90vh] rounded-3xl shadow-2xl overflow-hidden backdrop:bg-jungle/60 backdrop:backdrop-blur-sm m-auto open:flex flex-col md:flex-row focus:outline-none">
+    <div class="bg-white w-full h-full flex flex-col md:flex-row relative">
+
+      <!-- Close Button -->
+      <button onclick="closeModal()"
+        class="absolute top-4 right-4 z-50 bg-white/50 hover:bg-white text-jungle p-2 rounded-full transition-all backdrop-blur-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- Modal Image (Left/Top) -->
+      <div class="w-full md:w-5/12 h-64 md:h-auto relative bg-stone-100 shrink-0">
+        <img id="modalImg" src="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-jungle/80 via-transparent to-transparent opacity-60"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h2 id="modalName" class="font-serif text-4xl font-bold mb-1 drop-shadow-lg"></h2>
+          <p id="modalSci" class="italic opacity-90 text-lg"></p>
+        </div>
+      </div>
+
+      <!-- Modal Content (Right/Bottom) -->
+      <div class="flex-1 overflow-y-auto p-8 md:p-10 no-scrollbar">
+
+        <!-- Header Tags -->
+        <div class="flex flex-wrap gap-2 mb-8" id="modalBadges"></div>
+
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+
+          <!-- Bio Section -->
+          <div>
+            <h3 class="font-serif text-2xl text-jungle mb-4 flex items-center gap-2">
+              🌱 <span class="border-b-2 border-terracotta/20">About</span>
+            </h3>
+
+            <div class="space-y-4 text-gray-600">
+              <div>
+                <span class="text-xs font-bold text-terracotta uppercase tracking-wider block mb-1">Local Names</span>
+                <p id="modalLocal" class="font-medium text-jungle"></p>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-terracotta uppercase tracking-wider block mb-1">Region &
+                  Lifespan</span>
+                <p id="modalOrigin" class="font-medium text-jungle"></p>
+              </div>
+              <div id="modalFactBox"
+                class="bg-stone-50 p-4 rounded-xl border border-stone-100 italic text-sm leading-relaxed text-leaf/90">
+              </div>
+            </div>
+          </div>
+
+          <!-- Care Section -->
+          <div>
+            <h3 class="font-serif text-2xl text-jungle mb-4 flex items-center gap-2">
+              💚 <span class="border-b-2 border-terracotta/20">Care Guide</span>
+            </h3>
+            <div class="grid grid-cols-2 gap-3" id="modalCareGrid">
+              <!-- Injected via JS -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Symbolism (Full Width) -->
+        <div id="modalSymbolism" class="bg-purple-50/50 rounded-2xl p-6 border border-purple-100/50 mb-4"></div>
+
+      </div>
+    </div>
+  </dialog>
+
+
   <script>
     async function loadPlants() {
       const plantGrid = document.getElementById('plantGrid');
@@ -264,134 +359,171 @@
 
         filteredPlants.forEach((plant, index) => {
           const card = document.createElement('div');
-          // Animation delay for stagger effect
+          // Staggered list animation
           card.style.animationDelay = `${index * 50}ms`;
-          card.className = "card-hover group bg-white rounded-3xl overflow-hidden shadow-sm border border-stone-100 flex flex-col relative";
+          card.className = "card-hover group bg-white rounded-3xl overflow-hidden shadow-sm border border-stone-100 flex flex-col relative h-96 cursor-pointer";
 
-          // --- Image Section ---
+          // Make entire card clickable
+          card.onclick = () => openModal(plant);
+
+          // --- Image Section (Tall) ---
           const imgContainer = document.createElement('div');
-          imgContainer.className = "relative h-64 overflow-hidden bg-stone-100";
+          imgContainer.className = "relative h-2/3 overflow-hidden bg-stone-100";
 
           const img = document.createElement('img');
           const thumbPath = plant.reference_image.url.replace("photos/", "thumbnails/");
           img.src = thumbPath;
-          img.alt = `Photo of ${plant.identified_name}`;
           img.className = "w-full h-full object-cover transition-transform duration-700 group-hover:scale-110";
           img.loading = "lazy";
 
-          // Overlay gradient
-          const overlay = document.createElement('div');
-          overlay.className = "absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60";
+          // Badge: Personality
+          if (plant.plant_personality) {
+            const vibe = document.createElement('div');
+            vibe.className = "absolute top-3 right-3 bg-white/90 backdrop-blur text-jungle text-xs font-bold px-3 py-1.5 rounded-full shadow-lg z-10";
+            vibe.textContent = plant.plant_personality;
+            imgContainer.appendChild(vibe);
+          }
 
-          // Confidence Ring/Badge
+          // Badge: Confidence Ring
           if (plant.confidence) {
             const confPercent = Math.round(plant.confidence * 100);
-            const badge = document.createElement('div');
-            let color = confPercent >= 90 ? "bg-emerald-500" : confPercent >= 70 ? "bg-amber-500" : "bg-red-500";
-            badge.className = "absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-lg text-xs font-bold text-jungle shadow-sm flex items-center gap-1.5";
-            badge.innerHTML = `<span class="w-2 h-2 rounded-full ${color}"></span> ${confPercent}%`;
-            imgContainer.appendChild(badge);
+            const ring = document.createElement('div');
+            let color = confPercent >= 90 ? "border-emerald-500 text-emerald-600" : "border-amber-500 text-amber-600";
+            ring.className = `absolute top-3 left-3 w-10 h-10 rounded-full bg-white flex items-center justify-center text-[10px] font-bold border-2 ${color} shadow-lg`;
+            ring.textContent = `${confPercent}%`;
+            imgContainer.appendChild(ring);
           }
 
           imgContainer.appendChild(img);
-          imgContainer.appendChild(overlay);
-
-          // Title on Image
-          const titleOverlay = document.createElement('div');
-          titleOverlay.className = "absolute bottom-0 left-0 p-5 text-white w-full";
-
-          const title = document.createElement('h2');
-          title.textContent = plant.identified_name;
-          title.className = "font-serif text-2xl font-bold leading-tight drop-shadow-md";
-          titleOverlay.appendChild(title);
-
-          const sci = document.createElement('p');
-          sci.textContent = plant.scientific_name;
-          sci.className = "text-white/80 text-sm italic font-light tracking-wide";
-          titleOverlay.appendChild(sci);
-
-          imgContainer.appendChild(titleOverlay);
           card.appendChild(imgContainer);
 
-          // --- Content Body ---
+          // --- Simple Body ---
           const body = document.createElement('div');
-          body.className = "p-5 flex flex-col flex-grow";
+          body.className = "p-5 flex flex-col justify-between h-1/3";
 
-          // Local Names
-          if (plant.local_names && plant.local_names.length) {
-            const localWrap = document.createElement('div');
-            localWrap.className = "mb-4";
-            const localLabel = document.createElement('span');
-            localLabel.className = "text-xs font-bold text-terracotta uppercase tracking-wider block mb-1";
-            localLabel.textContent = "Also known as";
+          // Title
+          const titleBox = document.createElement('div');
+          titleBox.innerHTML = `<h2 class="font-serif text-xl font-bold text-jungle leading-tight truncate">${plant.identified_name}</h2>
+                                <p class="text-leaf/60 text-sm italic truncate">${plant.scientific_name}</p>`;
+          body.appendChild(titleBox);
 
-            const localText = document.createElement('p');
-            localText.className = "text-sm text-leaf/80";
-            localText.textContent = plant.local_names.map(l => l.name).slice(0, 3).join(', ');
+          // Footer Icons
+          const iconDiv = document.createElement('div');
+          iconDiv.className = "flex gap-1";
+          if (plant.is_flowering) iconDiv.innerHTML += '<span title="Flowering" class="bg-pink-50 text-pink-600 p-1 rounded">🌸</span>';
+          if (plant.is_edible) iconDiv.innerHTML += '<span title="Edible" class="bg-amber-50 text-amber-600 p-1 rounded">🥗</span>';
+          if (plant.is_medicinal) iconDiv.innerHTML += '<span title="Medicinal" class="bg-blue-50 text-blue-600 p-1 rounded">💊</span>';
+          if (plant.is_toxic_to_pets) iconDiv.innerHTML += '<span title="Toxic" class="bg-red-50 text-red-600 p-1 rounded">⚠️</span>';
 
-            localWrap.appendChild(localLabel);
-            localWrap.appendChild(localText);
-            body.appendChild(localWrap);
-          }
+          const footer = document.createElement('div');
+          footer.className = "flex items-center justify-between mt-auto";
+          footer.appendChild(iconDiv);
 
-          // Fun Fact
-          if (plant.fun_fact && plant.fun_fact.text) {
-            const factBox = document.createElement('div');
-            factBox.className = "bg-stone-50 p-3 rounded-xl mb-4 border border-stone-100";
-            const factText = document.createElement('p');
-            factText.className = "text-xs text-leaf/90 italic leading-relaxed";
-            factText.textContent = `"${plant.fun_fact.text}"`;
-            factBox.appendChild(factText);
-            body.appendChild(factBox);
-          }
+          const viewBtn = document.createElement('span');
+          viewBtn.className = "text-terracotta text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all";
+          viewBtn.innerHTML = 'View <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>';
+          footer.appendChild(viewBtn);
 
-          // Attributes (Footer of card)
-          const attrContainer = document.createElement('div');
-          attrContainer.className = "mt-auto flex flex-wrap gap-2 pt-4 border-t border-stone-100";
-
-          const attrs = [
-            { label: "Flowering", value: plant.is_flowering, icon: "🌸", bg: "bg-pink-50", text: "text-pink-700" },
-            { label: "Medicinal", value: plant.is_medicinal, icon: "💊", bg: "bg-blue-50", text: "text-blue-700" },
-            { label: "Edible", value: plant.is_edible, icon: "🥗", bg: "bg-amber-50", text: "text-amber-700" },
-            { label: "Toxic", value: plant.is_toxic_to_pets, icon: "⚠️", bg: "bg-red-50", text: "text-red-700" }
-          ];
-
-          let hasAttrs = false;
-          attrs.forEach(a => {
-            if (a.value) {
-              hasAttrs = true;
-              const span = document.createElement('span');
-              span.className = `p-1.5 rounded-md ${a.bg} ${a.text} text-xs`;
-              span.title = a.label;
-              span.textContent = a.icon;
-              attrContainer.appendChild(span);
-            }
-          });
-
-          if (!hasAttrs) {
-            const empty = document.createElement('span');
-            empty.className = "text-xs text-stone-400 italic";
-            empty.textContent = "No special traits";
-            attrContainer.appendChild(empty);
-          }
-
-          // Timestamp
-          const dateSpan = document.createElement('span');
-          dateSpan.className = "ml-auto text-xs text-stone-400 pt-1";
-          if (plant.date_added) {
-            const date = new Date(plant.date_added);
-            dateSpan.textContent = date.toLocaleDateString();
-          }
-          attrContainer.appendChild(dateSpan);
-
-          body.appendChild(attrContainer);
+          body.appendChild(footer);
           card.appendChild(body);
-
           fragment.appendChild(card);
         });
 
         plantGrid.appendChild(fragment);
       }
+
+      // --- Modal Logic ---
+
+      function openModal(plant) {
+        const m = document.getElementById('detailModal');
+        const img = document.getElementById('modalImg');
+
+        // 1. Header Data
+        img.src = plant.reference_image.url;
+        document.getElementById('modalName').textContent = plant.identified_name;
+        document.getElementById('modalSci').textContent = plant.scientific_name;
+
+        // 2. Badges
+        const badgeContainer = document.getElementById('modalBadges');
+        badgeContainer.innerHTML = '';
+        if (plant.plant_personality)
+          addBadge(badgeContainer, `🎭 ${plant.plant_personality}`, "bg-terracotta text-white");
+
+        if (plant.is_flowering) addBadge(badgeContainer, "🌸 Flowering", "bg-pink-100 text-pink-700");
+        if (plant.is_edible) addBadge(badgeContainer, "🥗 Edible", "bg-amber-100 text-amber-700");
+        if (plant.is_medicinal) addBadge(badgeContainer, "💊 Medicinal", "bg-blue-100 text-blue-700");
+        if (plant.is_toxic_to_pets) addBadge(badgeContainer, "⚠️ Toxic to Pets", "bg-red-100 text-red-700");
+
+        // 3. Bio
+        const localNames = (plant.local_names || []).map(l => l.name).join(', ') || "None known";
+        document.getElementById('modalLocal').textContent = localNames;
+
+        const life = plant.lifespan ? ` • ${plant.lifespan}` : '';
+        document.getElementById('modalOrigin').textContent = (plant.origin_region || "Unknown") + life;
+
+        const fact = plant.fun_fact?.text || "No specific fun fact available.";
+        document.getElementById('modalFactBox').innerHTML = `<span class="font-bold">Did you know?</span> "${fact}"`;
+
+        // 4. Care Grid
+        const careContainer = document.getElementById('modalCareGrid');
+        careContainer.innerHTML = '';
+        const care = plant.care || {};
+
+        const careItems = [
+          { l: "Water", v: care.watering_frequency, i: "💧" },
+          { l: "Sun", v: care.sunlight_requirement, i: "☀️" },
+          { l: "Soil", v: care.soil_type, i: "🪴" },
+          { l: "Growth", v: care.growth_rate, i: "📈" }
+        ];
+
+        careItems.forEach(item => {
+          const div = document.createElement('div');
+          div.className = "bg-stone-50 rounded-lg p-3 border border-stone-100";
+          div.innerHTML = `<p class="text-[10px] uppercase text-leaf/50 font-bold tracking-wider mb-1">${item.i} ${item.l}</p>
+                              <p class="text-sm font-medium text-jungle leading-snug">${item.v || 'Unknown'}</p>`;
+          careContainer.appendChild(div);
+        });
+
+        // 5. Symbolism
+        const symBox = document.getElementById('modalSymbolism');
+        if (plant.symbolism) {
+          symBox.style.display = "block";
+          symBox.innerHTML = `<h4 class="font-serif text-lg text-purple-900 mb-2">✨ Symbolism</h4><p class="text-purple-800/80 italic">${plant.symbolism}</p>`;
+        } else {
+          symBox.style.display = "none";
+        }
+
+        // Show Modal
+        m.showModal();
+        // Prevent body scroll
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        const m = document.getElementById('detailModal');
+        m.close();
+        document.body.style.overflow = '';
+      }
+
+      function addBadge(parent, text, classes) {
+        const span = document.createElement('span');
+        span.className = `px-3 py-1 rounded-full text-xs font-bold ${classes}`;
+        span.textContent = text;
+        parent.appendChild(span);
+      }
+
+      // Close modal on click outside
+      document.getElementById('detailModal').addEventListener('click', (e) => {
+        const rect = e.target.getBoundingClientRect();
+        if (rect.left > e.clientX || rect.right < e.clientX || rect.top > e.clientY || rect.bottom < e.clientY) {
+          closeModal();
+        }
+      });
+
+      // Restore scroll on native close (Escape key)
+      document.getElementById('detailModal').addEventListener('close', () => {
+        document.body.style.overflow = '';
+      });
 
       function render() {
         const filtered = getFilteredAndSortedPlants();
@@ -401,12 +533,12 @@
       // --- Data Fetching ---
 
       try {
-        const indexRes = await fetch('data/index.json');
+        const indexRes = await fetch('data/index.json?v=' + Date.now());
         const jsonFiles = await indexRes.json();
 
         for (const filename of jsonFiles) {
           try {
-            const res = await fetch(`data/${filename}`);
+            const res = await fetch(`data/${filename}?v=` + Date.now());
             const plant = await res.json();
             plants.push(plant);
           } catch (e) {

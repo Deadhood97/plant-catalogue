@@ -1,60 +1,66 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Bodhi Tree",
+      "identified_name": "Peepal Tree",
       "scientific_name": "Ficus religiosa",
       "confidence": 0.85
     },
     {
-      "identified_name": "Peepal Tree",
+      "identified_name": "Bodhi Tree",
       "scientific_name": "Ficus religiosa",
-      "confidence": 0.7
+      "confidence": 0.75
     },
     {
       "identified_name": "Sacred Fig",
       "scientific_name": "Ficus religiosa",
-      "confidence": 0.6
+      "confidence": 0.65
     }
   ],
-  "identified_name": "Bodhi Tree",
+  "identified_name": "Peepal Tree",
   "scientific_name": "Ficus religiosa",
   "local_names": [
     {
-      "name": "Arasa Maram",
-      "language": "Tamil",
-      "region": "South India",
-      "confidence": 0.85
-    },
-    {
-      "name": "Asvattha",
-      "language": "Sanskrit",
-      "region": "Indian Subcontinent",
-      "confidence": 0.85
-    },
-    {
-      "name": "Peepal",
+      "name": "पीपल",
       "language": "Hindi",
-      "region": "North India",
+      "region": "India",
+      "confidence": 0.9
+    },
+    {
+      "name": "Ashvattha",
+      "language": "Sanskrit",
+      "region": "India",
       "confidence": 0.85
     }
   ],
   "confidence": 0.85,
   "fun_fact": {
-    "text": "The Bodhi tree is famously known as the sacred fig under which Siddhartha Gautama, the Buddha, attained enlightenment.",
+    "text": "The Peepal Tree is historically sacred in India and is often associated with enlightenment, as it is believed Gautama Buddha attained enlightenment while meditating under such a tree.",
     "confidence": 0.9,
-    "category": "historical"
+    "category": "cultural"
   },
-  "is_flowering": null,
+  "is_flowering": true,
   "is_medicinal": null,
   "is_edible": null,
   "is_toxic_to_pets": null,
-  "plant_type": "Tree",
-  "environment": "Tropical and subtropical regions",
-  "difficulty": "Moderate",
+  "plant_type": "tree",
+  "environment": "outdoor",
+  "difficulty": "moderate",
+  "care": {
+    "watering_frequency": "Water regularly but do not overwater; allow soil to dry slightly between watering",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-drained, fertile soil",
+    "growth_rate": "Moderate to fast",
+    "hardiness_zone": "Zone 9 through 11"
+  },
+  "origin_region": "Indian subcontinent",
+  "plant_personality": "Sacred Guardian",
+  "fragrance": "Mild, not notably fragrant",
+  "symbolism": "Symbol of enlightenment, fertility, and longevity in Indian culture",
+  "lifespan": "Decades to centuries",
   "reference_image": {
     "url": "photos/PXL_20251222_103530351.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:55:09.769936Z"
+  "date_added": "2025-12-28T05:16:03.642073Z"
 }

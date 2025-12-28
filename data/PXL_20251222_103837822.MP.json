@@ -8,36 +8,53 @@
     {
       "identified_name": "Bamboo Palm",
       "scientific_name": "Chamaedorea seifrizii",
-      "confidence": 0.6
+      "confidence": 0.55
+    },
+    {
+      "identified_name": "Fishtail Palm",
+      "scientific_name": "Caryota mitis",
+      "confidence": 0.3
     }
   ],
   "identified_name": "Lady Palm",
   "scientific_name": "Rhapis excelsa",
   "local_names": [
     {
-      "name": "Rhapis",
-      "language": "English",
-      "region": "Global",
-      "confidence": 0.9
+      "name": "Chappal Khaali",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.7
     }
   ],
   "confidence": 0.85,
   "fun_fact": {
-    "text": "Lady Palm is popular as a houseplant because it tolerates low light and helps improve indoor air quality.",
-    "confidence": 0.8,
-    "category": "Gardening"
+    "text": "Lady Palm is popular as an ornamental indoor plant because of its elegant fan-shaped leaves and its ability to improve indoor air quality.",
+    "confidence": 0.9,
+    "category": "cultural & gardening"
   },
-  "is_flowering": false,
+  "is_flowering": true,
   "is_medicinal": null,
-  "is_edible": false,
+  "is_edible": null,
   "is_toxic_to_pets": null,
-  "plant_type": "Indoor palm",
-  "environment": "Indoor, shaded or indirect light",
+  "plant_type": "Palm",
+  "environment": "Indoor and shaded outdoor areas",
   "difficulty": "Easy to moderate",
+  "care": {
+    "watering_frequency": "Water when the top inch of soil feels dry, about once a week",
+    "sunlight_requirement": "Indirect or filtered light, avoid direct sunlight",
+    "soil_type": "Well-draining potting mix, slightly acidic to neutral",
+    "growth_rate": "Slow to moderate",
+    "hardiness_zone": "9b to 11"
+  },
+  "origin_region": "Southern China and Taiwan",
+  "plant_personality": "Elegant & Air-Purifying Buddy",
+  "fragrance": "None",
+  "symbolism": "Represents beauty, protection, and good luck in feng shui",
+  "lifespan": "Several years to decades under proper care",
   "reference_image": {
     "url": "photos/PXL_20251222_103837822.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:45:13.191537Z"
+  "date_added": "2025-12-28T05:05:10.429108Z"
 }

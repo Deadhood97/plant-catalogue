@@ -1,22 +1,17 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Madagascar Periwinkle",
+      "identified_name": "Periwinkle",
       "scientific_name": "Catharanthus roseus",
-      "confidence": 0.85
+      "confidence": 0.9
     },
     {
       "identified_name": "Vinca",
       "scientific_name": "Vinca minor",
-      "confidence": 0.4
-    },
-    {
-      "identified_name": "Common Periwinkle",
-      "scientific_name": "Catharanthus roseus",
-      "confidence": 0.35
+      "confidence": 0.6
     }
   ],
-  "identified_name": "Madagascar Periwinkle",
+  "identified_name": "Periwinkle",
   "scientific_name": "Catharanthus roseus",
   "local_names": [
     {
@@ -26,29 +21,41 @@
       "confidence": 0.9
     },
     {
-      "name": "Nithyakalyani",
-      "language": "Tamil",
+      "name": "Nithya Mallige",
+      "language": "Kannada",
       "region": "India",
-      "confidence": 0.8
+      "confidence": 0.7
     }
   ],
-  "confidence": 0.85,
+  "confidence": 0.9,
   "fun_fact": {
-    "text": "Madagascar Periwinkle is widely grown as an ornamental plant for its pretty flowers and is known for its use in traditional medicine. It also inspired research for cancer-fighting compounds.",
+    "text": "Periwinkle is known for its medicinal alkaloids vincristine and vinblastine, used in cancer treatment.",
     "confidence": 0.8,
-    "category": "cultural"
+    "category": "Medicinal"
   },
   "is_flowering": true,
   "is_medicinal": true,
   "is_edible": false,
   "is_toxic_to_pets": true,
-  "plant_type": "herbaceous perennial",
-  "environment": "tropical and subtropical regions",
-  "difficulty": "easy to moderate care",
+  "plant_type": "Herbaceous perennial",
+  "environment": "Tropical and subtropical climates",
+  "difficulty": "Low",
+  "care": {
+    "watering_frequency": "Water when soil is dry, avoid overwatering",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-draining soil",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Madagascar",
+  "plant_personality": "Hardy Bloomer",
+  "fragrance": "Mild, slightly sweet",
+  "symbolism": "Symbolizes friendship and remembrance in various cultures",
+  "lifespan": "Perennial, but often grown as an annual in cooler climates",
   "reference_image": {
     "url": "photos/PXL_20251222_103513668.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:53:28.201380Z"
+  "date_added": "2025-12-28T05:14:20.421968Z"
 }

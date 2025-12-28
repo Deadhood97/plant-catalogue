@@ -6,14 +6,14 @@
       "confidence": 0.95
     },
     {
-      "identified_name": "Cuban Oregano",
-      "scientific_name": "Plectranthus barbatus",
-      "confidence": 0.7
+      "identified_name": "Mexican Mint",
+      "scientific_name": "Plectranthus neochilus",
+      "confidence": 0.65
     },
     {
-      "identified_name": "Mexican Mint",
-      "scientific_name": "Plectranthus coleoides",
-      "confidence": 0.5
+      "identified_name": "Cuban Oregano",
+      "scientific_name": "Plectranthus barbatus",
+      "confidence": 0.6
     }
   ],
   "identified_name": "Indian Borage",
@@ -26,29 +26,41 @@
       "confidence": 0.9
     },
     {
-      "name": "Gollukura",
-      "language": "Telugu",
+      "name": "Vallarai",
+      "language": "Tamil",
       "region": "India",
       "confidence": 0.85
     }
   ],
   "confidence": 0.95,
   "fun_fact": {
-    "text": "Indian Borage is often grown indoors for its aromatic leaves which are used in traditional cooking and folk remedies in India.",
-    "confidence": 0.85,
-    "category": "Cultural"
+    "text": "Indian Borage is often kept in homes in India for its pleasant aroma and is believed to ward off mosquitoes and purify the air.",
+    "confidence": 0.9,
+    "category": "cultural"
   },
   "is_flowering": true,
   "is_medicinal": true,
-  "is_edible": true,
+  "is_edible": false,
   "is_toxic_to_pets": null,
   "plant_type": "Herb",
-  "environment": "Tropical and subtropical gardens, indoor pots",
-  "difficulty": "Easy to moderate",
+  "environment": "Tropical and subtropical regions, grows well in pots indoors or in shaded outdoor areas",
+  "difficulty": "Easy to grow",
+  "care": {
+    "watering_frequency": "Moderate, allow soil to dry between waterings",
+    "sunlight_requirement": "Partial shade to full sun",
+    "soil_type": "Well-draining soil, prefers sandy or loamy",
+    "growth_rate": "Moderate to fast",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Southern Africa and India",
+  "plant_personality": "Aromatic Protector",
+  "fragrance": "Strong, pungent, oregano-like aroma",
+  "symbolism": "Associated with protection and health in folklore",
+  "lifespan": "Perennial",
   "reference_image": {
     "url": "photos/PXL_20251222_103954792.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:48:27.917802Z"
+  "date_added": "2025-12-28T05:08:42.998918Z"
 }

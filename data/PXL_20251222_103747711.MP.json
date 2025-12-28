@@ -6,13 +6,13 @@
       "confidence": 0.85
     },
     {
-      "identified_name": "Chinese Hibiscus",
-      "scientific_name": "Hibiscus rosa-sinensis",
-      "confidence": 0.75
+      "identified_name": "Rosemallow",
+      "scientific_name": "Hibiscus mutabilis",
+      "confidence": 0.65
     },
     {
-      "identified_name": "Shoeblackplant",
-      "scientific_name": "Hibiscus rosa-sinensis 'Moonglow'",
+      "identified_name": "Chinese hibiscus",
+      "scientific_name": "Hibiscus rosa-sinensis var.",
       "confidence": 0.55
     }
   ],
@@ -23,32 +23,50 @@
       "name": "Gudhal",
       "language": "Hindi",
       "region": "India",
-      "confidence": 0.85
+      "confidence": 0.9
     },
     {
-      "name": "Japa Kusuma",
+      "name": "Japa mala",
       "language": "Kannada",
-      "region": "Karnataka, India",
-      "confidence": 0.75
+      "region": "India",
+      "confidence": 0.8
+    },
+    {
+      "name": "Chevuru",
+      "language": "Telugu",
+      "region": "India",
+      "confidence": 0.8
     }
   ],
   "confidence": 0.85,
   "fun_fact": {
-    "text": "Hibiscus flowers are widely used in Indian culture for religious offerings and as decorative garlands.",
-    "confidence": 0.9,
-    "category": "cultural"
+    "text": "Hibiscus flowers are culturally significant in many countries and are often used in traditional ceremonies, including in Hindu worship where they are offered to deities.",
+    "confidence": 0.85,
+    "category": "Cultural Significance"
   },
   "is_flowering": true,
-  "is_medicinal": true,
+  "is_medicinal": null,
   "is_edible": null,
   "is_toxic_to_pets": null,
-  "plant_type": "shrub",
-  "environment": "tropical and subtropical",
-  "difficulty": "easy",
+  "plant_type": "Shrub",
+  "environment": "Tropical and subtropical regions",
+  "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Regular watering, allowing soil to dry between waterings",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-draining, fertile soil",
+    "growth_rate": "Moderate to fast",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Asia",
+  "plant_personality": "Bright and Cheerful",
+  "fragrance": "Mild, sometimes sweet floral scent",
+  "symbolism": "Symbolizes beauty, love, and femininity in many cultures",
+  "lifespan": "Perennial, typically several years",
   "reference_image": {
     "url": "photos/PXL_20251222_103747711.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:42:16.650798Z"
+  "date_added": "2025-12-28T05:01:48.401393Z"
 }

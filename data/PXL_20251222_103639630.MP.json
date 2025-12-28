@@ -3,17 +3,17 @@
     {
       "identified_name": "Rose",
       "scientific_name": "Rosa",
-      "confidence": 0.9
+      "confidence": 0.95
     },
     {
-      "identified_name": "Blackberry",
-      "scientific_name": "Rubus fruticosus",
-      "confidence": 0.4
+      "identified_name": "Japanese Rose",
+      "scientific_name": "Rosa rugosa",
+      "confidence": 0.6
     },
     {
-      "identified_name": "Raspberry",
-      "scientific_name": "Rubus idaeus",
-      "confidence": 0.3
+      "identified_name": "Multiflora Rose",
+      "scientific_name": "Rosa multiflora",
+      "confidence": 0.55
     }
   ],
   "identified_name": "Rose",
@@ -24,25 +24,43 @@
       "language": "Hindi",
       "region": "India",
       "confidence": 0.9
+    },
+    {
+      "name": "Gulabi",
+      "language": "Bengali",
+      "region": "India",
+      "confidence": 0.8
     }
   ],
-  "confidence": 0.9,
+  "confidence": 0.95,
   "fun_fact": {
-    "text": "Roses have long been symbols of love and beauty and are among the most popular flowers worldwide.",
-    "confidence": 0.8,
+    "text": "The rose is the national flower of several countries including the United States, United Kingdom, and Iran, and is often associated with love and romance.",
+    "confidence": 0.9,
     "category": "cultural"
   },
   "is_flowering": true,
   "is_medicinal": null,
   "is_edible": null,
   "is_toxic_to_pets": null,
-  "plant_type": "shrub",
-  "environment": "gardens, pots",
-  "difficulty": "moderate",
+  "plant_type": "Shrub",
+  "environment": "Outdoor garden, temperate to subtropical climates",
+  "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Water regularly but allow soil to dry between watering",
+    "sunlight_requirement": "Full sun for at least 6 hours a day",
+    "soil_type": "Well-drained, loamy soil with good organic content",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "USDA zones 5-9"
+  },
+  "origin_region": "Asia",
+  "plant_personality": "Romantic Classic",
+  "fragrance": "Sweet and fragrant",
+  "symbolism": "Love, beauty, passion, purity",
+  "lifespan": "Perennial",
   "reference_image": {
     "url": "photos/PXL_20251222_103639630.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:41:18.286681Z"
+  "date_added": "2025-12-28T05:00:50.237870Z"
 }

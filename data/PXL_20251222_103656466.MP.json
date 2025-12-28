@@ -1,48 +1,66 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Oleander",
-      "scientific_name": "Nerium oleander",
+      "identified_name": "Olea europaea (Olive Plant)",
+      "scientific_name": "Olea europaea",
       "confidence": 0.85
     },
     {
-      "identified_name": "Frangipani",
-      "scientific_name": "Plumeria rubra",
-      "confidence": 0.5
+      "identified_name": "Nerium oleander",
+      "scientific_name": "Nerium oleander",
+      "confidence": 0.4
     },
     {
-      "identified_name": "Desert Rose",
-      "scientific_name": "Adenium obesum",
+      "identified_name": "Ficus elastica (Rubber Plant)",
+      "scientific_name": "Ficus elastica",
       "confidence": 0.3
     }
   ],
-  "identified_name": "Oleander",
-  "scientific_name": "Nerium oleander",
+  "identified_name": "Olea europaea (Olive Plant)",
+  "scientific_name": "Olea europaea",
   "local_names": [
     {
-      "name": "Kaner",
+      "name": "Jaitun",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.8
+    },
+    {
+      "name": "Jaitra",
+      "language": "Marathi",
+      "region": "India",
+      "confidence": 0.6
     }
   ],
   "confidence": 0.85,
   "fun_fact": {
-    "text": "Oleander is often used as an ornamental plant in gardens and along roadsides because of its beautiful and abundant flowers.",
-    "confidence": 0.75,
-    "category": "aesthetic"
+    "text": "Olive trees have been cultivated for thousands of years and are symbolic of peace and prosperity, often seen in Mediterranean culture and mythology.",
+    "confidence": 0.85,
+    "category": "cultural"
   },
   "is_flowering": true,
   "is_medicinal": null,
   "is_edible": null,
-  "is_toxic_to_pets": true,
-  "plant_type": "Shrub",
-  "environment": "Warm temperate to subtropical",
-  "difficulty": "Moderate",
+  "is_toxic_to_pets": null,
+  "plant_type": "Shrub / Small Tree",
+  "environment": "Mediterranean, subtropical to temperate regions",
+  "difficulty": "Moderate care",
+  "care": {
+    "watering_frequency": "Water every 1-2 weeks, allow soil to dry between watering",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-drained, sandy or loamy soil",
+    "growth_rate": "Slow to moderate",
+    "hardiness_zone": "8-11"
+  },
+  "origin_region": "Mediterranean Basin",
+  "plant_personality": "Resilient Classic",
+  "fragrance": "Mild, slightly fruity when flowering",
+  "symbolism": "Symbol of peace, wisdom, and victory in many cultures",
+  "lifespan": "Long-lived, can live for hundreds of years",
   "reference_image": {
     "url": "photos/PXL_20251222_103656466.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:41:41.345840Z"
+  "date_added": "2025-12-28T05:01:18.297873Z"
 }

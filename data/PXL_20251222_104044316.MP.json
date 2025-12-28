@@ -1,43 +1,60 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Polka Dot Plant",
-      "scientific_name": "Hypoestes phyllostachya",
-      "confidence": 0.85
+      "identified_name": "Euphorbia trigona",
+      "scientific_name": "Euphorbia trigona",
+      "confidence": 0.95
     },
     {
-      "identified_name": "Variegated Coral Plant",
-      "scientific_name": "Jatropha multifida variegata",
+      "identified_name": "Cactus Euphorbia",
+      "scientific_name": "Euphorbia",
+      "confidence": 0.75
+    },
+    {
+      "identified_name": "African Milk Tree",
+      "scientific_name": "Euphorbia trigona",
       "confidence": 0.6
     }
   ],
-  "identified_name": "Polka Dot Plant",
-  "scientific_name": "Hypoestes phyllostachya",
+  "identified_name": "Euphorbia trigona",
+  "scientific_name": "Euphorbia trigona",
   "local_names": [
     {
-      "name": "Chandni Phool",
-      "language": "Hindi",
-      "region": "India",
-      "confidence": 0.6
+      "name": "African Milk Tree",
+      "language": "English",
+      "region": "Global",
+      "confidence": 0.9
     }
   ],
-  "confidence": 0.85,
+  "confidence": 0.95,
   "fun_fact": {
-    "text": "The Polka Dot Plant is popular for its vibrant and colorful spotted leaves that add a splash of color to indoor gardens.",
-    "confidence": 0.8,
-    "category": "aesthetic"
+    "text": "Euphorbia trigona, often called the African Milk Tree, is a popular ornamental plant known for its striking upright stems and attractive variegated leaves. It exudes a milky sap that was historically used as a natural insecticide in some African cultures.",
+    "confidence": 0.9,
+    "category": "Cultural and Gardening"
   },
-  "is_flowering": true,
+  "is_flowering": false,
   "is_medicinal": null,
-  "is_edible": null,
-  "is_toxic_to_pets": null,
-  "plant_type": "herbaceous",
-  "environment": "indoor and shaded outdoor areas",
-  "difficulty": "easy",
+  "is_edible": false,
+  "is_toxic_to_pets": true,
+  "plant_type": "Succulent",
+  "environment": "Indoor/Outdoor, warm climates",
+  "difficulty": "Low to Moderate",
+  "care": {
+    "watering_frequency": "Allow soil to dry between watering; water moderately in growing season, less in winter",
+    "sunlight_requirement": "Bright, indirect light; can tolerate some direct sun",
+    "soil_type": "Well-draining succulent or cactus soil",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Central Africa",
+  "plant_personality": "Architectural Showstopper",
+  "fragrance": "None",
+  "symbolism": "Symbolizes endurance and resilience due to its hardy nature and ability to thrive in tough conditions.",
+  "lifespan": "Perennial",
   "reference_image": {
     "url": "photos/PXL_20251222_104044316.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:51:07.491085Z"
+  "date_added": "2025-12-28T05:11:44.687688Z"
 }

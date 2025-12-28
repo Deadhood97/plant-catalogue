@@ -2,42 +2,59 @@
   "candidate_identifications": [
     {
       "identified_name": "Dahlia",
-      "scientific_name": "Dahlia spp.",
-      "confidence": 0.9
+      "scientific_name": "Dahlia pinnata",
+      "confidence": 0.85
+    },
+    {
+      "identified_name": "Chrysanthemum",
+      "scientific_name": "Chrysanthemum morifolium",
+      "confidence": 0.5
     },
     {
       "identified_name": "Zinnia",
       "scientific_name": "Zinnia elegans",
-      "confidence": 0.4
+      "confidence": 0.3
     }
   ],
   "identified_name": "Dahlia",
-  "scientific_name": "Dahlia spp.",
+  "scientific_name": "Dahlia pinnata",
   "local_names": [
     {
-      "name": "डालिया",
+      "name": "डाहलिया",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.8
     }
   ],
-  "confidence": 0.9,
+  "confidence": 0.85,
   "fun_fact": {
-    "text": "Dahlias were declared the national flower of Mexico, where they are native, and are famous for their wide variety of flower shapes and colors.",
-    "confidence": 0.8,
-    "category": "cultural"
+    "text": "Dahlias are native to Mexico and Central America and were brought to Europe in the 18th century where they became popular garden plants.",
+    "confidence": 0.75,
+    "category": "Cultural/Historical"
   },
   "is_flowering": true,
   "is_medicinal": null,
   "is_edible": null,
   "is_toxic_to_pets": null,
-  "plant_type": "herbaceous perennial",
-  "environment": "garden, temperate to subtropical",
-  "difficulty": "moderate",
+  "plant_type": "Flowering perennial",
+  "environment": "Gardens, pots, outdoor sunny areas",
+  "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Water regularly but avoid waterlogging; keep soil moist",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-drained, fertile soil rich in organic matter",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "8-11"
+  },
+  "origin_region": "Mexico and Central America",
+  "plant_personality": "Showy Performer",
+  "fragrance": "Light to none",
+  "symbolism": "Symbolizes elegance, dignity, and lasting bonds",
+  "lifespan": "Perennial",
   "reference_image": {
     "url": "photos/PXL_20251222_103630815.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:43:06.309392Z"
+  "date_added": "2025-12-28T05:02:46.156693Z"
 }

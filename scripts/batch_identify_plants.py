@@ -3,6 +3,12 @@ import json
 import base64
 from datetime import datetime
 from openai import OpenAI
+from dotenv import load_dotenv
+
+import argparse
+
+# Load env vars
+load_dotenv()
 
 # Initialize client
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -11,6 +17,11 @@ PHOTOS_DIR = "photos"
 DATA_DIR = "data"
 
 os.makedirs(DATA_DIR, exist_ok=True)
+
+parser = argparse.ArgumentParser(description="Batch identify plants.")
+parser.add_argument("--force", action="store_true", help="Overwrite existing JSON files.")
+parser.add_argument("--limit", type=int, help="Limit number of files to process.")
+args = parser.parse_args()
 
 # Load prompt from your existing updated prompt
 PROMPT = """\
@@ -55,6 +66,18 @@ Schema:
   "plant_type": "",
   "environment": "",
   "difficulty": "",
+  "care": {
+    "watering_frequency": "",
+    "sunlight_requirement": "",
+    "soil_type": "",
+    "growth_rate": "",
+    "hardiness_zone": ""
+  },
+  "origin_region": "",
+  "plant_personality": "",
+  "fragrance": "",
+  "symbolism": "",
+  "lifespan": "",
   "reference_image": {
     "url": "",
     "source": "",
@@ -70,6 +93,10 @@ Rules:
 - identified_name and scientific_name must match the first candidate
 - confidence must equal the first candidate’s confidence
 - Attributes (flowering, edible, medicinal, toxic, plant_type, environment, difficulty) must be based ONLY on the first candidate
+- NEW: Fill in the "care" object with specific advice for the primary identification
+- NEW: "plant_personality" should be a fun, short "vibe" description (e.g., "Drama Queen", "Low Maintenance Buddy")
+- NEW: "symbolism" should include cultural or historical meanings
+- NEW: "fragrance" should describe the scent or "None"
 - If overall confidence < 0.6, set identified_name to "unknown" and leave candidate_identifications empty
 - Local names should correspond ONLY to the primary identification
 - Local name should be an Indian local name if available
@@ -87,7 +114,11 @@ Rules:
 """
 
 # Loop through all photos
+count = 0
 for filename in os.listdir(PHOTOS_DIR):
+    if args.limit and count >= args.limit:
+        break
+
     if not filename.lower().endswith((".jpg", ".jpeg", ".png", ".mp4")):
         continue
 
@@ -95,11 +126,12 @@ for filename in os.listdir(PHOTOS_DIR):
     json_filename = os.path.splitext(filename)[0] + ".json"
     json_path = os.path.join(DATA_DIR, json_filename)
 
-    if os.path.exists(json_path):
+    if os.path.exists(json_path) and not args.force:
         print(f"Skipping {filename}, JSON already exists.")
         continue
 
     print(f"Processing {filename} ...")
+    count += 1
 
     # Read and encode image
     with open(photo_path, "rb") as f:

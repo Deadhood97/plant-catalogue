@@ -2,42 +2,65 @@
   "candidate_identifications": [
     {
       "identified_name": "Rose",
-      "scientific_name": "Rosa indica",
-      "confidence": 0.85
+      "scientific_name": "Rosa",
+      "confidence": 0.95
     },
     {
-      "identified_name": "Chinese Rose",
-      "scientific_name": "Hibiscus rosa-sinensis",
-      "confidence": 0.4
+      "identified_name": "Jasmine",
+      "scientific_name": "Jasminum",
+      "confidence": 0.3
+    },
+    {
+      "identified_name": "Bougainvillea",
+      "scientific_name": "Bougainvillea glabra",
+      "confidence": 0.2
     }
   ],
   "identified_name": "Rose",
-  "scientific_name": "Rosa indica",
+  "scientific_name": "Rosa",
   "local_names": [
     {
       "name": "गुलाब",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.9
+    },
+    {
+      "name": "குலாப்",
+      "language": "Tamil",
+      "region": "India",
+      "confidence": 0.8
     }
   ],
-  "confidence": 0.85,
+  "confidence": 0.95,
   "fun_fact": {
-    "text": "The rose is often considered the national flower of India and symbolizes love and beauty in many cultures worldwide.",
-    "confidence": 0.8,
+    "text": "Roses have been symbols of love and beauty for thousands of years and are featured prominently in art, mythology, and literature.",
+    "confidence": 0.9,
     "category": "cultural"
   },
   "is_flowering": true,
-  "is_medicinal": true,
-  "is_edible": false,
-  "is_toxic_to_pets": false,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
   "plant_type": "shrub",
-  "environment": "gardens, temperate to tropical outdoor environments",
+  "environment": "garden, temperate to tropical climates",
   "difficulty": "moderate",
+  "care": {
+    "watering_frequency": "regular but well-drained soil; avoid waterlogging",
+    "sunlight_requirement": "full sun to partial shade",
+    "soil_type": "well-draining, rich in organic matter",
+    "growth_rate": "moderate",
+    "hardiness_zone": "3-11"
+  },
+  "origin_region": "Asia, Europe, North America",
+  "plant_personality": "Romantic Classic",
+  "fragrance": "Sweet and floral fragrance",
+  "symbolism": "Love, passion, beauty, and grace across many cultures",
+  "lifespan": "Perennial",
   "reference_image": {
     "url": "photos/PXL_20251222_103627369.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:55:41.105273Z"
+  "date_added": "2025-12-28T05:16:37.024666Z"
 }

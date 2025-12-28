@@ -12,6 +12,18 @@
   "environment": "",
   "difficulty": "",
 
+  "care": {
+    "watering_frequency": "string",
+    "sunlight_requirement": "string",
+    "soil_type": "string",
+    "growth_rate": "string",
+    "hardiness_zone": "string"
+  },
+  "origin_region": "string",
+  "plant_personality": "string",
+  "fragrance": "string",
+  "symbolism": "string",
+  "lifespan": "string",
   "reference_image": {
     "url": "",
     "source": "",

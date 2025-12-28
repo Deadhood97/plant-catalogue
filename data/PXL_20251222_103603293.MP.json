@@ -1,54 +1,72 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Sacred Basil",
-      "scientific_name": "Ocimum sanctum",
-      "confidence": 0.85
-    },
-    {
       "identified_name": "Holy Basil",
       "scientific_name": "Ocimum tenuiflorum",
-      "confidence": 0.7
+      "confidence": 0.9
+    },
+    {
+      "identified_name": "Common Basil",
+      "scientific_name": "Ocimum basilicum",
+      "confidence": 0.5
     },
     {
       "identified_name": "Wild Basil",
       "scientific_name": "Ocimum gratissimum",
-      "confidence": 0.5
+      "confidence": 0.3
     }
   ],
-  "identified_name": "Sacred Basil",
-  "scientific_name": "Ocimum sanctum",
+  "identified_name": "Holy Basil",
+  "scientific_name": "Ocimum tenuiflorum",
   "local_names": [
     {
       "name": "Tulsi",
       "language": "Hindi",
       "region": "India",
+      "confidence": 0.95
+    },
+    {
+      "name": "Thulasi",
+      "language": "Tamil",
+      "region": "India",
       "confidence": 0.9
     },
     {
       "name": "Tulasi",
-      "language": "Sanskrit",
+      "language": "Kannada",
       "region": "India",
       "confidence": 0.8
     }
   ],
-  "confidence": 0.85,
+  "confidence": 0.9,
   "fun_fact": {
-    "text": "Sacred Basil, or Tulsi, is considered a holy plant in India and is often grown in household courtyards for its spiritual and medicinal significance.",
-    "confidence": 0.8,
-    "category": "cultural"
+    "text": "Holy Basil or Tulsi is considered sacred in Hindu culture and is often grown in homes for its religious significance and medicinal properties.",
+    "confidence": 0.9,
+    "category": "Cultural"
   },
   "is_flowering": true,
   "is_medicinal": true,
   "is_edible": false,
   "is_toxic_to_pets": null,
-  "plant_type": "Herbaceous shrub",
-  "environment": "Tropical and subtropical climates",
-  "difficulty": "Easy to grow",
+  "plant_type": "Herb",
+  "environment": "Tropical to subtropical climates, outdoor garden or pots",
+  "difficulty": "Easy",
+  "care": {
+    "watering_frequency": "Moderate; keep soil moist but not waterlogged",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-drained, fertile soil",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "10-11"
+  },
+  "origin_region": "Indian subcontinent",
+  "plant_personality": "Sacred Healer",
+  "fragrance": "Strong, spicy aromatic scent",
+  "symbolism": "Symbolizes purity, protection, and spiritual connection in Hinduism",
+  "lifespan": "Perennial",
   "reference_image": {
     "url": "photos/PXL_20251222_103603293.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:50:43.321184Z"
+  "date_added": "2025-12-28T05:11:18.372042Z"
 }

@@ -15,19 +15,19 @@
   "scientific_name": "Mangifera indica",
   "local_names": [
     {
-      "name": "आम",
+      "name": "\u0906\u092e",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.9
     },
     {
-      "name": "మామిడి",
+      "name": "\u0c2e\u0c3e\u0c2e\u0c3f\u0c21\u0c3f",
       "language": "Telugu",
       "region": "India",
       "confidence": 0.9
     },
     {
-      "name": "आंबा",
+      "name": "\u0906\u0902\u092c\u093e",
       "language": "Marathi",
       "region": "India",
       "confidence": 0.8
@@ -51,5 +51,15 @@
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:48:57.253689Z"
+  "date_added": "2025-12-27T07:48:57.253689Z",
+  "plant_personality": "Mystery Vibe \u2728",
+  "care": {
+    "watering_frequency": "Check soil",
+    "sunlight_requirement": "Needs light",
+    "soil_type": "Standard mix",
+    "growth_rate": "Varies",
+    "hardiness_zone": "Unknown"
+  },
+  "origin_region": "Earth \ud83c\udf0d",
+  "symbolism": "Growth and Renewal"
 }

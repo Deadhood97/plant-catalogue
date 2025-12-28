@@ -1,48 +1,61 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Swiss Cheese Plant",
+      "identified_name": "Monstera",
       "scientific_name": "Monstera deliciosa",
-      "confidence": 0.95
-    },
-    {
-      "identified_name": "Split-leaf Philodendron",
-      "scientific_name": "Monstera deliciosa",
-      "confidence": 0.85
+      "confidence": 0.9
     },
     {
       "identified_name": "Philodendron",
       "scientific_name": "Philodendron bipinnatifidum",
-      "confidence": 0.4
+      "confidence": 0.6
     }
   ],
-  "identified_name": "Swiss Cheese Plant",
+  "identified_name": "Monstera",
   "scientific_name": "Monstera deliciosa",
   "local_names": [
     {
-      "name": "Money Plant",
+      "name": "Swiss Cheese Plant",
+      "language": "English",
+      "region": "Global",
+      "confidence": 0.9
+    },
+    {
+      "name": "नागफनी",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.7
     }
   ],
-  "confidence": 0.95,
+  "confidence": 0.9,
   "fun_fact": {
-    "text": "Monstera deliciosa is popular worldwide as a decorative houseplant due to its unique leaf holes and ease of care.",
+    "text": "Monstera deliciosa is famous for its unique perforated leaves which have inspired many ornamental designs and art around the world.",
     "confidence": 0.9,
     "category": "aesthetic"
   },
-  "is_flowering": false,
+  "is_flowering": true,
   "is_medicinal": null,
   "is_edible": null,
-  "is_toxic_to_pets": null,
-  "plant_type": "Tropical perennial climbing plant",
-  "environment": "Indoor or shaded outdoor environments",
-  "difficulty": "Easy to moderate care",
+  "is_toxic_to_pets": true,
+  "plant_type": "Tropical vine",
+  "environment": "Indoor and shaded outdoor environments",
+  "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Water when the top inch of soil feels dry",
+    "sunlight_requirement": "Bright indirect light",
+    "soil_type": "Well-draining potting soil",
+    "growth_rate": "Moderate to fast",
+    "hardiness_zone": "10-12"
+  },
+  "origin_region": "Tropical rainforests of southern Mexico",
+  "plant_personality": "Tropical Trendsetter",
+  "fragrance": "None",
+  "symbolism": "Represents long life and respect in some cultures",
+  "lifespan": "Several years to decades with proper care",
   "reference_image": {
     "url": "photos/PXL_20251222_103703560.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:34:56.729746Z"
+  "date_added": "2025-12-28T04:53:44.345070Z"
 }

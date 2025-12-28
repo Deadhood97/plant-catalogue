@@ -6,44 +6,61 @@
       "confidence": 0.85
     },
     {
-      "identified_name": "Rain Tree",
-      "scientific_name": "Samanea saman",
-      "confidence": 0.6
+      "identified_name": "Kiwi Vine",
+      "scientific_name": "Actinidia deliciosa",
+      "confidence": 0.4
+    },
+    {
+      "identified_name": "Yellow Flame Tree",
+      "scientific_name": "Peltophorum pterocarpum",
+      "confidence": 0.3
     }
   ],
   "identified_name": "Indian Kino Tree",
   "scientific_name": "Pterocarpus marsupium",
   "local_names": [
     {
+      "name": "Arjuna",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.9
+    },
+    {
       "name": "Vijaysar",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.8
-    },
-    {
-      "name": "Indian Kino",
-      "language": "English",
-      "region": "India",
-      "confidence": 0.75
     }
   ],
   "confidence": 0.85,
   "fun_fact": {
-    "text": "The Indian Kino Tree is valued for its heartwood which produces a rich red dye called 'kino' used traditionally in textiles.",
-    "confidence": 0.8,
-    "category": "cultural"
+    "text": "The Indian Kino tree is known for its reddish resin called 'kino' that was historically used as a dye and traditional medicine in India.",
+    "confidence": 0.75,
+    "category": "Historical"
   },
   "is_flowering": true,
   "is_medicinal": true,
   "is_edible": false,
   "is_toxic_to_pets": null,
-  "plant_type": "tree",
-  "environment": "tropical and subtropical regions",
-  "difficulty": "moderate",
+  "plant_type": "Tree",
+  "environment": "Tropical and Subtropical climates",
+  "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Moderate; water regularly but avoid waterlogging",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-drained, loamy or sandy soils",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "India and Sri Lanka",
+  "plant_personality": "Sturdy Traditionalist",
+  "fragrance": "Mild, earthy scent from bark resin",
+  "symbolism": "In Indian culture, it is often associated with healing and protection due to its medicinal properties.",
+  "lifespan": "Decades to over 100 years",
   "reference_image": {
     "url": "photos/PXL_20251222_103725093.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:35:33.002228Z"
+  "date_added": "2025-12-28T04:54:25.202033Z"
 }

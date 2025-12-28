@@ -1,48 +1,66 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Cardamom",
-      "scientific_name": "Elettaria cardamomum",
-      "confidence": 0.85
-    },
-    {
       "identified_name": "Turmeric",
       "scientific_name": "Curcuma longa",
-      "confidence": 0.3
+      "confidence": 0.85
     },
     {
-      "identified_name": "Bamboo",
-      "scientific_name": "Bambusoideae spp.",
-      "confidence": 0.1
+      "identified_name": "Cardamom",
+      "scientific_name": "Elettaria cardamomum",
+      "confidence": 0.35
+    },
+    {
+      "identified_name": "Ginger",
+      "scientific_name": "Zingiber officinale",
+      "confidence": 0.3
     }
   ],
-  "identified_name": "Cardamom",
-  "scientific_name": "Elettaria cardamomum",
+  "identified_name": "Turmeric",
+  "scientific_name": "Curcuma longa",
   "local_names": [
     {
-      "name": "Elaichi",
+      "name": "हल्दी",
       "language": "Hindi",
       "region": "India",
-      "confidence": 0.85
+      "confidence": 0.9
+    },
+    {
+      "name": "Manjal",
+      "language": "Tamil",
+      "region": "India",
+      "confidence": 0.8
     }
   ],
   "confidence": 0.85,
   "fun_fact": {
-    "text": "Cardamom has been called the 'queen of spices' and is one of the most expensive spices by weight, used in cooking and traditional medicine.",
-    "confidence": 0.8,
-    "category": "cultural"
+    "text": "Turmeric is known as the 'golden spice' and holds significant cultural and medicinal importance in India, often used in rituals and traditional medicine.",
+    "confidence": 0.9,
+    "category": "Cultural"
   },
   "is_flowering": true,
   "is_medicinal": true,
   "is_edible": true,
   "is_toxic_to_pets": null,
   "plant_type": "Herbaceous perennial",
-  "environment": "Tropical and subtropical shade",
+  "environment": "Tropical and subtropical climates, warm and humid",
   "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Keep soil moist but not waterlogged; water 2-3 times per week depending on climate",
+    "sunlight_requirement": "Partial shade to filtered sunlight",
+    "soil_type": "Well-draining, rich in organic matter",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "8-11"
+  },
+  "origin_region": "South Asia",
+  "plant_personality": "Golden Healer",
+  "fragrance": "Earthy, warm, and pungent aroma",
+  "symbolism": "Symbolizes purity, prosperity, and fertility in Indian culture",
+  "lifespan": "Several years when cultivated as a perennial",
   "reference_image": {
     "url": "photos/PXL_20251222_103905016.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:34:31.049023Z"
+  "date_added": "2025-12-28T04:53:17.311210Z"
 }

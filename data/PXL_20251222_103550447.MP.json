@@ -3,17 +3,12 @@
     {
       "identified_name": "Holy Basil",
       "scientific_name": "Ocimum tenuiflorum",
-      "confidence": 0.85
+      "confidence": 0.9
     },
     {
-      "identified_name": "Common Basil",
-      "scientific_name": "Ocimum basilicum",
-      "confidence": 0.6
-    },
-    {
-      "identified_name": "Mint",
-      "scientific_name": "Mentha spp.",
-      "confidence": 0.4
+      "identified_name": "Thai Basil",
+      "scientific_name": "Ocimum basilicum var. thyrsiflora",
+      "confidence": 0.5
     }
   ],
   "identified_name": "Holy Basil",
@@ -23,26 +18,44 @@
       "name": "Tulsi",
       "language": "Hindi",
       "region": "India",
+      "confidence": 1.0
+    },
+    {
+      "name": "Tulasi",
+      "language": "Telugu",
+      "region": "Southern India",
       "confidence": 0.9
     }
   ],
-  "confidence": 0.85,
+  "confidence": 0.9,
   "fun_fact": {
-    "text": "Holy Basil, or Tulsi, is considered a sacred plant in Indian culture and is often grown in homes and temples for its spiritual significance.",
-    "confidence": 0.9,
-    "category": "cultural"
+    "text": "Holy Basil (Tulsi) is revered in Hindu culture and often grown in or near homes for its spiritual significance and air-purifying properties.",
+    "confidence": 0.95,
+    "category": "Cultural"
   },
   "is_flowering": true,
-  "is_medicinal": null,
-  "is_edible": null,
+  "is_medicinal": true,
+  "is_edible": true,
   "is_toxic_to_pets": null,
-  "plant_type": "herb",
-  "environment": "tropical, subtropical",
-  "difficulty": "easy",
+  "plant_type": "Herb",
+  "environment": "Tropical to subtropical climates, prefers sunny locations",
+  "difficulty": "Easy to moderate",
+  "care": {
+    "watering_frequency": "Water daily in hot weather; keep soil moist but not waterlogged",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-drained, fertile soil",
+    "growth_rate": "Moderate to fast",
+    "hardiness_zone": "10-11"
+  },
+  "origin_region": "Indian subcontinent",
+  "plant_personality": "Sacred Guardian",
+  "fragrance": "Aromatic, spicy, and clove-like scent",
+  "symbolism": "Symbolizes purity, protection, and spiritual devotion in Hindu tradition",
+  "lifespan": "Perennial",
   "reference_image": {
     "url": "photos/PXL_20251222_103550447.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:39:32.707917Z"
+  "date_added": "2025-12-28T04:58:50.020038Z"
 }

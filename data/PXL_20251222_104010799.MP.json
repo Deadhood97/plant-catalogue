@@ -3,52 +3,59 @@
     {
       "identified_name": "Cockscomb",
       "scientific_name": "Celosia argentea var. cristata",
-      "confidence": 0.92
+      "confidence": 0.95
     },
     {
       "identified_name": "Celosia",
-      "scientific_name": "Celosia argentea",
-      "confidence": 0.75
-    },
-    {
-      "identified_name": "Amaranth",
-      "scientific_name": "Amaranthus tricolor",
-      "confidence": 0.45
+      "scientific_name": "Celosia argentia",
+      "confidence": 0.7
     }
   ],
   "identified_name": "Cockscomb",
   "scientific_name": "Celosia argentea var. cristata",
   "local_names": [
     {
-      "name": "Murugam poo",
-      "language": "Tamil",
-      "region": "South India",
-      "confidence": 0.85
+      "name": "Kali Mirchi",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.8
     },
     {
-      "name": "Kokila",
+      "name": "Nagachampala",
       "language": "Kannada",
-      "region": "Karnataka",
-      "confidence": 0.75
+      "region": "India",
+      "confidence": 0.7
     }
   ],
-  "confidence": 0.92,
+  "confidence": 0.95,
   "fun_fact": {
-    "text": "Cockscomb flowers have been used traditionally in many cultures for ornamental and religious purposes, symbolizing affection and uniqueness due to their distinctive crested appearance.",
-    "confidence": 0.85,
+    "text": "The Cockscomb flower resembles a rooster's comb and is often used in floral arrangements and decorations in various cultures, symbolizing boldness and uniqueness.",
+    "confidence": 0.9,
     "category": "cultural"
   },
   "is_flowering": true,
-  "is_medicinal": true,
-  "is_edible": true,
-  "is_toxic_to_pets": false,
-  "plant_type": "Herbaceous annual",
-  "environment": "Gardens, pots, full sun to partial shade",
-  "difficulty": "Easy to grow",
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "Annual flowering plant",
+  "environment": "Prefers full sun and well-drained soil",
+  "difficulty": "Easy to moderate",
+  "care": {
+    "watering_frequency": "Water moderately, allowing soil to dry between watering",
+    "sunlight_requirement": "Full sun",
+    "soil_type": "Well-draining, fertile soil",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "Zone 10-11"
+  },
+  "origin_region": "Tropics and subtropics of Asia and Africa",
+  "plant_personality": "Bold and Eye-catching",
+  "fragrance": "None",
+  "symbolism": "Symbol of boldness, uniqueness, and affection in various cultures",
+  "lifespan": "Annual",
   "reference_image": {
     "url": "photos/PXL_20251222_104010799.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:54:15.262619Z"
+  "date_added": "2025-12-28T05:15:11.725657Z"
 }

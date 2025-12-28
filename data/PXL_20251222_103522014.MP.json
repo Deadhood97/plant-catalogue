@@ -6,38 +6,67 @@
       "confidence": 0.95
     },
     {
+      "identified_name": "Traveler's Palm",
+      "scientific_name": "Ravenala madagascariensis",
+      "confidence": 0.3
+    },
+    {
       "identified_name": "Bird of Paradise",
       "scientific_name": "Strelitzia reginae",
-      "confidence": 0.5
+      "confidence": 0.2
     }
   ],
   "identified_name": "Banana Plant",
   "scientific_name": "Musa spp.",
   "local_names": [
     {
-      "name": "Kela",
+      "name": "केला का पेड़",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.9
+    },
+    {
+      "name": "பழவள்ளி",
+      "language": "Tamil",
+      "region": "India",
+      "confidence": 0.8
+    },
+    {
+      "name": "ಬಾಳೆ",
+      "language": "Kannada",
+      "region": "India",
+      "confidence": 0.8
     }
   ],
   "confidence": 0.95,
   "fun_fact": {
-    "text": "The banana plant is not a tree but a large herbaceous flowering plant, and it is widely cultivated in tropical regions around the world for its fruit.",
-    "confidence": 0.8,
-    "category": "botanical"
+    "text": "Banana plants are technically giant herbs, not trees.",
+    "confidence": 0.9,
+    "category": "botany"
   },
   "is_flowering": true,
   "is_medicinal": null,
   "is_edible": true,
   "is_toxic_to_pets": null,
-  "plant_type": "herbaceous plant",
-  "environment": "tropical, warm climates",
-  "difficulty": "moderate",
+  "plant_type": "Herbaceous perennial plant",
+  "environment": "Tropical and subtropical regions",
+  "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Regular, keep soil consistently moist but not waterlogged",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-draining, rich in organic matter",
+    "growth_rate": "Fast",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Southeast Asia",
+  "plant_personality": "Tropical Showstopper",
+  "fragrance": "Mild or none from leaves; banana fruit has a sweet scent",
+  "symbolism": "Symbolizes prosperity, fertility, and abundance in many cultures",
+  "lifespan": "Around 6-25 years depending on variety and conditions",
   "reference_image": {
     "url": "photos/PXL_20251222_103522014.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:44:28.842480Z"
+  "date_added": "2025-12-28T05:04:18.622434Z"
 }

@@ -1,48 +1,61 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Sweet Lemon",
-      "scientific_name": "Citrus limettioides",
-      "confidence": 0.85
+      "identified_name": "Bael Tree",
+      "scientific_name": "Aegle marmelos",
+      "confidence": 0.9
     },
     {
-      "identified_name": "Lime Tree",
-      "scientific_name": "Citrus aurantiifolia",
-      "confidence": 0.4
-    },
-    {
-      "identified_name": "Pomelo",
-      "scientific_name": "Citrus maxima",
-      "confidence": 0.3
+      "identified_name": "Indian Bael",
+      "scientific_name": "Aegle marmelos",
+      "confidence": 0.75
     }
   ],
-  "identified_name": "Sweet Lemon",
-  "scientific_name": "Citrus limettioides",
+  "identified_name": "Bael Tree",
+  "scientific_name": "Aegle marmelos",
   "local_names": [
     {
-      "name": "Mosambi",
+      "name": "Bel",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.9
+    },
+    {
+      "name": "Bilva",
+      "language": "Sanskrit",
+      "region": "India",
+      "confidence": 0.85
     }
   ],
-  "confidence": 0.85,
+  "confidence": 0.9,
   "fun_fact": {
-    "text": "Sweet lemon (Mosambi) is a popular citrus fruit in India, well-liked for its sweet juice used frequently in beverages.",
-    "confidence": 0.8,
+    "text": "The Bael tree is considered sacred in Hindu culture and is often associated with Lord Shiva. Its wood and leaves are used in religious rituals.",
+    "confidence": 0.9,
     "category": "cultural"
   },
   "is_flowering": true,
   "is_medicinal": null,
-  "is_edible": true,
+  "is_edible": null,
   "is_toxic_to_pets": null,
   "plant_type": "Tree",
-  "environment": "Tropical and subtropical",
+  "environment": "Tropical and subtropical regions",
   "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Moderate; water regularly but allow soil to dry between waterings",
+    "sunlight_requirement": "Full sun",
+    "soil_type": "Well-drained, sandy or loamy soil",
+    "growth_rate": "Slow to moderate",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Indian Subcontinent",
+  "plant_personality": "Sacred Old Soul",
+  "fragrance": "Mild, pleasant fragrance especially from flowers",
+  "symbolism": "Sacred tree in Hinduism symbolizing purity and prosperity",
+  "lifespan": "Long-lived, several decades",
   "reference_image": {
     "url": "photos/PXL_20251222_115420676.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:52:57.717881Z"
+  "date_added": "2025-12-28T05:13:49.498702Z"
 }

@@ -2,53 +2,54 @@
   "candidate_identifications": [
     {
       "identified_name": "Chrysanthemum",
-      "scientific_name": "Chrysanthemum indicum",
+      "scientific_name": "Chrysanthemum morifolium",
       "confidence": 0.95
     },
     {
-      "identified_name": "Aster",
-      "scientific_name": "Aster amellus",
+      "identified_name": "Asters",
+      "scientific_name": "Asteraceae",
       "confidence": 0.6
-    },
-    {
-      "identified_name": "Dahlia",
-      "scientific_name": "Dahlia pinnata",
-      "confidence": 0.4
     }
   ],
   "identified_name": "Chrysanthemum",
-  "scientific_name": "Chrysanthemum indicum",
+  "scientific_name": "Chrysanthemum morifolium",
   "local_names": [
     {
-      "name": "Guldaudi",
+      "name": "गेंदे का फूल",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.9
-    },
-    {
-      "name": "Kembu",
-      "language": "Kannada",
-      "region": "Karnataka, India",
-      "confidence": 0.85
     }
   ],
   "confidence": 0.95,
   "fun_fact": {
-    "text": "Chrysanthemums are traditionally used in East Asia during festivals and are symbols of longevity and rejuvenation.",
-    "confidence": 0.85,
+    "text": "Chrysanthemums are symbols of longevity and rejuvenation in many Asian cultures and are often used in festivals and decorations.",
+    "confidence": 0.9,
     "category": "cultural"
   },
   "is_flowering": true,
   "is_medicinal": null,
   "is_edible": null,
   "is_toxic_to_pets": null,
-  "plant_type": "Perennial flowering plant",
-  "environment": "Gardens, pots, temperate to subtropical climates",
+  "plant_type": "Herbaceous perennial",
+  "environment": "Prefers well-drained soil and partial to full sunlight",
   "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Water regularly, keep soil moist but not soggy",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-drained, fertile soil",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "5-9"
+  },
+  "origin_region": "East Asia",
+  "plant_personality": "Cheerful Bloom Buddy",
+  "fragrance": "Light, fresh floral scent",
+  "symbolism": "Represents longevity, rejuvenation, and optimism in many cultures",
+  "lifespan": "Perennial",
   "reference_image": {
     "url": "photos/PXL_20251222_103737429.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:46:57.287906Z"
+  "date_added": "2025-12-28T05:07:01.853397Z"
 }

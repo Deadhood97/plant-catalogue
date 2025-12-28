@@ -1,0 +1,66 @@
+{
+  "candidate_identifications": [
+    {
+      "identified_name": "Areca Palm",
+      "scientific_name": "Dypsis lutescens",
+      "confidence": 0.92
+    },
+    {
+      "identified_name": "Kentia Palm",
+      "scientific_name": "Howea forsteriana",
+      "confidence": 0.65
+    },
+    {
+      "identified_name": "Bamboo Palm",
+      "scientific_name": "Chamaedorea seifrizii",
+      "confidence": 0.55
+    }
+  ],
+  "identified_name": "Areca Palm",
+  "scientific_name": "Dypsis lutescens",
+  "local_names": [
+    {
+      "name": "Chrysalidocarpus",
+      "language": "English",
+      "region": "India",
+      "confidence": 0.85
+    },
+    {
+      "name": "Butterfly Palm",
+      "language": "English",
+      "region": "India",
+      "confidence": 0.7
+    }
+  ],
+  "confidence": 0.92,
+  "fun_fact": {
+    "text": "The Areca Palm is widely used in Indian homes as an indoor ornamental plant and is sometimes associated with bringing good luck and positive energy.",
+    "confidence": 0.9,
+    "category": "cultural"
+  },
+  "is_flowering": true,
+  "is_medicinal": null,
+  "is_edible": null,
+  "is_toxic_to_pets": null,
+  "plant_type": "Palm",
+  "environment": "Indoor and Outdoor tropical/subtropical",
+  "difficulty": "Low maintenance",
+  "care": {
+    "watering_frequency": "Water moderately; keep soil moist but not soggy",
+    "sunlight_requirement": "Bright, indirect sunlight",
+    "soil_type": "Well-draining sandy or loamy soil",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "10-11"
+  },
+  "origin_region": "Madagascar",
+  "plant_personality": "Tropical Vibe Enhancer",
+  "fragrance": "None",
+  "symbolism": "Symbolizes prosperity and good luck in many cultures",
+  "lifespan": "Several decades in ideal conditions",
+  "reference_image": {
+    "url": "photos/PXL_20251222_103808545.MP.jpg",
+    "source": "local",
+    "license": ""
+  },
+  "date_added": "2025-12-28T05:08:18.822108Z"
+}

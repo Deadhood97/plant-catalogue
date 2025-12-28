@@ -2,42 +2,59 @@
   "candidate_identifications": [
     {
       "identified_name": "Black Pearl Pepper",
-      "scientific_name": "Capsicum annuum 'Black Pearl'",
-      "confidence": 0.9
+      "scientific_name": "Capsicum annuum",
+      "confidence": 0.95
     },
     {
       "identified_name": "Purple Heart",
       "scientific_name": "Tradescantia pallida",
-      "confidence": 0.6
+      "confidence": 0.4
+    },
+    {
+      "identified_name": "Purple Basil",
+      "scientific_name": "Ocimum basilicum 'Purpurascens'",
+      "confidence": 0.3
     }
   ],
   "identified_name": "Black Pearl Pepper",
-  "scientific_name": "Capsicum annuum 'Black Pearl'",
+  "scientific_name": "Capsicum annuum",
   "local_names": [
     {
-      "name": "Black Pearl Mirch",
-      "language": "Hindi",
-      "region": "India",
-      "confidence": 0.8
+      "name": "Black Pearl Pepper",
+      "language": "English",
+      "region": "Global",
+      "confidence": 0.95
     }
   ],
-  "confidence": 0.9,
+  "confidence": 0.95,
   "fun_fact": {
-    "text": "Black Pearl Pepper is known for its striking black-purple foliage and shiny black fruit which eventually ripens to bright red. It is often grown as an ornamental plant due to its unique leaf color.",
-    "confidence": 0.85,
-    "category": "aesthetic"
+    "text": "Black Pearl Pepper is popular for its striking deep purple to black foliage and bright red peppers, often grown as an ornamental and sometimes used in cooking.",
+    "confidence": 0.9,
+    "category": "Gardening and aesthetics"
   },
   "is_flowering": true,
   "is_medicinal": null,
   "is_edible": true,
-  "is_toxic_to_pets": true,
-  "plant_type": "ornamental / spicy pepper plant",
-  "environment": "warm temperate to subtropical",
-  "difficulty": "moderate",
+  "is_toxic_to_pets": null,
+  "plant_type": "Annual/Perennial herb",
+  "environment": "Prefers warm climates and grows well indoors or outdoors in pots",
+  "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Water regularly but allow soil to dry slightly between watering",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Well-draining fertile soil",
+    "growth_rate": "Moderate",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Native to Central and South America",
+  "plant_personality": "Bold and dramatic with a spicy twist",
+  "fragrance": "Mild aroma typical of pepper plants",
+  "symbolism": "Symbolizes vibrant energy and protection in some cultures",
+  "lifespan": "Typically grown as an annual, but can be perennial in suitable climates",
   "reference_image": {
     "url": "photos/PXL_20251222_103813101.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:47:40.228252Z"
+  "date_added": "2025-12-28T05:07:53.960009Z"
 }

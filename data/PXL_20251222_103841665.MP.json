@@ -1,54 +1,60 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Monstera",
+      "identified_name": "Swiss Cheese Plant",
       "scientific_name": "Monstera deliciosa",
       "confidence": 0.95
     },
     {
-      "identified_name": "Philodendron",
-      "scientific_name": "Philodendron bipinnatifidum",
-      "confidence": 0.7
+      "identified_name": "Split-leaf Philodendron",
+      "scientific_name": "Monstera deliciosa",
+      "confidence": 0.85
     },
     {
-      "identified_name": "Split-leaf Philodendron",
-      "scientific_name": "Thaumatophyllum bipinnatifidum",
-      "confidence": 0.6
+      "identified_name": "Philodendron bipinnatifidum",
+      "scientific_name": "Philodendron bipinnatifidum",
+      "confidence": 0.75
     }
   ],
-  "identified_name": "Monstera",
+  "identified_name": "Swiss Cheese Plant",
   "scientific_name": "Monstera deliciosa",
   "local_names": [
     {
-      "name": "Cheese plant",
+      "name": "Split Leaf Philodendron",
       "language": "English",
-      "region": "Global",
-      "confidence": 0.9
-    },
-    {
-      "name": "Swiss Cheese Plant",
-      "language": "English",
-      "region": "Global",
-      "confidence": 0.9
+      "region": "India",
+      "confidence": 0.8
     }
   ],
   "confidence": 0.95,
   "fun_fact": {
-    "text": "Monstera deliciosa is known as the 'Swiss Cheese Plant' due to the unique holes and splits in its large leaves, which many designers love for adding dramatic tropical aesthetics to indoor spaces.",
+    "text": "Monstera deliciosa is named for the unique perforations in its leaves (monstera means 'monstrous' or 'abnormal' in Latin), and 'deliciosa' refers to its edible fruit which tastes like a mix of banana and pineapple.",
     "confidence": 0.9,
-    "category": "aesthetic"
+    "category": "Botanical History"
   },
   "is_flowering": true,
   "is_medicinal": null,
-  "is_edible": false,
+  "is_edible": true,
   "is_toxic_to_pets": true,
-  "plant_type": "houseplant",
-  "environment": "indoor, tropical",
-  "difficulty": "easy",
+  "plant_type": "Tropical perennial vine",
+  "environment": "Indoor, tropical or subtropical climates",
+  "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Water when the top 1-2 inches of soil are dry",
+    "sunlight_requirement": "Bright, indirect sunlight",
+    "soil_type": "Well-draining potting mix rich in organic matter",
+    "growth_rate": "Moderate to fast under ideal conditions",
+    "hardiness_zone": "10-12"
+  },
+  "origin_region": "Southern Mexico and Panama",
+  "plant_personality": "Tropical Trendsetter",
+  "fragrance": "None",
+  "symbolism": "Represents long life and respect in some cultures, admired for its unique leaf pattern symbolizing growth and renewal.",
+  "lifespan": "Perennial, can live many years with proper care",
   "reference_image": {
     "url": "photos/PXL_20251222_103841665.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:40:54.836698Z"
+  "date_added": "2025-12-28T05:00:22.074779Z"
 }

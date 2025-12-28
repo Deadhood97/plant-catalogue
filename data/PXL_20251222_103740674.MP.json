@@ -1,48 +1,61 @@
 {
   "candidate_identifications": [
     {
-      "identified_name": "Physalis",
-      "scientific_name": "Physalis spp.",
+      "identified_name": "Corchorus olitorius",
+      "scientific_name": "Corchorus olitorius",
       "confidence": 0.85
     },
     {
-      "identified_name": "Withania",
-      "scientific_name": "Withania somnifera",
-      "confidence": 0.4
-    },
-    {
-      "identified_name": "Solanum",
-      "scientific_name": "Solanum nigrum",
-      "confidence": 0.3
+      "identified_name": "Corchorus capsularis",
+      "scientific_name": "Corchorus capsularis",
+      "confidence": 0.6
     }
   ],
-  "identified_name": "Physalis",
-  "scientific_name": "Physalis spp.",
+  "identified_name": "Corchorus olitorius",
+  "scientific_name": "Corchorus olitorius",
   "local_names": [
     {
-      "name": "रहस",
-      "language": "Hindi",
+      "name": "Jute",
+      "language": "English",
       "region": "India",
-      "confidence": 0.75
+      "confidence": 0.9
+    },
+    {
+      "name": "Molokhia",
+      "language": "Arabic",
+      "region": "Middle East",
+      "confidence": 0.8
     }
   ],
   "confidence": 0.85,
   "fun_fact": {
-    "text": "Physalis plants produce distinctive papery husks that resemble lanterns, which is why they are sometimes called 'Chinese lanterns.'",
+    "text": "Corchorus olitorius is commonly known as jute and is a major fiber crop used worldwide for making burlap, hessian, and gunny sacks. It is also valued for its edible leaves, used in traditional dishes in the Middle East, Africa, and South Asia.",
     "confidence": 0.8,
-    "category": "aesthetic"
+    "category": "cultural and economic importance"
   },
   "is_flowering": true,
   "is_medicinal": null,
-  "is_edible": null,
+  "is_edible": true,
   "is_toxic_to_pets": null,
-  "plant_type": "shrub",
-  "environment": "temperate to tropical regions",
-  "difficulty": "easy",
+  "plant_type": "Shrub/Herbaceous plant",
+  "environment": "Tropical and subtropical regions",
+  "difficulty": "Easy",
+  "care": {
+    "watering_frequency": "Moderate; keep soil moist but well-drained",
+    "sunlight_requirement": "Full sun to partial shade",
+    "soil_type": "Fertile, loamy, well-draining soil",
+    "growth_rate": "Fast",
+    "hardiness_zone": "10-12"
+  },
+  "origin_region": "South Asia, Tropical Asia",
+  "plant_personality": "Versatile and useful",
+  "fragrance": "None",
+  "symbolism": "Symbolizes prosperity and utility due to its use as a fiber and food source",
+  "lifespan": "Annual",
   "reference_image": {
     "url": "photos/PXL_20251222_103740674.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:51:35.445949Z"
+  "date_added": "2025-12-28T05:12:16.373927Z"
 }

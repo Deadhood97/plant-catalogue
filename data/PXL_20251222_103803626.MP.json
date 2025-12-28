@@ -8,12 +8,12 @@
     {
       "identified_name": "Cardboard Palm",
       "scientific_name": "Zamia furfuracea",
-      "confidence": 0.65
+      "confidence": 0.75
     },
     {
-      "identified_name": "Japanese Sago Palm",
-      "scientific_name": "Cycas revoluta var. japonica",
-      "confidence": 0.6
+      "identified_name": "King Sago Palm",
+      "scientific_name": "Cycas circinalis",
+      "confidence": 0.65
     }
   ],
   "identified_name": "Sago Palm",
@@ -24,25 +24,43 @@
       "language": "English",
       "region": "India",
       "confidence": 0.9
+    },
+    {
+      "name": "साग पाम",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.8
     }
   ],
   "confidence": 0.95,
   "fun_fact": {
-    "text": "The Sago Palm is widely used as an ornamental plant in homes and gardens, known for its symmetrical and rugged appearance resembling a small palm tree.",
+    "text": "The Sago Palm is often mistaken for a true palm but is actually a cycad, an ancient group of plants that existed long before the dinosaurs.",
     "confidence": 0.9,
-    "category": "gardening"
+    "category": "Botanical History"
   },
   "is_flowering": false,
   "is_medicinal": null,
   "is_edible": null,
-  "is_toxic_to_pets": null,
-  "plant_type": "gymnosperm",
-  "environment": "indoors, gardens",
-  "difficulty": "moderate",
+  "is_toxic_to_pets": true,
+  "plant_type": "Cycad",
+  "environment": "Indoor or outdoor in warm climates",
+  "difficulty": "Moderate",
+  "care": {
+    "watering_frequency": "Water sparingly; allow soil to dry between watering",
+    "sunlight_requirement": "Bright, indirect sunlight",
+    "soil_type": "Well-draining soil, sandy or loamy",
+    "growth_rate": "Slow",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Japan and southern China",
+  "plant_personality": "Ancient Elegance",
+  "fragrance": "None",
+  "symbolism": "Symbolizes longevity and resilience in many cultures.",
+  "lifespan": "Several decades to centuries",
   "reference_image": {
     "url": "photos/PXL_20251222_103803626.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:52:02.786564Z"
+  "date_added": "2025-12-28T05:12:49.286506Z"
 }

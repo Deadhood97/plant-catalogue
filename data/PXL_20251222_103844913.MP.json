@@ -6,43 +6,50 @@
       "confidence": 0.9
     },
     {
-      "identified_name": "Chinese Fan Palm",
-      "scientific_name": "Livistona chinensis",
+      "identified_name": "Rhapis laosensis",
+      "scientific_name": "Rhapis laosensis",
       "confidence": 0.6
-    },
-    {
-      "identified_name": "European Fan Palm",
-      "scientific_name": "Chamaerops humilis",
-      "confidence": 0.4
     }
   ],
   "identified_name": "Lady Palm",
   "scientific_name": "Rhapis excelsa",
   "local_names": [
     {
-      "name": "Lady Palm",
-      "language": "English",
-      "region": "Global",
-      "confidence": 0.9
+      "name": "Nariyal Pati",
+      "language": "Hindi",
+      "region": "India",
+      "confidence": 0.7
     }
   ],
   "confidence": 0.9,
   "fun_fact": {
-    "text": "Lady Palm is popular as an indoor ornamental plant due to its elegant fan-shaped leaves and ability to thrive in low light, making it a favorite for offices and homes.",
-    "confidence": 0.9,
-    "category": "gardening-related"
+    "text": "Lady Palm is often used in office and indoor spaces for its air-purifying qualities and elegant fan-like leaves.",
+    "confidence": 0.8,
+    "category": "gardening"
   },
-  "is_flowering": true,
+  "is_flowering": false,
   "is_medicinal": null,
   "is_edible": null,
   "is_toxic_to_pets": null,
-  "plant_type": "Indoor ornamental palm",
-  "environment": "Indoor/ shaded outdoor environments",
-  "difficulty": "Easy to moderate care",
+  "plant_type": "Palm",
+  "environment": "Indoor, Tropical/Subtropical",
+  "difficulty": "Low",
+  "care": {
+    "watering_frequency": "Moderate, water when top inch of soil is dry",
+    "sunlight_requirement": "Indirect light to partial shade",
+    "soil_type": "Well-drained, fertile soil",
+    "growth_rate": "Slow to moderate",
+    "hardiness_zone": "9-11"
+  },
+  "origin_region": "Southern China and Southeast Asia",
+  "plant_personality": "Elegant Indoor Classic",
+  "fragrance": "None",
+  "symbolism": "Symbolizes elegance and good fortune in East Asian cultures",
+  "lifespan": "Long-lived perennial",
   "reference_image": {
     "url": "photos/PXL_20251222_103844913.MP.jpg",
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-27T07:50:11.764212Z"
+  "date_added": "2025-12-28T05:10:42.411030Z"
 }
