@@ -4,7 +4,8 @@ __pycache__/
 *.pyc
 
 # Ignore photos/videos if too large
-photos/
+# Ignore photos/videos if too large
+# photos/
 photos/*.mp3
 
 # Ignore any sensitive keys
