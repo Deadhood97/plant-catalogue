@@ -57,9 +57,10 @@ async def upload_plant(file: UploadFile = File(...), db: Session = Depends(get_d
         plant_data = identify_plant_from_file(file_path)
         
         # 3. Augment Data (set reference image to the public URL)
-        # Assuming backend runs on localhost:8001 for now
+        # Use BASE_URL env var for prod, fallback to localhost for dev
+        base_url = os.getenv('BASE_URL', 'http://localhost:8001')
         plant_data["reference_image"] = {
-            "url": f"http://localhost:8001/uploads/{unique_filename}",
+            "url": f"{base_url}/uploads/{unique_filename}",
             "source": "public_upload",
             "license": "public"
         }
