@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>My Plant Catalogue</title>
@@ -10,11 +11,15 @@
     body {
       font-family: 'Merriweather', serif;
     }
+
     /* Optional subtle leaf pattern */
     body::before {
       content: "";
       position: fixed;
-      top:0; left:0; right:0; bottom:0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       background: url('https://www.transparenttextures.com/patterns/leaf.png') repeat;
       opacity: 0.05;
       pointer-events: none;
@@ -22,6 +27,7 @@
     }
   </style>
 </head>
+
 <body class="bg-green-50">
 
   <!-- Header -->
@@ -32,17 +38,81 @@
   <!-- Description Section -->
   <section class="max-w-3xl mx-auto text-center bg-green-100 rounded-xl p-4 mt-6 shadow-inner">
     <p class="text-green-800 text-lg">
-      Welcome to my home plant catalogue! 🌱 These plants are all from my home garden. 
-      Identification has been assisted by AI, so there may be some inaccuracies. 
+      Welcome to my home plant catalogue! 🌱 These plants are all from my home garden.
+      Identification has been assisted by AI, so there may be some inaccuracies.
       Enjoy exploring the greenery! 🍃
     </p>
   </section>
 
   <main class="p-6 max-w-7xl mx-auto">
 
-    <!-- Search / Filter -->
-    <div class="mb-6 flex justify-center">
-      <input id="searchInput" type="text" placeholder="Search plants..." class="rounded-full px-4 py-2 w-full sm:w-1/2 border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400">
+    <!-- Controls Section: Search, Filter, Sort -->
+    <div class="mb-8 bg-white p-6 rounded-2xl shadow-sm border border-green-100">
+
+      <!-- Top Row: Search & Sort -->
+      <div class="flex flex-col md:flex-row gap-4 mb-4 justify-between items-center">
+        <!-- Search -->
+        <div class="w-full md:w-1/2">
+          <input id="searchInput" type="text" placeholder="Search plants by name..."
+            class="w-full rounded-full px-4 py-2 border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400">
+        </div>
+
+        <!-- Sort -->
+        <div class="flex items-center gap-2 w-full md:w-auto">
+          <label for="sortSelect" class="text-green-800 font-semibold whitespace-nowrap">Sort by:</label>
+          <select id="sortSelect"
+            class="w-full md:w-auto rounded-lg px-3 py-2 border border-green-300 text-green-800 bg-white focus:outline-none focus:ring-2 focus:ring-green-400">
+            <option value="name_asc">Name (A-Z)</option>
+            <option value="name_desc">Name (Z-A)</option>
+            <option value="date_desc">Newest First</option>
+            <option value="date_asc">Oldest First</option>
+            <option value="conf_desc">Confidence (High-Low)</option>
+            <option value="conf_asc">Confidence (Low-High)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Bottom Row: Filters -->
+      <div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+
+        <!-- Attribute Filters -->
+        <div class="flex flex-wrap gap-4">
+          <span class="text-green-800 font-semibold">Attributes:</span>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" class="filter-attr w-4 h-4 text-green-600 rounded focus:ring-green-500"
+              value="is_flowering">
+            <span class="text-green-700">Flowering</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" class="filter-attr w-4 h-4 text-green-600 rounded focus:ring-green-500"
+              value="is_medicinal">
+            <span class="text-green-700">Medicinal</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" class="filter-attr w-4 h-4 text-green-600 rounded focus:ring-green-500"
+              value="is_edible">
+            <span class="text-green-700">Edible</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" class="filter-attr w-4 h-4 text-green-600 rounded focus:ring-green-500"
+              value="is_toxic_to_pets">
+            <span class="text-red-600">Toxic to Pets</span>
+          </label>
+        </div>
+
+        <!-- Confidence Filter -->
+        <div class="flex items-center gap-2">
+          <label for="confFilter" class="text-green-800 font-semibold whitespace-nowrap">Min Confidence:</label>
+          <select id="confFilter"
+            class="rounded-lg px-2 py-1 border border-green-300 text-green-800 bg-white focus:outline-none focus:ring-2 focus:ring-green-400">
+            <option value="0">All</option>
+            <option value="0.9">90%+</option>
+            <option value="0.8">80%+</option>
+            <option value="0.5">50%+</option>
+          </select>
+        </div>
+
+      </div>
     </div>
 
     <!-- Plant Grid -->
@@ -53,6 +123,9 @@
     async function loadPlants() {
       const plantGrid = document.getElementById('plantGrid');
       const searchInput = document.getElementById('searchInput');
+      const sortSelect = document.getElementById('sortSelect');
+      const confFilter = document.getElementById('confFilter');
+      const attrCheckboxes = document.querySelectorAll('.filter-attr');
 
       let plants = [];
 
@@ -70,12 +143,81 @@
           }
         }
 
+        function getFilteredAndSortedPlants() {
+          let result = [...plants];
+
+          // 1. Search (Name or Local Name)
+          const query = searchInput.value.toLowerCase();
+          if (query) {
+            result = result.filter(p =>
+              p.identified_name.toLowerCase().includes(query) ||
+              (p.local_names && p.local_names.some(l => l.name.toLowerCase().includes(query)))
+            );
+          }
+
+          // 2. Attributes (AND logic: must match all checked)
+          attrCheckboxes.forEach(cb => {
+            if (cb.checked) {
+              const key = cb.value;
+              result = result.filter(p => p[key] === true);
+            }
+          });
+
+          // 3. Confidence
+          const minConf = parseFloat(confFilter.value);
+          if (minConf > 0) {
+            result = result.filter(p => (p.confidence || 0) >= minConf);
+          }
+
+          // 4. Sort
+          const sortMode = sortSelect.value;
+          result.sort((a, b) => {
+            switch (sortMode) {
+              case 'name_asc':
+                return a.identified_name.localeCompare(b.identified_name);
+              case 'name_desc':
+                return b.identified_name.localeCompare(a.identified_name);
+              case 'conf_desc':
+                return (b.confidence || 0) - (a.confidence || 0);
+              case 'conf_asc':
+                return (a.confidence || 0) - (b.confidence || 0);
+              case 'date_desc':
+                return new Date(b.date_added || 0) - new Date(a.date_added || 0);
+              case 'date_asc':
+                return new Date(a.date_added || 0) - new Date(b.date_added || 0);
+              default:
+                return 0;
+            }
+          });
+
+          return result;
+        }
+
+        function render() {
+          const filtered = getFilteredAndSortedPlants();
+          renderGrid(filtered);
+        }
+
+        // Attach Event Listeners
+        searchInput.addEventListener('input', render);
+        sortSelect.addEventListener('change', render);
+        confFilter.addEventListener('change', render);
+        attrCheckboxes.forEach(cb => cb.addEventListener('change', render));
+
+        // Initial Render
+        render();
+
         function renderGrid(filteredPlants) {
           plantGrid.innerHTML = "";
+          if (filteredPlants.length === 0) {
+            plantGrid.innerHTML = '<p class="text-center text-gray-500 w-full col-span-full py-8">No plants found matching these filters.</p>';
+            return;
+          }
+
           const fragment = document.createDocumentFragment();
 
           filteredPlants.forEach(plant => {
-            const card = document.createElement('div');
+            // ... (Card creation logic same as before)
             card.className = "bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col";
 
             // Circular thumbnail
@@ -106,18 +248,18 @@
 
             // Confidence badge for primary
             // Confidence badge for primary
-if (plant.confidence !== undefined) {
-  const confBadge = document.createElement('span');
-  const confPercent = Math.round(plant.confidence * 100);
-  confBadge.textContent = `Confidence: ${confPercent}%`;
+            if (plant.confidence !== undefined) {
+              const confBadge = document.createElement('span');
+              const confPercent = Math.round(plant.confidence * 100);
+              confBadge.textContent = `Confidence: ${confPercent}%`;
 
-  // New color scale
-  let bgColor = confPercent >= 95 ? "green" : confPercent >= 90 ? "yellow" : "red";
+              // New color scale
+              let bgColor = confPercent >= 95 ? "green" : confPercent >= 90 ? "yellow" : "red";
 
-  confBadge.className = `text-white text-xs px-2 py-1 rounded-full bg-${bgColor}-500 ml-2`;
-  confBadge.title = "AI confidence in this identification";
-  titleContainer.appendChild(confBadge);
-}
+              confBadge.className = `text-white text-xs px-2 py-1 rounded-full bg-${bgColor}-500 ml-2`;
+              confBadge.title = "AI confidence in this identification";
+              titleContainer.appendChild(confBadge);
+            }
 
 
             card.appendChild(titleContainer);
@@ -154,10 +296,10 @@ if (plant.confidence !== undefined) {
             const attrContainer = document.createElement('div');
             attrContainer.className = "flex flex-wrap gap-2 mb-2";
             const attrs = [
-              {label: "Flowering", value: plant.is_flowering, color: "green"},
-              {label: "Medicinal", value: plant.is_medicinal, color: "blue"},
-              {label: "Edible", value: plant.is_edible, color: "yellow"},
-              {label: "Toxic", value: plant.is_toxic_to_pets, color: "red"}
+              { label: "Flowering", value: plant.is_flowering, color: "green" },
+              { label: "Medicinal", value: plant.is_medicinal, color: "blue" },
+              { label: "Edible", value: plant.is_edible, color: "yellow" },
+              { label: "Toxic", value: plant.is_toxic_to_pets, color: "red" }
             ];
             attrs.forEach(a => {
               if (a.value !== null) {
@@ -183,17 +325,6 @@ if (plant.confidence !== undefined) {
           plantGrid.appendChild(fragment);
         }
 
-        renderGrid(plants);
-
-        // Search filter
-        searchInput.addEventListener('input', () => {
-          const query = searchInput.value.toLowerCase();
-          const filtered = plants.filter(p =>
-            p.identified_name.toLowerCase().includes(query) ||
-            (p.local_names && p.local_names.some(l => l.name.toLowerCase().includes(query)))
-          );
-          renderGrid(filtered);
-        });
 
       } catch (e) {
         console.error('Failed to load data/index.json:', e);
@@ -204,4 +335,5 @@ if (plant.confidence !== undefined) {
   </script>
 
 </body>
+
 </html>
