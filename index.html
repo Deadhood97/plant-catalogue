@@ -500,7 +500,12 @@
         const img = document.getElementById('modalImg');
 
         // 1. Header Data
-        img.src = plant.reference_image.url;
+        let thumbPath = plant.reference_image.url;
+        // Use thumbnails for local files to avoid loading heavy 5MB photos
+        if (!thumbPath.startsWith('http')) {
+          thumbPath = thumbPath.replace("photos/", "thumbnails/");
+        }
+        img.src = thumbPath;
         document.getElementById('modalName').textContent = plant.identified_name;
         document.getElementById('modalSci').textContent = plant.scientific_name;
 
