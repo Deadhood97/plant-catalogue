@@ -56,7 +56,25 @@ async def upload_plant(file: UploadFile = File(...), db: Session = Depends(get_d
         # 2. Run AI Identification
         plant_data = identify_plant_from_file(file_path)
         
-        # 3. Augment Data (set reference image to the public URL)
+        # 3. Content Moderation - Reject if not a plant
+        MIN_CONFIDENCE = 0.6  # Minimum confidence to accept
+        
+        if plant_data.get("confidence", 0) < MIN_CONFIDENCE:
+            # Delete the uploaded file
+            os.remove(file_path)
+            raise HTTPException(
+                status_code=400, 
+                detail=f"Unable to identify a plant in this image (confidence: {plant_data.get('confidence', 0):.0%}). Please upload a clear photo of a plant."
+            )
+        
+        if plant_data.get("identified_name", "").lower() == "unknown":
+            os.remove(file_path)
+            raise HTTPException(
+                status_code=400,
+                detail="Could not identify a plant in this image. Please upload a clear photo of a plant."
+            )
+        
+        # 4. Augment Data (set reference image to the public URL)
         # Use BASE_URL env var for prod, fallback to localhost for dev
         base_url = os.getenv('BASE_URL', 'http://localhost:8001')
         plant_data["reference_image"] = {
@@ -65,7 +83,7 @@ async def upload_plant(file: UploadFile = File(...), db: Session = Depends(get_d
             "license": "public"
         }
         
-        # 4. Save to Database
+        # 5. Save to Database
         db_plant = PublicPlant(
             filename=unique_filename,
             data=plant_data
