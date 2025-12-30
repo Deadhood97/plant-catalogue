@@ -648,7 +648,10 @@
             body: formData
           });
 
-          if (!res.ok) throw new Error('Upload failed');
+          if (!res.ok) {
+            const errorData = await res.json();
+            throw new Error(errorData.detail || 'Upload failed');
+          }
 
           // Refresh public list
           await loadPublicPlants();
@@ -657,7 +660,7 @@
           e.target.value = '';
           alert('Plant identified and added to public collection! 🌿');
         } catch (err) {
-          alert('Failed to upload plant: ' + err.message);
+          alert('Upload Issue: ' + err.message);
         } finally {
           loader.classList.add('hidden');
         }
