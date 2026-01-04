@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Greenery | Plant Catalogue</title>
+  <title>The Conservatory | Plant Catalogue</title>
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/common.js"></script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,682 +17,87 @@
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
     rel="stylesheet">
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            serif: ['"Playfair Display"', 'serif'],
-            sans: ['"Outfit"', 'sans-serif'],
-          },
-          colors: {
-            jungle: '#1a4731',
-            sage: '#8da399',
-            terracotta: '#e07a5f',
-            cream: '#fcfbf7',
-            leaf: '#4a7c59',
-            sand: '#e8e6df'
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    body {
-      background-color: #fcfbf7;
-      /* Subtle texture */
-      background-image: radial-gradient(#8da399 0.5px, transparent 0.5px);
-      background-size: 24px 24px;
-    }
-
-    .glass {
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.6);
-    }
-
-    .card-hover {
-      transition: all 0.3s ease;
-    }
-
-    .card-hover:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    }
-
-    /* Hide scrollbar for clean horizontal scrolling if needed */
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-
-    dialog::backdrop {
-      background: rgba(26, 71, 49, 0.6);
-      backdrop-filter: blur(4px);
-    }
-
-    dialog[open] {
-      animation: zoomIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    @keyframes zoomIn {
-      from {
-        transform: scale(0.95);
-        opacity: 0;
-      }
-
-      to {
-        transform: scale(1);
-      }
-    }
-
-    /* Loader Styles */
-    #loader {
-      position: fixed;
-      inset: 0;
-      z-index: 100;
-      background-color: #fcfbf7;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      transition: opacity 0.5s ease;
-    }
-
-    .sprout-icon {
-      font-size: 4rem;
-      animation: bounce 1.5s infinite;
-    }
-
-    @keyframes bounce {
-
-      0%,
-      100% {
-        transform: translateY(0);
-      }
-
-      50% {
-        transform: translateY(-10px);
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body
-  class="text-gray-800 font-sans antialiased min-h-screen flex flex-col selection:bg-terracotta selection:text-white">
+  class="text-gray-800 font-sans antialiased min-h-screen flex flex-col justify-center items-center selection:bg-terracotta selection:text-white relative overflow-hidden">
 
-  <!-- Loading Screen -->
-  <div id="loader">
-    <div class="sprout-icon">🌱</div>
-    <p class="mt-4 text-jungle font-serif text-xl animate-pulse">Curating your garden...</p>
+  <!-- Background decorations -->
+  <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 opacity-30">
+    <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-sage/30 rounded-full blur-[100px]"></div>
+    <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-terracotta/20 rounded-full blur-[100px]"></div>
   </div>
 
-  <!-- Hero Section -->
-  <header class="relative pt-20 pb-16 px-6 text-center overflow-hidden">
-    <!-- Decorative Backdrop Blobs -->
-    <div
-      class="absolute top-0 left-1/4 w-96 h-96 bg-sage/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-    </div>
-    <div
-      class="absolute top-10 right-1/4 w-80 h-80 bg-terracotta/10 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3 pointer-events-none">
-    </div>
+  <!-- Main Content -->
+  <div class="text-center max-w-4xl px-6 relative z-10">
+    <h1
+      class="font-serif text-6xl md:text-8xl font-bold text-jungle mb-6 tracking-tight drop-shadow-sm animate-fade-in-up">
+      The Conservatory
+    </h1>
+    <p class="font-sans text-xl md:text-2xl text-leaf font-light max-w-2xl mx-auto tracking-wide mb-16 animate-fade-in-up"
+      style="animation-delay: 100ms">
+      A digital herbarium curated by AI.
+    </p>
 
-    <div class="relative z-10 max-w-4xl mx-auto">
-      <h1 class="font-serif text-6xl md:text-7xl font-bold text-jungle mb-4 tracking-tight drop-shadow-sm">
-        The Conservatory
-      </h1>
-      <p class="font-sans text-xl md:text-2xl text-leaf font-light max-w-2xl mx-auto tracking-wide">
-        A digital herbarium of my home garden, curated by AI.
-      </p>
-    </div>
-  </header>
+    <!-- Navigation Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
 
-  <main class="flex-grow px-4 md:px-8 max-w-[1600px] mx-auto w-full pb-20">
-
-    <!-- Controls Bar -->
-    <div
-      class="glass sticky top-6 z-40 rounded-2xl shadow-lg p-3 md:p-5 mb-12 transition-all duration-300 border border-white/50">
-      <div class="flex flex-col xl:flex-row gap-5 items-center justify-between">
-
-        <!-- Search -->
-        <div class="w-full xl:w-1/3 relative group">
-          <span
-            class="absolute left-4 top-1/2 -translate-y-1/2 text-leaf/60 group-focus-within:text-jungle transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </span>
-          <input id="searchInput" type="text" placeholder="Search species, local names..."
-            class="w-full pl-11 pr-4 py-3 bg-white/60 border border-sage/20 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-jungle/10 focus:border-jungle/30 text-jungle placeholder-leaf/50 transition-all font-medium">
+      <!-- My Plants -->
+      <a href="my-plants.html"
+        class="glass p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300 group text-left border border-white/60 hover:border-terracotta/30 shadow-lg hover:shadow-xl cursor-pointer">
+        <div class="text-4xl mb-4 group-hover:scale-110 transition-transform origin-left">🌿</div>
+        <h2 class="font-serif text-3xl font-bold text-jungle mb-2 group-hover:text-terracotta transition-colors">My
+          Collection</h2>
+        <p class="text-leaf/80 text-lg">Browse the curated selection of specimens from my personal home garden.</p>
+        <div class="mt-6 text-terracotta font-medium flex items-center gap-2 group-hover:gap-3 transition-all">
+          Enter Collection <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
         </div>
+      </a>
 
-        <!-- Filters & Sort -->
-        <div class="flex flex-col md:flex-row gap-4 w-full xl:w-auto items-center justify-center lg:justify-end">
-
-          <!-- Attributes -->
-          <div class="flex flex-wrap gap-2 justify-center">
-            <label class="cursor-pointer select-none group">
-              <input type="checkbox" class="filter-attr peer sr-only" value="is_flowering">
-              <div
-                class="px-4 py-2 rounded-lg border border-sage/20 text-leaf/80 bg-white/40 peer-checked:bg-pink-50 peer-checked:text-pink-700 peer-checked:border-pink-200 transition-all hover:bg-white/80 group-hover:shadow-sm text-sm font-medium flex items-center gap-2">
-                <span>🌸</span> Flowering
-              </div>
-            </label>
-            <label class="cursor-pointer select-none group">
-              <input type="checkbox" class="filter-attr peer sr-only" value="is_medicinal">
-              <div
-                class="px-4 py-2 rounded-lg border border-sage/20 text-leaf/80 bg-white/40 peer-checked:bg-blue-50 peer-checked:text-blue-700 peer-checked:border-blue-200 transition-all hover:bg-white/80 group-hover:shadow-sm text-sm font-medium flex items-center gap-2">
-                <span>💊</span> Medicinal
-              </div>
-            </label>
-            <label class="cursor-pointer select-none group">
-              <input type="checkbox" class="filter-attr peer sr-only" value="is_edible">
-              <div
-                class="px-4 py-2 rounded-lg border border-sage/20 text-leaf/80 bg-white/40 peer-checked:bg-amber-50 peer-checked:text-amber-700 peer-checked:border-amber-200 transition-all hover:bg-white/80 group-hover:shadow-sm text-sm font-medium flex items-center gap-2">
-                <span>🥗</span> Edible
-              </div>
-            </label>
-            <label class="cursor-pointer select-none group">
-              <input type="checkbox" class="filter-attr peer sr-only" value="is_toxic_to_pets">
-              <div
-                class="px-4 py-2 rounded-lg border border-sage/20 text-leaf/80 bg-white/40 peer-checked:bg-red-50 peer-checked:text-red-700 peer-checked:border-red-200 transition-all hover:bg-white/80 group-hover:shadow-sm text-sm font-medium flex items-center gap-2">
-                <span>⚠️</span> Toxic
-              </div>
-            </label>
-          </div>
-
-          <div class="w-full h-px md:w-px md:h-8 bg-sage/20 mx-2 hidden md:block"></div>
-
-          <!-- Dropdowns -->
-          <div class="flex w-full md:w-auto gap-3">
-            <select id="confFilter"
-              class="flex-1 md:flex-none px-4 py-2 rounded-lg border border-sage/20 bg-white/60 text-jungle focus:outline-none focus:ring-2 focus:ring-jungle/10 cursor-pointer text-sm font-medium hover:bg-white transition-colors">
-              <option value="0">All Confidence</option>
-              <option value="0.9">High (90%+)</option>
-              <option value="0.8">Medium (80%+)</option>
-            </select>
-
-            <select id="sortSelect"
-              class="flex-1 md:flex-none px-4 py-2 rounded-lg border border-sage/20 bg-white/60 text-jungle focus:outline-none focus:ring-2 focus:ring-jungle/10 cursor-pointer text-sm font-medium hover:bg-white transition-colors">
-              <option value="date_desc">Newest First</option>
-              <option value="name_asc">Name (A-Z)</option>
-              <option value="name_desc">Name (Z-A)</option>
-              <option value="conf_desc">Most Confident</option>
-            </select>
-          </div>
+      <!-- Public Plants -->
+      <a href="public-plants.html"
+        class="glass p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300 group text-left border border-white/60 hover:border-jungle/30 shadow-lg hover:shadow-xl cursor-pointer">
+        <div class="text-4xl mb-4 group-hover:scale-110 transition-transform origin-left">🌍</div>
+        <h2 class="font-serif text-3xl font-bold text-jungle mb-2 group-hover:text-terracotta transition-colors">Public
+          Gallery</h2>
+        <p class="text-leaf/80 text-lg">Explore discoveries uploaded by the community and identified by our AI.</p>
+        <div class="mt-6 text-terracotta font-medium flex items-center gap-2 group-hover:gap-3 transition-all">
+          Visit Gallery <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
         </div>
-      </div>
+      </a>
+
     </div>
+  </div>
 
-    <!-- Grid -->
-    <div id="plantGrid" class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
-      <!-- Cards injected here -->
-    </div>
+  <footer class="absolute bottom-6 w-full text-center text-leaf/40 text-sm font-light">
+    <p>Cultivated with <span class="text-terracotta animate-pulse">❤</span> in the digital garden.</p>
+  </footer>
 
-    <!-- Public Section -->
-    <div class="mt-24 mb-12">
-      <div class="flex items-center justify-between mb-8">
-        <h2 class="text-3xl font-serif text-jungle">Public Collection</h2>
-        <label
-          class="cursor-pointer bg-terracotta text-white px-6 py-3 rounded-full hover:bg-terracotta/90 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
-          <span>📸</span> Add Your Plant
-          <input type="file" id="uploadInput" accept="image/*" class="hidden">
-        </label>
-      </div>
-
-      <!-- Upload Spinner -->
-      <div id="uploadLoader" class="hidden w-full text-center py-12">
-        <div class="inline-block animate-bounce text-4xl">🌱</div>
-        <p class="text-leaf/60 mt-4">Identifying your plant...</p>
-      </div>
-
-      <div id="publicGrid" class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
-        <!-- Public Cards injected here -->
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="mt-24 text-center text-leaf/40 text-sm font-light">
-      <p>Cultivated with <span class="text-terracotta animate-pulse">❤</span> in the digital garden.</p>
-    </footer>
-
-  </main>
-
-  <!-- Detail Modal -->
-  <dialog id="detailModal"
-    class="bg-transparent p-0 w-full max-w-5xl h-[90vh] md:h-auto md:max-h-[90vh] rounded-3xl shadow-2xl overflow-hidden backdrop:bg-jungle/60 backdrop:backdrop-blur-sm m-auto open:flex flex-col md:flex-row focus:outline-none">
-    <div class="bg-white w-full h-full flex flex-col md:flex-row relative">
-
-      <!-- Close Button -->
-      <button id="modalCloseBtn"
-        class="absolute top-4 right-4 z-50 bg-white/50 hover:bg-white text-jungle p-2 rounded-full transition-all backdrop-blur-md">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-
-      <!-- Modal Image (Left/Top) -->
-      <div class="w-full md:w-5/12 h-64 md:h-auto relative bg-stone-100 shrink-0">
-        <img id="modalImg" src="" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-t from-jungle/80 via-transparent to-transparent opacity-60"></div>
-        <div class="absolute bottom-6 left-6 text-white">
-          <h2 id="modalName" class="font-serif text-4xl font-bold mb-1 drop-shadow-lg"></h2>
-          <p id="modalSci" class="italic opacity-90 text-lg"></p>
-        </div>
-      </div>
-
-      <!-- Modal Content (Right/Bottom) -->
-      <div class="flex-1 overflow-y-auto p-8 md:p-10 no-scrollbar">
-
-        <!-- Header Tags -->
-        <div class="flex flex-wrap gap-2 mb-8" id="modalBadges"></div>
-
-        <!-- Main Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-
-          <!-- Bio Section -->
-          <div>
-            <h3 class="font-serif text-2xl text-jungle mb-4 flex items-center gap-2">
-              🌱 <span class="border-b-2 border-terracotta/20">About</span>
-            </h3>
-
-            <div class="space-y-4 text-gray-600">
-              <div>
-                <span class="text-xs font-bold text-terracotta uppercase tracking-wider block mb-1">Local Names</span>
-                <p id="modalLocal" class="font-medium text-jungle"></p>
-              </div>
-              <div>
-                <span class="text-xs font-bold text-terracotta uppercase tracking-wider block mb-1">Region &
-                  Lifespan</span>
-                <p id="modalOrigin" class="font-medium text-jungle"></p>
-              </div>
-              <div id="modalFactBox"
-                class="bg-stone-50 p-4 rounded-xl border border-stone-100 italic text-sm leading-relaxed text-leaf/90">
-              </div>
-            </div>
-          </div>
-
-          <!-- Care Section -->
-          <div>
-            <h3 class="font-serif text-2xl text-jungle mb-4 flex items-center gap-2">
-              💚 <span class="border-b-2 border-terracotta/20">Care Guide</span>
-            </h3>
-            <div class="grid grid-cols-2 gap-3" id="modalCareGrid">
-              <!-- Injected via JS -->
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Symbolism (Full Width) -->
-        <div id="modalSymbolism" class="bg-purple-50/50 rounded-2xl p-6 border border-purple-100/50 mb-4"></div>
-
-      </div>
-    </div>
-  </dialog>
-
-
-  <script>
-    async function loadPlants() {
-      const plantGrid = document.getElementById('plantGrid');
-      const searchInput = document.getElementById('searchInput');
-      const sortSelect = document.getElementById('sortSelect');
-      const confFilter = document.getElementById('confFilter');
-      const attrCheckboxes = document.querySelectorAll('.filter-attr');
-
-      let plants = [];
-
-      // --- Helper Functions ---
-
-      function getFilteredAndSortedPlants() {
-        let result = [...plants];
-
-        // 1. Search (Name or Local Name)
-        const query = searchInput.value.toLowerCase();
-        if (query) {
-          result = result.filter(p =>
-            p.identified_name.toLowerCase().includes(query) ||
-            (p.local_names && p.local_names.some(l => l.name.toLowerCase().includes(query)))
-          );
-        }
-
-        // 2. Attributes (AND logic: must match all checked)
-        attrCheckboxes.forEach(cb => {
-          if (cb.checked) {
-            const key = cb.value;
-            result = result.filter(p => p[key] === true);
-          }
-        });
-
-        // 3. Confidence
-        const minConf = parseFloat(confFilter.value);
-        if (minConf > 0) {
-          result = result.filter(p => (p.confidence || 0) >= minConf);
-        }
-
-        // 4. Sort
-        const sortMode = sortSelect.value;
-        result.sort((a, b) => {
-          switch (sortMode) {
-            case 'name_asc':
-              return a.identified_name.localeCompare(b.identified_name);
-            case 'name_desc':
-              return b.identified_name.localeCompare(a.identified_name);
-            case 'conf_desc':
-              return (b.confidence || 0) - (a.confidence || 0);
-            case 'conf_asc':
-              return (a.confidence || 0) - (b.confidence || 0);
-            case 'date_desc':
-              return new Date(b.date_added || 0) - new Date(a.date_added || 0);
-            case 'date_asc':
-              return new Date(a.date_added || 0) - new Date(b.date_added || 0);
-            default:
-              return 0;
-          }
-        });
-
-        return result;
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
       }
 
-      function renderGrid(filteredPlants, container = plantGrid) {
-        container.innerHTML = "";
-        if (filteredPlants.length === 0) {
-          container.innerHTML = `
-                <div class="col-span-full py-20 text-center text-leaf/60">
-                    <p class="text-2xl font-serif mb-2">🌿</p>
-                    <p class="text-lg">No plants found matching these filters.</p>
-                </div>`;
-          return;
-        }
-
-        const fragment = document.createDocumentFragment();
-
-        filteredPlants.forEach((plant, index) => {
-          const card = document.createElement('div');
-          // Staggered list animation
-          card.style.animationDelay = `${index * 50}ms`;
-          card.className = "card-hover group bg-white rounded-3xl overflow-hidden shadow-sm border border-stone-100 flex flex-col relative h-96 cursor-pointer";
-
-          // Make entire card clickable
-          card.onclick = () => openModal(plant);
-
-          // --- Image Section (Tall) ---
-          const imgContainer = document.createElement('div');
-          imgContainer.className = "relative h-2/3 overflow-hidden bg-stone-100";
-
-          const img = document.createElement('img');
-          // Handle both local photos/thumbnails and public absolute URLs
-          let thumbPath = plant.reference_image.url;
-          if (!thumbPath.startsWith('http')) {
-            thumbPath = thumbPath.replace("photos/", "thumbnails/");
-          }
-          img.src = thumbPath;
-          img.className = "w-full h-full object-cover transition-transform duration-700 group-hover:scale-110";
-          img.loading = "lazy";
-
-          // Badge: Personality
-          if (plant.plant_personality) {
-            const vibe = document.createElement('div');
-            vibe.className = "absolute top-3 right-3 bg-white/90 backdrop-blur text-jungle text-xs font-bold px-3 py-1.5 rounded-full shadow-lg z-10";
-            vibe.textContent = plant.plant_personality;
-            imgContainer.appendChild(vibe);
-          }
-
-          // Badge: Confidence Ring
-          if (plant.confidence) {
-            const confPercent = Math.round(plant.confidence * 100);
-            const ring = document.createElement('div');
-            let color = confPercent >= 90 ? "border-emerald-500 text-emerald-600" : "border-amber-500 text-amber-600";
-            ring.className = `absolute top-3 left-3 w-10 h-10 rounded-full bg-white flex items-center justify-center text-[10px] font-bold border-2 ${color} shadow-lg`;
-            ring.textContent = `${confPercent}%`;
-            imgContainer.appendChild(ring);
-          }
-
-          imgContainer.appendChild(img);
-          card.appendChild(imgContainer);
-
-          // --- Simple Body ---
-          const body = document.createElement('div');
-          body.className = "p-5 flex flex-col justify-between h-1/3";
-
-          // Title
-          const titleBox = document.createElement('div');
-          titleBox.innerHTML = `<h2 class="font-serif text-xl font-bold text-jungle leading-tight truncate">${plant.identified_name}</h2>
-                                <p class="text-leaf/60 text-sm italic truncate">${plant.scientific_name}</p>`;
-          body.appendChild(titleBox);
-
-          // Footer Icons
-          const iconDiv = document.createElement('div');
-          iconDiv.className = "flex gap-1";
-          if (plant.is_flowering) iconDiv.innerHTML += '<span title="Flowering" class="bg-pink-50 text-pink-600 p-1 rounded">🌸</span>';
-          if (plant.is_edible) iconDiv.innerHTML += '<span title="Edible" class="bg-amber-50 text-amber-600 p-1 rounded">🥗</span>';
-          if (plant.is_medicinal) iconDiv.innerHTML += '<span title="Medicinal" class="bg-blue-50 text-blue-600 p-1 rounded">💊</span>';
-          if (plant.is_toxic_to_pets) iconDiv.innerHTML += '<span title="Toxic" class="bg-red-50 text-red-600 p-1 rounded">⚠️</span>';
-
-          const footer = document.createElement('div');
-          footer.className = "flex items-center justify-between mt-auto";
-          footer.appendChild(iconDiv);
-
-          const viewBtn = document.createElement('span');
-          viewBtn.className = "text-terracotta text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all";
-          viewBtn.innerHTML = 'View <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>';
-          footer.appendChild(viewBtn);
-
-          body.appendChild(footer);
-          card.appendChild(body);
-          fragment.appendChild(card);
-        });
-
-        container.appendChild(fragment);
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
-
-      // --- Modal Logic ---
-
-      function openModal(plant) {
-        const m = document.getElementById('detailModal');
-        const img = document.getElementById('modalImg');
-
-        // 1. Header Data
-        let thumbPath = plant.reference_image.url;
-        // Use thumbnails for local files to avoid loading heavy 5MB photos
-        if (!thumbPath.startsWith('http')) {
-          thumbPath = thumbPath.replace("photos/", "thumbnails/");
-        }
-        img.src = thumbPath;
-        document.getElementById('modalName').textContent = plant.identified_name;
-        document.getElementById('modalSci').textContent = plant.scientific_name;
-
-        // 2. Badges
-        const badgeContainer = document.getElementById('modalBadges');
-        badgeContainer.innerHTML = '';
-        if (plant.plant_personality)
-          addBadge(badgeContainer, `🎭 ${plant.plant_personality}`, "bg-terracotta text-white");
-
-        if (plant.is_flowering) addBadge(badgeContainer, "🌸 Flowering", "bg-pink-100 text-pink-700");
-        if (plant.is_edible) addBadge(badgeContainer, "🥗 Edible", "bg-amber-100 text-amber-700");
-        if (plant.is_medicinal) addBadge(badgeContainer, "💊 Medicinal", "bg-blue-100 text-blue-700");
-        if (plant.is_toxic_to_pets) addBadge(badgeContainer, "⚠️ Toxic to Pets", "bg-red-100 text-red-700");
-
-        // 3. Bio
-        const localNames = (plant.local_names || []).map(l => l.name).join(', ') || "None known";
-        document.getElementById('modalLocal').textContent = localNames;
-
-        const life = plant.lifespan ? ` • ${plant.lifespan}` : '';
-        document.getElementById('modalOrigin').textContent = (plant.origin_region || "Unknown") + life;
-
-        const fact = plant.fun_fact?.text || "No specific fun fact available.";
-        document.getElementById('modalFactBox').innerHTML = `<span class="font-bold">Did you know?</span> "${fact}"`;
-
-        // 4. Care Grid
-        const careContainer = document.getElementById('modalCareGrid');
-        careContainer.innerHTML = '';
-        const care = plant.care || {};
-
-        const careItems = [
-          { l: "Water", v: care.watering_frequency, i: "💧" },
-          { l: "Sun", v: care.sunlight_requirement, i: "☀️" },
-          { l: "Soil", v: care.soil_type, i: "🪴" },
-          { l: "Growth", v: care.growth_rate, i: "📈" }
-        ];
-
-        careItems.forEach(item => {
-          const div = document.createElement('div');
-          div.className = "bg-stone-50 rounded-lg p-3 border border-stone-100";
-          div.innerHTML = `<p class="text-[10px] uppercase text-leaf/50 font-bold tracking-wider mb-1">${item.i} ${item.l}</p>
-                              <p class="text-sm font-medium text-jungle leading-snug">${item.v || 'Unknown'}</p>`;
-          careContainer.appendChild(div);
-        });
-
-        // 5. Symbolism
-        const symBox = document.getElementById('modalSymbolism');
-        if (plant.symbolism) {
-          symBox.style.display = "block";
-          symBox.innerHTML = `<h4 class="font-serif text-lg text-purple-900 mb-2">✨ Symbolism</h4><p class="text-purple-800/80 italic">${plant.symbolism}</p>`;
-        } else {
-          symBox.style.display = "none";
-        }
-
-        // Show Modal
-        m.showModal();
-        // Prevent body scroll
-        document.body.style.overflow = 'hidden';
-      }
-
-      function closeModal() {
-        const m = document.getElementById('detailModal');
-        m.close();
-        document.body.style.overflow = '';
-      }
-
-      function addBadge(parent, text, classes) {
-        const span = document.createElement('span');
-        span.className = `px-3 py-1 rounded-full text-xs font-bold ${classes}`;
-        span.textContent = text;
-        parent.appendChild(span);
-      }
-
-      // Close modal on click outside
-      document.getElementById('detailModal').addEventListener('click', (e) => {
-        const rect = e.target.getBoundingClientRect();
-        if (rect.left > e.clientX || rect.right < e.clientX || rect.top > e.clientY || rect.bottom < e.clientY) {
-          closeModal();
-        }
-      });
-
-      // Restore scroll on native close (Escape key)
-      document.getElementById('detailModal').addEventListener('close', () => {
-        document.body.style.overflow = '';
-      });
-
-      function render() {
-        const filtered = getFilteredAndSortedPlants();
-        renderGrid(filtered);
-      }
-
-      // --- Data Fetching ---
-
-      try {
-        // Fetch bundled data for performance
-        const res = await fetch('data/all_plants.json?v=' + Date.now());
-        if (!res.ok) throw new Error('Bundle not found');
-        plants = await res.json();
-      } catch (e) {
-        console.warn('Bundle load failed, falling back to individual files:', e);
-        // Fallback to legacy loading
-        try {
-          const indexRes = await fetch('data/index.json?v=' + Date.now());
-          const jsonFiles = await indexRes.json();
-          for (const filename of jsonFiles) {
-            try {
-              const res = await fetch(`data/${filename}?v=` + Date.now());
-              plants.push(await res.json());
-            } catch (err) { console.error(err); }
-          }
-        } catch (err) { console.error('Critical: Failed to load any plant data', err); }
-      }
-
-      // --- Public Backend Integration ---
-      const API_URL = 'http://localhost:8001';
-
-      async function loadPublicPlants() {
-        try {
-          const res = await fetch(`${API_URL}/api/public-plants`);
-          if (!res.ok) return;
-          const publicPlants = await res.json();
-          renderGrid(publicPlants, document.getElementById('publicGrid'));
-        } catch (e) {
-          console.warn('Backend not available:', e);
-        }
-      }
-
-      async function handleUpload(e) {
-        const file = e.target.files[0];
-        if (!file) return;
-
-        const loader = document.getElementById('uploadLoader');
-        loader.classList.remove('hidden');
-
-        const formData = new FormData();
-        formData.append('file', file);
-
-        try {
-          const res = await fetch(`${API_URL}/api/upload`, {
-            method: 'POST',
-            body: formData
-          });
-
-          if (!res.ok) {
-            const errorData = await res.json();
-            throw new Error(errorData.detail || 'Upload failed');
-          }
-
-          // Refresh public list
-          await loadPublicPlants();
-
-          // Reset
-          e.target.value = '';
-          alert('Plant identified and added to public collection! 🌿');
-        } catch (err) {
-          alert('Upload Issue: ' + err.message);
-        } finally {
-          loader.classList.add('hidden');
-        }
-      }
-
-      // --- Initialization ---
-
-      // Attach Event Listeners
-      document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
-      document.getElementById('uploadInput').addEventListener('change', handleUpload);
-      searchInput.addEventListener('input', render);
-      sortSelect.addEventListener('change', render);
-      confFilter.addEventListener('change', render);
-      attrCheckboxes.forEach(cb => cb.addEventListener('change', render));
-
-
-      // Initial Render
-      render();
-      loadPublicPlants();
-
-      // Hide Loader
-      const loader = document.getElementById('loader');
-      setTimeout(() => {
-        loader.style.opacity = '0';
-        setTimeout(() => loader.remove(), 500);
-      }, 500); // Small delay for smoothness
-
     }
 
-    loadPlants();
-  </script>
+    .animate-fade-in-up {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+  </style>
+
 </body>
 
 </html>

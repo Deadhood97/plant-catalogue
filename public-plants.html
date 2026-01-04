@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Public Gallery | The Conservatory</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Shared Tailwind Configuration -->
+  <script src="assets/js/common.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body
+  class="text-gray-800 font-sans antialiased min-h-screen flex flex-col selection:bg-terracotta selection:text-white">
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="sprout-icon">🌱</div>
+    <p class="mt-4 text-jungle font-serif text-xl animate-pulse">Connecting to the grid...</p>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="absolute top-0 w-full p-6 z-50 flex justify-between items-center max-w-[1600px] mx-auto left-0 right-0">
+    <a href="index.html" class="flex items-center gap-2 text-jungle hover:text-leaf transition-colors group">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform group-hover:-translate-x-1 transition-transform"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      <span class="font-serif font-medium">Home</span>
+    </a>
+    <div class="flex gap-4">
+      <a href="my-plants.html" class="text-leaf/80 hover:text-jungle transition-colors">My Collection</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative pt-24 pb-12 px-6 text-center overflow-hidden">
+    <div class="relative z-10 max-w-4xl mx-auto">
+      <h1 class="font-serif text-5xl md:text-6xl font-bold text-jungle mb-4 tracking-tight drop-shadow-sm">
+        Public Gallery
+      </h1>
+      <p class="font-sans text-lg md:text-xl text-leaf font-light max-w-2xl mx-auto tracking-wide">
+        Specimens contributed by the community, identified by our AI.
+      </p>
+    </div>
+  </header>
+
+  <main class="flex-grow px-4 md:px-8 max-w-[1600px] mx-auto w-full pb-20">
+
+    <!-- Upload Section controls -->
+    <div
+      class="glass sticky top-6 z-40 rounded-2xl shadow-lg p-3 md:p-5 mb-12 transition-all duration-300 border border-white/50">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-jungle font-serif text-xl ml-2">Share your discovery</p>
+
+        <label
+          class="cursor-pointer bg-terracotta text-white px-6 py-3 rounded-full hover:bg-terracotta/90 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 group">
+          <span class="group-hover:rotate-12 transition-transform">📸</span> Add Your Plant
+          <input type="file" id="uploadInput" accept="image/*" class="hidden">
+        </label>
+      </div>
+
+      <!-- Upload Spinner -->
+      <div id="uploadLoader" class="hidden w-full text-center py-6 border-t border-sage/10 mt-4">
+        <div class="inline-block animate-bounce text-3xl">🌱</div>
+        <p class="text-leaf/60 mt-2 font-medium">Identifying your plant...</p>
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <div id="publicGrid"
+      class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 min-h-[400px]">
+      <!-- Cards injected here -->
+      <div class="col-span-full flex items-center justify-center text-leaf/50 h-64">
+        Connecting to public database...
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-24 text-center text-leaf/40 text-sm font-light">
+      <p>Cultivated with <span class="text-terracotta animate-pulse">❤</span> in the digital garden.</p>
+    </footer>
+
+  </main>
+
+  <!-- Detail Modal -->
+  <dialog id="detailModal"
+    class="bg-transparent p-0 w-full max-w-5xl h-[90vh] md:h-auto md:max-h-[90vh] rounded-3xl shadow-2xl overflow-hidden backdrop:bg-jungle/60 backdrop:backdrop-blur-sm m-auto open:flex flex-col md:flex-row focus:outline-none">
+    <div class="bg-white w-full h-full flex flex-col md:flex-row relative">
+
+      <!-- Close Button -->
+      <button id="modalCloseBtn"
+        class="absolute top-4 right-4 z-50 bg-white/50 hover:bg-white text-jungle p-2 rounded-full transition-all backdrop-blur-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- Modal Image (Left/Top) -->
+      <div class="w-full md:w-5/12 h-64 md:h-auto relative bg-stone-100 shrink-0">
+        <img id="modalImg" src="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-jungle/80 via-transparent to-transparent opacity-60"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h2 id="modalName" class="font-serif text-4xl font-bold mb-1 drop-shadow-lg"></h2>
+          <p id="modalSci" class="italic opacity-90 text-lg"></p>
+        </div>
+      </div>
+
+      <!-- Modal Content (Right/Bottom) -->
+      <div class="flex-1 overflow-y-auto p-8 md:p-10 no-scrollbar">
+
+        <!-- Header Tags -->
+        <div class="flex flex-wrap gap-2 mb-8" id="modalBadges"></div>
+
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+
+          <!-- Bio Section -->
+          <div>
+            <h3 class="font-serif text-2xl text-jungle mb-4 flex items-center gap-2">
+              🌱 <span class="border-b-2 border-terracotta/20">About</span>
+            </h3>
+
+            <div class="space-y-4 text-gray-600">
+              <div>
+                <span class="text-xs font-bold text-terracotta uppercase tracking-wider block mb-1">Local Names</span>
+                <p id="modalLocal" class="font-medium text-jungle"></p>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-terracotta uppercase tracking-wider block mb-1">Region &
+                  Lifespan</span>
+                <p id="modalOrigin" class="font-medium text-jungle"></p>
+              </div>
+              <div id="modalFactBox"
+                class="bg-stone-50 p-4 rounded-xl border border-stone-100 italic text-sm leading-relaxed text-leaf/90">
+              </div>
+            </div>
+          </div>
+
+          <!-- Care Section -->
+          <div>
+            <h3 class="font-serif text-2xl text-jungle mb-4 flex items-center gap-2">
+              💚 <span class="border-b-2 border-terracotta/20">Care Guide</span>
+            </h3>
+            <div class="grid grid-cols-2 gap-3" id="modalCareGrid">
+              <!-- Injected via JS -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Symbolism (Full Width) -->
+        <div id="modalSymbolism" class="bg-purple-50/50 rounded-2xl p-6 border border-purple-100/50 mb-4"></div>
+
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Shared Catalogue Logic -->
+  <script src="assets/js/catalogue.js"></script>
+
+  <script>
+    async function init() {
+      const publicGrid = document.getElementById('publicGrid');
+
+      async function loadPublicPlants() {
+        try {
+          const res = await fetch(`${API_URL}/api/public-plants`);
+          if (!res.ok) throw new Error('Failed to fetch public plants');
+          const publicPlants = await res.json();
+          renderGrid(publicPlants, publicGrid);
+        } catch (e) {
+          console.warn('Backend not available:', e);
+          publicGrid.innerHTML = `
+            <div class="col-span-full py-20 text-center text-leaf/60">
+                <p class="text-2xl font-serif mb-2">🔌</p>
+                <p class="text-lg">Public backend is currently offline.</p>
+                <p class="text-sm mt-2 opacity-70">Make sure the python server is running on localhost:8001</p>
+            </div>`;
+        }
+      }
+
+      async function handleUpload(e) {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        const loader = document.getElementById('uploadLoader');
+        loader.classList.remove('hidden');
+
+        const formData = new FormData();
+        formData.append('file', file);
+
+        try {
+          const res = await fetch(`${API_URL}/api/upload`, {
+            method: 'POST',
+            body: formData
+          });
+
+          if (!res.ok) {
+            const errorData = await res.json();
+            throw new Error(errorData.detail || 'Upload failed');
+          }
+
+          // Refresh public list
+          await loadPublicPlants();
+
+          // Reset
+          e.target.value = '';
+          alert('Plant identified and added to public collection! 🌿');
+        } catch (err) {
+          alert('Upload Issue: ' + err.message);
+        } finally {
+          loader.classList.add('hidden');
+        }
+      }
+
+      document.getElementById('uploadInput').addEventListener('change', handleUpload);
+
+      // Initial Load
+      loadPublicPlants();
+
+      // Hide Loader
+      const loader = document.getElementById('loader');
+      setTimeout(() => {
+        loader.style.opacity = '0';
+        setTimeout(() => loader.remove(), 500);
+      }, 500);
+    }
+
+    init();
+  </script>
+</body>
+
+</html>

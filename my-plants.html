@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Collection | The Conservatory</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Shared Tailwind Configuration -->
+  <script src="assets/js/common.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body
+  class="text-gray-800 font-sans antialiased min-h-screen flex flex-col selection:bg-terracotta selection:text-white">
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="sprout-icon">🌱</div>
+    <p class="mt-4 text-jungle font-serif text-xl animate-pulse">Curating your garden...</p>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="absolute top-0 w-full p-6 z-50 flex justify-between items-center max-w-[1600px] mx-auto left-0 right-0">
+    <a href="index.html" class="flex items-center gap-2 text-jungle hover:text-leaf transition-colors group">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform group-hover:-translate-x-1 transition-transform"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      <span class="font-serif font-medium">Home</span>
+    </a>
+    <div class="flex gap-4">
+      <a href="public-plants.html" class="text-leaf/80 hover:text-jungle transition-colors">Public Gallery</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative pt-24 pb-12 px-6 text-center overflow-hidden">
+    <div class="relative z-10 max-w-4xl mx-auto">
+      <h1 class="font-serif text-5xl md:text-6xl font-bold text-jungle mb-4 tracking-tight drop-shadow-sm">
+        My Collection
+      </h1>
+      <p class="font-sans text-lg md:text-xl text-leaf font-light max-w-2xl mx-auto tracking-wide">
+        A curated selection of specimens from my personal garden.
+      </p>
+    </div>
+  </header>
+
+  <main class="flex-grow px-4 md:px-8 max-w-[1600px] mx-auto w-full pb-20">
+
+    <!-- Controls Bar -->
+    <div
+      class="glass sticky top-6 z-40 rounded-2xl shadow-lg p-3 md:p-5 mb-12 transition-all duration-300 border border-white/50">
+      <div class="flex flex-col xl:flex-row gap-5 items-center justify-between">
+
+        <!-- Search -->
+        <div class="w-full xl:w-1/3 relative group">
+          <span
+            class="absolute left-4 top-1/2 -translate-y-1/2 text-leaf/60 group-focus-within:text-jungle transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </span>
+          <input id="searchInput" type="text" placeholder="Search species, local names..."
+            class="w-full pl-11 pr-4 py-3 bg-white/60 border border-sage/20 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-jungle/10 focus:border-jungle/30 text-jungle placeholder-leaf/50 transition-all font-medium">
+        </div>
+
+        <!-- Filters & Sort -->
+        <div class="flex flex-col md:flex-row gap-4 w-full xl:w-auto items-center justify-center lg:justify-end">
+
+          <!-- Attributes -->
+          <div class="flex flex-wrap gap-2 justify-center">
+            <label class="cursor-pointer select-none group">
+              <input type="checkbox" class="filter-attr peer sr-only" value="is_flowering">
+              <div
+                class="px-4 py-2 rounded-lg border border-sage/20 text-leaf/80 bg-white/40 peer-checked:bg-pink-50 peer-checked:text-pink-700 peer-checked:border-pink-200 transition-all hover:bg-white/80 group-hover:shadow-sm text-sm font-medium flex items-center gap-2">
+                <span>🌸</span> Flowering
+              </div>
+            </label>
+            <label class="cursor-pointer select-none group">
+              <input type="checkbox" class="filter-attr peer sr-only" value="is_medicinal">
+              <div
+                class="px-4 py-2 rounded-lg border border-sage/20 text-leaf/80 bg-white/40 peer-checked:bg-blue-50 peer-checked:text-blue-700 peer-checked:border-blue-200 transition-all hover:bg-white/80 group-hover:shadow-sm text-sm font-medium flex items-center gap-2">
+                <span>💊</span> Medicinal
+              </div>
+            </label>
+            <label class="cursor-pointer select-none group">
+              <input type="checkbox" class="filter-attr peer sr-only" value="is_edible">
+              <div
+                class="px-4 py-2 rounded-lg border border-sage/20 text-leaf/80 bg-white/40 peer-checked:bg-amber-50 peer-checked:text-amber-700 peer-checked:border-amber-200 transition-all hover:bg-white/80 group-hover:shadow-sm text-sm font-medium flex items-center gap-2">
+                <span>🥗</span> Edible
+              </div>
+            </label>
+            <label class="cursor-pointer select-none group">
+              <input type="checkbox" class="filter-attr peer sr-only" value="is_toxic_to_pets">
+              <div
+                class="px-4 py-2 rounded-lg border border-sage/20 text-leaf/80 bg-white/40 peer-checked:bg-red-50 peer-checked:text-red-700 peer-checked:border-red-200 transition-all hover:bg-white/80 group-hover:shadow-sm text-sm font-medium flex items-center gap-2">
+                <span>⚠️</span> Toxic
+              </div>
+            </label>
+          </div>
+
+          <div class="w-full h-px md:w-px md:h-8 bg-sage/20 mx-2 hidden md:block"></div>
+
+          <!-- Dropdowns -->
+          <div class="flex w-full md:w-auto gap-3">
+            <select id="confFilter"
+              class="flex-1 md:flex-none px-4 py-2 rounded-lg border border-sage/20 bg-white/60 text-jungle focus:outline-none focus:ring-2 focus:ring-jungle/10 cursor-pointer text-sm font-medium hover:bg-white transition-colors">
+              <option value="0">All Confidence</option>
+              <option value="0.9">High (90%+)</option>
+              <option value="0.8">Medium (80%+)</option>
+            </select>
+
+            <select id="sortSelect"
+              class="flex-1 md:flex-none px-4 py-2 rounded-lg border border-sage/20 bg-white/60 text-jungle focus:outline-none focus:ring-2 focus:ring-jungle/10 cursor-pointer text-sm font-medium hover:bg-white transition-colors">
+              <option value="date_desc">Newest First</option>
+              <option value="name_asc">Name (A-Z)</option>
+              <option value="name_desc">Name (Z-A)</option>
+              <option value="conf_desc">Most Confident</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <div id="plantGrid" class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+      <!-- Cards injected here -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-24 text-center text-leaf/40 text-sm font-light">
+      <p>Cultivated with <span class="text-terracotta animate-pulse">❤</span> in the digital garden.</p>
+    </footer>
+
+  </main>
+
+  <!-- Detail Modal -->
+  <dialog id="detailModal"
+    class="bg-transparent p-0 w-full max-w-5xl h-[90vh] md:h-auto md:max-h-[90vh] rounded-3xl shadow-2xl overflow-hidden backdrop:bg-jungle/60 backdrop:backdrop-blur-sm m-auto open:flex flex-col md:flex-row focus:outline-none">
+    <div class="bg-white w-full h-full flex flex-col md:flex-row relative">
+
+      <!-- Close Button -->
+      <button id="modalCloseBtn"
+        class="absolute top-4 right-4 z-50 bg-white/50 hover:bg-white text-jungle p-2 rounded-full transition-all backdrop-blur-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- Modal Image (Left/Top) -->
+      <div class="w-full md:w-5/12 h-64 md:h-auto relative bg-stone-100 shrink-0">
+        <img id="modalImg" src="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-jungle/80 via-transparent to-transparent opacity-60"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h2 id="modalName" class="font-serif text-4xl font-bold mb-1 drop-shadow-lg"></h2>
+          <p id="modalSci" class="italic opacity-90 text-lg"></p>
+        </div>
+      </div>
+
+      <!-- Modal Content (Right/Bottom) -->
+      <div class="flex-1 overflow-y-auto p-8 md:p-10 no-scrollbar">
+
+        <!-- Header Tags -->
+        <div class="flex flex-wrap gap-2 mb-8" id="modalBadges"></div>
+
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+
+          <!-- Bio Section -->
+          <div>
+            <h3 class="font-serif text-2xl text-jungle mb-4 flex items-center gap-2">
+              🌱 <span class="border-b-2 border-terracotta/20">About</span>
+            </h3>
+
+            <div class="space-y-4 text-gray-600">
+              <div>
+                <span class="text-xs font-bold text-terracotta uppercase tracking-wider block mb-1">Local Names</span>
+                <p id="modalLocal" class="font-medium text-jungle"></p>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-terracotta uppercase tracking-wider block mb-1">Region &
+                  Lifespan</span>
+                <p id="modalOrigin" class="font-medium text-jungle"></p>
+              </div>
+              <div id="modalFactBox"
+                class="bg-stone-50 p-4 rounded-xl border border-stone-100 italic text-sm leading-relaxed text-leaf/90">
+              </div>
+            </div>
+          </div>
+
+          <!-- Care Section -->
+          <div>
+            <h3 class="font-serif text-2xl text-jungle mb-4 flex items-center gap-2">
+              💚 <span class="border-b-2 border-terracotta/20">Care Guide</span>
+            </h3>
+            <div class="grid grid-cols-2 gap-3" id="modalCareGrid">
+              <!-- Injected via JS -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Symbolism (Full Width) -->
+        <div id="modalSymbolism" class="bg-purple-50/50 rounded-2xl p-6 border border-purple-100/50 mb-4"></div>
+
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Shared Catalogue Logic -->
+  <script src="assets/js/catalogue.js"></script>
+
+  <script>
+    async function init() {
+      const plantGrid = document.getElementById('plantGrid');
+      const searchInput = document.getElementById('searchInput');
+      const sortSelect = document.getElementById('sortSelect');
+      const confFilter = document.getElementById('confFilter');
+      const attrCheckboxes = document.querySelectorAll('.filter-attr');
+
+      let plants = [];
+
+      try {
+        // Fetch bundled data for performance
+        const res = await fetch('data/all_plants.json?v=' + Date.now());
+        if (!res.ok) throw new Error('Bundle not found');
+        plants = await res.json();
+      } catch (e) {
+        console.warn('Bundle load failed, falling back to individual files:', e);
+        // Fallback
+        try {
+          const indexRes = await fetch('data/index.json?v=' + Date.now());
+          const jsonFiles = await indexRes.json();
+          for (const filename of jsonFiles) {
+            try {
+              const res = await fetch(`data/${filename}?v=` + Date.now());
+              plants.push(await res.json());
+            } catch (err) { console.error(err); }
+          }
+        } catch (err) { console.error('Critical: Failed to load any plant data', err); }
+      }
+
+      function updateGrid() {
+        const filtered = filterAndSortPlants(plants, {
+          searchInput,
+          attrCheckboxes,
+          confFilter,
+          sortSelect
+        });
+        renderGrid(filtered, plantGrid);
+      }
+
+      // Attach Listeners
+      searchInput.addEventListener('input', updateGrid);
+      sortSelect.addEventListener('change', updateGrid);
+      confFilter.addEventListener('change', updateGrid);
+      attrCheckboxes.forEach(cb => cb.addEventListener('change', updateGrid));
+
+      // Initial Render
+      updateGrid();
+
+      // Hide Loader
+      const loader = document.getElementById('loader');
+      setTimeout(() => {
+        loader.style.opacity = '0';
+        setTimeout(() => loader.remove(), 500);
+      }, 500);
+    }
+
+    init();
+  </script>
+</body>
+
+</html>
