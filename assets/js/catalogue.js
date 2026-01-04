@@ -32,6 +32,13 @@ function renderGrid(filteredPlants, container) {
         const img = document.createElement('img');
         // Handle both local photos/thumbnails and public absolute URLs
         let thumbPath = plant.reference_image.url;
+
+        // HOTFIX: If DB has "localhost" URL but we are in Prod, rewrite it
+        if (thumbPath.includes('localhost') && API_URL.startsWith('https')) {
+            const parts = thumbPath.split('/uploads/');
+            if (parts.length > 1) thumbPath = `${API_URL}/uploads/${parts[1]}`;
+        }
+
         if (!thumbPath.startsWith('http')) {
             thumbPath = thumbPath.replace("photos/", "thumbnails/");
         }
@@ -103,6 +110,13 @@ function openModal(plant) {
 
     // 1. Header Data
     let thumbPath = plant.reference_image.url;
+
+    // HOTFIX: If DB has "localhost" URL but we are in Prod, rewrite it
+    if (thumbPath.includes('localhost') && API_URL.startsWith('https')) {
+        const parts = thumbPath.split('/uploads/');
+        if (parts.length > 1) thumbPath = `${API_URL}/uploads/${parts[1]}`;
+    }
+
     if (!thumbPath.startsWith('http')) {
         thumbPath = thumbPath.replace("photos/", "thumbnails/");
     }
