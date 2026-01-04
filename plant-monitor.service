@@ -1,0 +1,12 @@
+[Unit]
+Description=Glances System Monitor
+After=network.target
+
+[Service]
+User=ddhd
+Group=ddhd
+ExecStart=/home/ddhd/Documents/plant-catalogue/venv/bin/glances -w -p 61208
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -176,6 +176,56 @@ To enable the **Public Plants** upload feature on the live site:
 
 ---
 
+## 🏠 Self-Hosting
+
+Run your own instance of the Plant Catalogue with systemd and Nginx. This setup ensures the backend restarts automatically and serves the frontend on your local network.
+
+### Prerequisites
+
+- Linux (tested on Ubuntu/Debian)
+- Python 3.8+
+- Nginx
+
+### Setup Guide
+
+1.  **Helper Script**:
+    Use the included setup script to configure everything automatically:
+    ```bash
+    sudo ./scripts/setup_service.sh
+    ```
+    *(Note: Ensure you have `setup_service.sh` if you made one, otherwise manual steps below)*
+    
+    **Manual Setup:**
+
+    **Backend Service:**
+    Copy `plant-backend.service` to `/etc/systemd/system/` and start it:
+    ```bash
+    sudo cp plant-backend.service /etc/systemd/system/
+    sudo systemctl enable --now plant-backend
+    ```
+
+    **Monitoring Service:**
+    (Optional) Start the Glances monitor:
+    ```bash
+    sudo cp plant-monitor.service /etc/systemd/system/
+    sudo systemctl enable --now plant-monitor
+    ```
+
+    **Nginx Configuration:**
+    Configure Nginx to serve the static site and proxy API requests:
+    ```bash
+    sudo cp nginx.conf /etc/nginx/sites-available/plant-catalogue
+    sudo ln -s /etc/nginx/sites-available/plant-catalogue /etc/nginx/sites-enabled/
+    sudo systemctl restart nginx
+    ```
+
+2.  **Access:**
+    - Catalogue: `http://localhost` (or your server IP)
+    - Backend API: `http://localhost/api`
+    - Monitor: `http://localhost:61208`
+
+---
+
 ## 📋 Scripts Reference
 
 | Script | Purpose |
@@ -237,10 +287,10 @@ MIT License - Feel free to use this for your own plant catalogue!
 
 ## 🌱 Tech Stack
 
-- **Frontend**: HTML, Tailwind CSS, Vanilla JavaScript
-- **Backend**: FastAPI, SQLAlchemy, SQLite/PostgreSQL
+- **Frontend**: HTML, Tailwind CSS, Vanilla JavaScript, Nginx
+- **Backend**: FastAPI, SQLAlchemy, SQLite/PostgreSQL, Systemd
 - **AI**: OpenAI GPT-4 Vision API
-- **Hosting**: GitHub Pages (frontend), Render (backend)
+- **Hosting**: GitHub Pages (frontend), Render (backend), Self-Hosted (Home Server)
 
 ---
 

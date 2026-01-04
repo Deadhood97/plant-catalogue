@@ -1,0 +1,14 @@
+[Unit]
+Description=Plant Catalogue Backend Service
+After=network.target
+
+[Service]
+User=ddhd
+Group=ddhd
+WorkingDirectory=/home/ddhd/Documents/plant-catalogue
+Environment="PATH=/home/ddhd/Documents/plant-catalogue/venv/bin:/usr/bin"
+EnvironmentFile=/home/ddhd/Documents/plant-catalogue/.env
+ExecStart=/home/ddhd/Documents/plant-catalogue/venv/bin/uvicorn backend.main:app --host 127.0.0.1 --port 8001
+
+[Install]
+WantedBy=multi-user.target
