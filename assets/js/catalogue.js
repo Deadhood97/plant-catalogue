@@ -1,4 +1,4 @@
-const API_URL = 'https://plant-catalogue.onrender.com';
+// Redundant API_URL removed, using global constant from common.js
 
 // --- Rendering Logic ---
 
