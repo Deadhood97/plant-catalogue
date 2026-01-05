@@ -21,7 +21,7 @@
       "confidence": 0.9
     },
     {
-      "name": "नागफनी",
+      "name": "\u0928\u093e\u0917\u092b\u0928\u0940",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.7
@@ -57,5 +57,6 @@
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-28T04:53:44.345070Z"
+  "date_added": "2025-12-28T04:53:44.345070Z",
+  "wiki_url": "https://en.wikipedia.org/wiki/Monstera_deliciosa"
 }

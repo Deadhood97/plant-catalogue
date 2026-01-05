@@ -15,7 +15,7 @@
   "scientific_name": "Chrysanthemum morifolium",
   "local_names": [
     {
-      "name": "गेंदे का फूल",
+      "name": "\u0917\u0947\u0902\u0926\u0947 \u0915\u093e \u092b\u0942\u0932",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.9
@@ -51,5 +51,6 @@
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-28T05:07:01.853397Z"
+  "date_added": "2025-12-28T05:07:01.853397Z",
+  "wiki_url": "https://en.wikipedia.org/wiki/Chrysanthemum_morifolium"
 }

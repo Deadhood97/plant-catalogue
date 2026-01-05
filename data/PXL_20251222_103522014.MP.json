@@ -20,19 +20,19 @@
   "scientific_name": "Musa spp.",
   "local_names": [
     {
-      "name": "केला का पेड़",
+      "name": "\u0915\u0947\u0932\u093e \u0915\u093e \u092a\u0947\u0921\u093c",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.9
     },
     {
-      "name": "பழவள்ளி",
+      "name": "\u0baa\u0bb4\u0bb5\u0bb3\u0bcd\u0bb3\u0bbf",
       "language": "Tamil",
       "region": "India",
       "confidence": 0.8
     },
     {
-      "name": "ಬಾಳೆ",
+      "name": "\u0cac\u0cbe\u0cb3\u0cc6",
       "language": "Kannada",
       "region": "India",
       "confidence": 0.8
@@ -68,5 +68,6 @@
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-28T05:04:18.622434Z"
+  "date_added": "2025-12-28T05:04:18.622434Z",
+  "wiki_url": "https://en.wikipedia.org/wiki/Musa_spp."
 }

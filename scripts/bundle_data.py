@@ -22,6 +22,15 @@ def bundle_data():
         try:
             with open(filepath, "r") as f:
                 plant_data = json.load(f)
+                
+                # Auto-generate Wikipedia URL if missing
+                if "wiki_url" not in plant_data:
+                    import urllib.parse
+                    wiki_name = plant_data.get("scientific_name") or plant_data.get("identified_name")
+                    if wiki_name:
+                        encoded_name = urllib.parse.quote(wiki_name.replace(" ", "_"))
+                        plant_data["wiki_url"] = f"https://en.wikipedia.org/wiki/{encoded_name}"
+                
                 all_plants.append(plant_data)
         except Exception as e:
             print(f"Warning: Failed to read {filename}: {e}")

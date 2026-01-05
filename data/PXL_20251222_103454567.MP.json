@@ -7,7 +7,7 @@
     },
     {
       "identified_name": "Leyland Cypress",
-      "scientific_name": "Cupressus × leylandii",
+      "scientific_name": "Cupressus \u00d7 leylandii",
       "confidence": 0.75
     },
     {
@@ -56,5 +56,6 @@
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-28T04:56:23.995144Z"
+  "date_added": "2025-12-28T04:56:23.995144Z",
+  "wiki_url": "https://en.wikipedia.org/wiki/Thuja_occidentalis"
 }

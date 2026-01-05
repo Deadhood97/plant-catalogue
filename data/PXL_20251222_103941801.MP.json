@@ -20,7 +20,7 @@
   "scientific_name": "Euphorbia milii",
   "local_names": [
     {
-      "name": "माकोय (Makoy)",
+      "name": "\u092e\u093e\u0915\u094b\u092f (Makoy)",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.85
@@ -56,5 +56,6 @@
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-28T04:54:51.876650Z"
+  "date_added": "2025-12-28T04:54:51.876650Z",
+  "wiki_url": "https://en.wikipedia.org/wiki/Euphorbia_milii"
 }

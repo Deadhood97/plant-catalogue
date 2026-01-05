@@ -20,13 +20,13 @@
   "scientific_name": "Rosa",
   "local_names": [
     {
-      "name": "गुलाब",
+      "name": "\u0917\u0941\u0932\u093e\u092c",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.9
     },
     {
-      "name": "குலாப்",
+      "name": "\u0b95\u0bc1\u0bb2\u0bbe\u0baa\u0bcd",
       "language": "Tamil",
       "region": "India",
       "confidence": 0.8
@@ -62,5 +62,6 @@
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-28T05:16:37.024666Z"
+  "date_added": "2025-12-28T05:16:37.024666Z",
+  "wiki_url": "https://en.wikipedia.org/wiki/Rosa"
 }

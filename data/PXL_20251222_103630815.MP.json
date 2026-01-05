@@ -20,7 +20,7 @@
   "scientific_name": "Dahlia pinnata",
   "local_names": [
     {
-      "name": "डाहलिया",
+      "name": "\u0921\u093e\u0939\u0932\u093f\u092f\u093e",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.8
@@ -56,5 +56,6 @@
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-28T05:02:46.156693Z"
+  "date_added": "2025-12-28T05:02:46.156693Z",
+  "wiki_url": "https://en.wikipedia.org/wiki/Dahlia_pinnata"
 }

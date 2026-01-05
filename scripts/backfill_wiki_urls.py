@@ -10,16 +10,13 @@ def backfill():
         updated_count = 0
         
         for plant in plants:
-            data = plant.data or {}
+            data = dict(plant.data or {})
             if "wiki_url" not in data:
                 wiki_name = data.get("scientific_name") or data.get("identified_name")
                 if wiki_name:
                     encoded_name = urllib.parse.quote(wiki_name.replace(" ", "_"))
                     data["wiki_url"] = f"https://en.wikipedia.org/wiki/{encoded_name}"
                     plant.data = data
-                    # SQLAlchemy needs to know the JSON was mutated
-                    from sqlalchemy.orm.attributes import flag_modified
-                    flag_modified(plant, "data")
                     updated_count += 1
         
         db.commit()

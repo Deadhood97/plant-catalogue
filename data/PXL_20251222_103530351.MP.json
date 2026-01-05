@@ -20,7 +20,7 @@
   "scientific_name": "Ficus religiosa",
   "local_names": [
     {
-      "name": "पीपल",
+      "name": "\u092a\u0940\u092a\u0932",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.9
@@ -62,5 +62,6 @@
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-28T05:16:03.642073Z"
+  "date_added": "2025-12-28T05:16:03.642073Z",
+  "wiki_url": "https://en.wikipedia.org/wiki/Ficus_religiosa"
 }

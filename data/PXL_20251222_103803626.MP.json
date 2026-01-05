@@ -26,7 +26,7 @@
       "confidence": 0.9
     },
     {
-      "name": "साग पाम",
+      "name": "\u0938\u093e\u0917 \u092a\u093e\u092e",
       "language": "Hindi",
       "region": "India",
       "confidence": 0.8
@@ -62,5 +62,6 @@
     "source": "local",
     "license": ""
   },
-  "date_added": "2025-12-28T05:12:49.286506Z"
+  "date_added": "2025-12-28T05:12:49.286506Z",
+  "wiki_url": "https://en.wikipedia.org/wiki/Cycas_revoluta"
 }
