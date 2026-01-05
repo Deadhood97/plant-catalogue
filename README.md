@@ -1,18 +1,29 @@
 # Home Plant Catalogue
 
-A personal, AI-assisted catalogue of plants in my home. This project automates plant identification, metadata extraction, and provides both a static site and a dynamic backend for community uploads.
+A personal, AI-assisted catalogue of plants in my home. This project automates plant identification, metadata extraction, and provides both a static site and a dynamic serverless backend for community uploads.
 
 ---
 
 ## 🌟 Features
 
 - **AI-Powered Plant Identification** using OpenAI Vision API
-- **Beautiful Botanical Journal UI** with glassmorphic design
-- **Detailed Plant Cards** with care instructions, symbolism, and personality traits
-- **Interactive Detail Modals** for comprehensive plant information
-- **Public Plants Upload** (Backend feature) - Community members can upload and identify their plants
-- **Performance Optimized** - Bundled data loading, thumbnail-only images
-- **Responsive Design** - Works beautifully on all devices
+- **The Uncertainty Model (Visual Honesty)** - UI visually communicates AI confidence using grayscale and blur effects for lower-confidence specimens.
+- **Wikipedia Integration** - Automatic external reading links for every plant, with smart reliability warnings.
+- **Botanical Journal UI** - Professional glassmorphic design inspired by vintage herbariums.
+- **Serverless Cloud Backend** - Robust AWS-native architecture (Lambda, S3, API Gateway).
+- **Interactive Detail Modals** - Comprehensive care instructions, symbolism, and personality traits.
+- **Performance Optimized** - Bundled data loading and web-optimized thumbnails.
+
+---
+
+## ☁️ Architecture (AWS Serverless)
+
+This project is fully cloud-native, ensuring scalability and cost-efficiency:
+- **Compute**: **AWS Lambda** (Python 3.10) running via Mangum.
+- **Database**: **PostgreSQL** (Managed via Neon.tech).
+- **File Storage**: **AWS S3** for persistent specimen image hosting.
+- **API Gateway**: Secure RESTful interface for the frontend.
+- **Infrastructure**: Defined via **AWS SAM** (Serverless Application Model).
 
 ---
 
@@ -20,253 +31,75 @@ A personal, AI-assisted catalogue of plants in my home. This project automates p
 
 ```
 plant-catalogue/
-├── backend/              # FastAPI backend for public uploads
-│   ├── main.py           # API routes (POST /upload, GET /public-plants)
-│   ├── database.py       # SQLAlchemy models and DB setup
-│   ├── services/
-│   │   └── identifier.py # Shared AI identification logic
-│   └── public_plants.db  # SQLite database (local development)
-├── data/                 # Plant metadata JSON files
-│   ├── all_plants.json   # Bundled data (performance optimization)
-│   └── index.json        # File index for fallback loading
-├── photos/               # Original images (local only, not in repo)
-├── thumbnails/           # Web-optimized images (synced to GitHub)
-├── uploads/              # User-uploaded images (backend feature)
-├── scripts/              # Automation scripts
-│   ├── batch_identify_plants.py  # Batch processing with AI
-│   ├── bundle_data.py            # Create all_plants.json
-│   ├── make_thumbnails.py        # Generate thumbnails
-│   └── plant_schema.json         # Data schema definition
-├── index.html            # Main web interface
+├── backend/              # serverless backend code
+│   ├── main.py           # Lambda handler & API routes
+│   └── database.py       # SQLAlchemy models (Postgres/SQLite)
+├── template.yaml         # AWS SAM Infrastructure definition
+├── scripts/              # Automation tools
+│   ├── backfill_wiki_urls.py # Update records with Wikipedia links
+│   ├── batch_identify_plants.py # Batch processing CLI
+│   └── bundle_data.py        # Optimized JSON bundling
+├── data/                 # Personal collection metadata (JSON)
+├── assets/               # CSS and Shared JS
+│   └── js/
+│       ├── common.js     # Config & API endpoints
+│       └── catalogue.js  # Core rendering & Uncertainty logic
+├── index.html            # Main Entry Point
 └── README.md
 ```
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Deployment
 
-### Prerequisites
+### Cloud Backend (AWS)
 
-- Python 3.8+
-- OpenAI API key
-
-### Installation
-
-1. **Clone the repository:**
+1. **Build the Stack**:
    ```bash
-   git clone https://github.com/Deadhood97/plant-catalogue.git
-   cd plant-catalogue
+   sam build
    ```
-
-2. **Set up virtual environment:**
+2. **Deploy**:
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   sam deploy --parameter-overrides "DatabaseUrl='...' OpenAiApiKey='...'"
    ```
 
-3. **Install dependencies:**
-   ```bash
-   pip install openai python-dotenv Pillow fastapi uvicorn python-multipart sqlalchemy
-   ```
+### Static Frontend (GitHub Pages)
 
-4. **Configure API key:**
-   Create a `.env` file:
-   ```
-   OPENAI_API_KEY=sk-...
-   ```
+The catalogue is hosted on GitHub Pages and connects to the AWS API automatically.
+- **Personal Plants**: Synced via the `data/` folder.
+- **Public Plants**: Fetched live from the AWS Lambda API.
 
 ---
 
-## 📖 Usage
+## 🧪 Visual Honesty & Integrity
 
-### View the Catalogue (Static)
-
-1. **Start the frontend server:**
-   ```bash
-   python3 -m http.server 8000
-   ```
-
-2. **Open in browser:**
-   ```
-   http://localhost:8000
-   ```
-
-### Enable Public Uploads (Backend)
-
-1. **Start the backend server:**
-   ```bash
-   ./venv/bin/python3 -m backend.main
-   ```
-   Backend runs on `http://localhost:8001`
-
-2. **Start the frontend server** (in another terminal):
-   ```bash
-   python3 -m http.server 8000
-   ```
-
-3. **Upload plants:**
-   - Navigate to `http://localhost:8000`
-   - Scroll to "Public Collection"
-   - Click "📸 Add Your Plant"
-   - Upload an image → AI identifies it automatically!
+The conservatory uses a unique **Uncertainty Model** to build trust:
+*   **🌟 Very Confident (90%+)**: Displayed in full, vivid color.
+*   **🔍 Uncertain (60-74%)**: Applied with a 60% grayscale filter.
+*   **⚠️ Guessing (<60%)**: Applied with heavy grayscale and a 3px blur.
+*   **Interactive Reveal**: Hovering over an uncertain plant restores its color and clarity temporarily.
 
 ---
 
-## 🛠️ Workflow
+## 📜 Metadata Schema
 
-### Adding Your Own Plants
-
-1. **Add photos** to the `photos/` directory
-
-2. **Run identification:**
-   ```bash
-   ./venv/bin/python scripts/batch_identify_plants.py
-   ```
-   - Processes all new images
-   - Generates detailed JSON metadata in `data/`
-
-3. **Generate thumbnails:**
-   ```bash
-   ./venv/bin/python scripts/make_thumbnails.py
-   ```
-
-4. **Bundle data for web:**
-   ```bash
-   ./venv/bin/python scripts/bundle_data.py
-   ```
-
-5. **Refresh the site** - Your plants now appear in the catalogue!
-
-### Single Plant Identification
-
-```bash
-./venv/bin/python scripts/identify_one_plant.py path/to/image.jpg
-```
-
----
-
-## 🌐 Deployment
-
-### GitHub Pages (Frontend Only)
-
-The static catalogue is hosted at: **[Your GitHub Pages URL]**
-
-This displays your personal plant collection with:
-- ✅ Full botanical details
-- ✅ Beautiful UI
-- ✅ Fast loading (bundled data + thumbnails)
-
-### Backend Deployment (Optional)
-
-To enable the **Public Plants** upload feature on the live site:
-
-1. **Deploy to Render** (free tier):
-   - See `deployment_plan.md` for detailed steps
-   - Requires: `requirements.txt` and `render.yaml`
-   - Set `OPENAI_API_KEY` in Render dashboard
-
-2. **Update frontend:**
-   ```javascript
-   // In index.html, change:
-   const API_URL = 'https://your-app.onrender.com';
-   ```
-
-3. **Migrate to PostgreSQL** (recommended for production):
-   - Render's free PostgreSQL prevents data loss on redeploys
-
----
-
-## ☁️ Cloud Architecture (AWS)
-
-This project has been migrated to a serverless architecture:
-- **Compute**: AWS Lambda (serverless, scalable)
-- **API Gateway**: Exposes the Lambda as a REST API
-- **Database**: PostgreSQL (Neon.tech)
-- **Storage**: AWS S3 (for plant images)
-- **Deployment**: AWS SAM (Infrastructure as Code)
-
-### Deployment Guide
-
-1.  **Prerequisites**: AWS CLI, SAM CLI, PostgreSQL URL.
-2.  **Build**:
-    ```bash
-    sam build
-    ```
-3.  **Deploy**:
-    ```bash
-    sam deploy --guided
-    ```
-
----
-
-## 📋 Scripts Reference
-
-| Script | Purpose |
-|--------|---------|
-| `batch_identify_plants.py` | Batch process images in `photos/` |
-| `identify_one_plant.py` | Identify a single plant |
-| `make_thumbnails.py` | Generate web-optimized thumbnails |
-| `bundle_data.py` | Create `all_plants.json` for performance |
-| `generate_json_index.py` | Update `data/index.json` |
-
----
-
-## 🎨 Design Philosophy
-
-- **Botanical Journal Aesthetic** - Inspired by vintage plant catalogues
-- **Glassmorphism** - Modern, elegant UI with frosted glass effects
-- **Personality-Driven** - Each plant has a unique "vibe" (e.g., "Drama Queen", "Chill Roommate")
-- **Mobile-First** - Responsive design that works beautifully on all devices
-- **Performance-Focused** - Thumbnails, bundled data, lazy loading
-
----
-
-## 🔒 Privacy & Data
-
-- **Personal Collection** (`data/`): Your private plant data, synced to GitHub
-- **Public Uploads** (`uploads/`, database): Community contributions (backend feature)
-- **API Keys**: Never commit `.env` to git (already in `.gitignore`)
-- **Photos**: Original `photos/` folder is gitignored to save repo space
-
----
-
-## 🛡️ Schema
-
-All plant metadata follows a strict JSON schema defined in `scripts/plant_schema.json`.
-
-**Key Fields:**
+Each plant specimen contains:
 - `identified_name`, `scientific_name`, `confidence`
-- `care` (watering, sunlight, soil, growth rate)
-- `plant_personality` (e.g., "Low Maintenance Buddy")
-- `symbolism`, `fragrance`, `lifespan`
-- `is_flowering`, `is_medicinal`, `is_edible`, `is_toxic_to_pets`
+- `wiki_url`: Direct link to Wikipedia
+- `care`: Watering frequency, sunlight, soil type, and growth rate
+- `plant_personality`: Fun "vibe" description (e.g., "Drama Queen")
+- `symbolism`, `fun_fact`, `is_flowering`, `is_toxic_to_pets`
 
 ---
 
-## 🤝 Contributing
+## 🤝 Tech Stack
 
-This is a personal project, but feel free to:
-- Fork it for your own plant collection
-- Suggest improvements via Issues
-- Share your deployed version!
-
----
-
-## 📜 License
-
-MIT License - Feel free to use this for your own plant catalogue!
+- **Frontend**: HTML5, Vanilla JS, Tailwind CSS
+- **Backend**: AWS Lambda, API Gateway
+- **Database**: PostgreSQL (Neon)
+- **AI**: OpenAI GPT-4o-mini
+- **Storage**: AWS S3
 
 ---
 
-## 🌱 Tech Stack
-
-- **Frontend**: HTML, Tailwind CSS, Vanilla JavaScript, AWS S3
-- **Backend**: AWS Lambda (Python), AWS API Gateway
-- **AI**: OpenAI GPT-4 Vision API
-- **Database**: PostgreSQL (Neon.tech)
-- **Hosting**: Serverless (AWS)
-
-
----
-
-_Last updated: 2025-12-28_
+_Last updated: January 2026_
