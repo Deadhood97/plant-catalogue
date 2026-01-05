@@ -1,0 +1,73 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Plant Catalogue Backend - Serverless FastAPI
+
+Parameters:
+  DatabaseUrl:
+    Type: String
+    Description: PostgreSQL Database URL (postgres://...)
+    NoEcho: true
+  OpenAiApiKey:
+    Type: String
+    Description: OpenAI API Key
+    NoEcho: true
+
+Resources:
+  PlantUploadsBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
+      CorsConfiguration:
+        CorsRules:
+          - AllowedHeaders: ['*']
+            AllowedMethods: [GET, HEAD]
+            AllowedOrigins: ['*']
+
+  PlantBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref PlantUploadsBucket
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: PublicReadGetObject
+            Effect: Allow
+            Principal: '*'
+            Action: 's3:GetObject'
+            Resource: !Sub 'arn:aws:s3:::${PlantUploadsBucket}/*'
+
+  PlantApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: backend.main.handler
+      Runtime: python3.10
+      Architectures:
+        - x86_64
+      MemorySize: 512
+      Timeout: 60
+      Environment:
+        Variables:
+          DATABASE_URL: !Ref DatabaseUrl
+          OPENAI_API_KEY: !Ref OpenAiApiKey
+          BUCKET_NAME: !Ref PlantUploadsBucket
+          UPLOAD_DIR: /tmp
+      Policies:
+        - S3CrudPolicy:
+            BucketName: !Ref PlantUploadsBucket
+      Events:
+        Api:
+          Type: HttpApi
+
+Outputs:
+  ApiUrl:
+    Description: "API Gateway endpoint URL"
+    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/"
+  BucketName:
+    Description: "S3 Bucket Name"
+    Value: !Ref PlantUploadsBucket

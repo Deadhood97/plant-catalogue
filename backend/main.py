@@ -10,10 +10,20 @@ from datetime import datetime
 from backend.database import engine, Base, SessionLocal, PublicPlant
 from backend.services.identifier import identify_plant_from_file
 
+# Lambda & Cloud imports
+try:
+    from mangum import Mangum
+except ImportError:
+    Mangum = None
+import boto3
+
 # Create DB tables
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
+
+if Mangum:
+    handler = Mangum(app)
 
 # Enable CORS (since frontend is on :8000 and backend on :8001)
 app.add_middleware(
@@ -25,7 +35,7 @@ app.add_middleware(
 )
 
 # Uploads directory
-UPLOAD_DIR = "uploads"
+UPLOAD_DIR = os.getenv("UPLOAD_DIR", "uploads")
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 # Mount uploads dir to serve images
@@ -57,10 +67,26 @@ async def upload_plant(file: UploadFile = File(...), db: Session = Depends(get_d
         plant_data = identify_plant_from_file(file_path)
         
         # 3. Augment Data (set reference image to the public URL)
-        # Use BASE_URL env var for prod, fallback to localhost for dev
-        base_url = os.getenv('BASE_URL', 'http://localhost:8001')
+        bucket_name = os.getenv("BUCKET_NAME")
+        
+        if bucket_name:
+            # S3 Upload
+            s3 = boto3.client('s3')
+            # Upload file_path (which is in UPLOAD_DIR aka /tmp on lambda)
+            s3.upload_file(file_path, bucket_name, unique_filename)
+            
+            # Construct S3 URL (assuming public access or cloudfront)
+            file_url = f"https://{bucket_name}.s3.amazonaws.com/{unique_filename}"
+            
+            # Clean up local temp file
+            os.remove(file_path)
+        else:
+            # Local Upload
+            base_url = os.getenv('BASE_URL', 'http://localhost:8001')
+            file_url = f"{base_url}/uploads/{unique_filename}"
+
         plant_data["reference_image"] = {
-            "url": f"{base_url}/uploads/{unique_filename}",
+            "url": file_url,
             "source": "public_upload",
             "license": "public"
         }

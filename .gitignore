@@ -9,3 +9,7 @@ photos/*.mp3
 
 # Ignore any sensitive keys
 .env
+
+# AWS SAM
+.aws-sam/
+samconfig.toml

@@ -5,3 +5,5 @@ sqlalchemy
 openai
 python-dotenv
 pillow
+mangum
+psycopg2-binary
