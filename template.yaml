@@ -14,6 +14,19 @@ Parameters:
     NoEcho: true
 
 Resources:
+  PlantApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      CorsConfiguration:
+        AllowMethods:
+          - GET
+          - POST
+          - OPTIONS
+        AllowHeaders:
+          - "*"
+        AllowOrigins:
+          - "*"
+
   PlantUploadsBucket:
     Type: AWS::S3::Bucket
     Properties:
@@ -63,11 +76,13 @@ Resources:
       Events:
         Api:
           Type: HttpApi
+          Properties:
+            ApiId: !Ref PlantApi
 
 Outputs:
   ApiUrl:
     Description: "API Gateway endpoint URL"
-    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/"
+    Value: !Sub "https://${PlantApi}.execute-api.${AWS::Region}.amazonaws.com/"
   BucketName:
     Description: "S3 Bucket Name"
     Value: !Ref PlantUploadsBucket

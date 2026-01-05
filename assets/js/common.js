@@ -19,4 +19,4 @@ tailwind.config = {
 
 
 // Global API Configuration
-const API_URL = "https://lw92nk81ld.execute-api.us-east-1.amazonaws.com";
+const API_URL = "https://mjfugwei3g.execute-api.us-east-1.amazonaws.com";
