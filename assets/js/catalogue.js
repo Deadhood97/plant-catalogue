@@ -197,12 +197,42 @@ function openModal(plant) {
         careContainer.appendChild(div);
     });
 
-    // 5. Symbolism
+    // 5. Symbolism & External Links
     const symBox = document.getElementById('modalSymbolism');
+    symBox.innerHTML = "";
+    symBox.style.display = "block";
+
     if (plant.symbolism) {
-        symBox.style.display = "block";
-        symBox.innerHTML = `<h4 class="font-serif text-lg text-purple-900 mb-2">✨ Symbolism</h4><p class="text-purple-800/80 italic">${plant.symbolism}</p>`;
-    } else {
+        const symDiv = document.createElement('div');
+        symDiv.className = "mb-6";
+        symDiv.innerHTML = `<h4 class="font-serif text-lg text-purple-900 mb-2">✨ Symbolism</h4><p class="text-purple-800/80 italic">${plant.symbolism}</p>`;
+        symBox.appendChild(symDiv);
+    }
+
+    if (plant.wiki_url) {
+        const wikiDiv = document.createElement('div');
+        wikiDiv.className = "bg-white/50 p-4 rounded-xl border border-purple-100 flex flex-col gap-2";
+
+        wikiDiv.innerHTML = `
+            <a href="${plant.wiki_url}" target="_blank" class="text-purple-700 font-medium flex items-center gap-2 hover:text-purple-900 transition-colors">
+                🌐 Learn more on Wikipedia 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+            </a>
+        `;
+
+        // Uncertainty Note Logic
+        const isLowConfidence = (plant.confidence || 0) < 0.75;
+        const usedCommonName = !plant.scientific_name;
+        if (isLowConfidence || usedCommonName) {
+            wikiDiv.innerHTML += `<p class="text-[10px] text-purple-600/60 italic">⚠️ Link may not exactly match the plant.</p>`;
+        }
+
+        symBox.appendChild(wikiDiv);
+    }
+
+    if (!plant.symbolism && !plant.wiki_url) {
         symBox.style.display = "none";
     }
 

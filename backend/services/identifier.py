@@ -115,22 +115,23 @@ def identify_plant_from_file(file_path: str) -> dict:
     image_data_url = f"data:image/jpeg;base64,{image_base64}"
 
     try:
-        response = client.responses.create(
-            model="gpt-4.1-mini",
-            input=[
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
                 {"role": "system", "content": PROMPT},
                 {
                     "role": "user",
                     "content": [
-                        {"type": "input_text", "text": "Identify the plant from this image."},
-                        {"type": "input_image", "image_url": image_data_url}
+                        {"type": "text", "text": "Identify the plant from this image."},
+                        {"type": "image_url", "image_url": {"url": image_data_url}}
                     ]
                 }
-            ]
+            ],
+            response_format={"type": "json_object"}
         )
 
         # Parse JSON output
-        text_output = response.output_text.strip()
+        text_output = response.choices[0].message.content.strip()
         data = json.loads(text_output)
         
         # Add timestamps if not present (though prompt usually doesn't, we add it here)

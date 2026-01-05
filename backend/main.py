@@ -72,12 +72,8 @@ async def upload_plant(file: UploadFile = File(...), db: Session = Depends(get_d
         if bucket_name:
             # S3 Upload
             s3 = boto3.client('s3')
-            # Upload file_path (which is in UPLOAD_DIR aka /tmp on lambda)
             s3.upload_file(file_path, bucket_name, unique_filename)
-            
-            # Construct S3 URL (assuming public access or cloudfront)
             file_url = f"https://{bucket_name}.s3.amazonaws.com/{unique_filename}"
-            
             # Clean up local temp file
             os.remove(file_path)
         else:
@@ -90,15 +86,23 @@ async def upload_plant(file: UploadFile = File(...), db: Session = Depends(get_d
             "source": "public_upload",
             "license": "public"
         }
+
+        # 4. Generate Wikipedia URL
+        import urllib.parse
+        wiki_name = plant_data.get("scientific_name") or plant_data.get("identified_name")
+        if wiki_name:
+            encoded_name = urllib.parse.quote(wiki_name.replace(" ", "_"))
+            plant_data["wiki_url"] = f"https://en.wikipedia.org/wiki/{encoded_name}"
         
-        # 4. Save to Database
-        db_plant = PublicPlant(
-            filename=unique_filename,
-            data=plant_data
-        )
-        db.add(db_plant)
-        db.commit()
-        db.refresh(db_plant)
+        # 5. Save to Database (ONLY if not unknown)
+        if plant_data.get("identified_name", "").lower() != "unknown":
+            db_plant = PublicPlant(
+                filename=unique_filename,
+                data=plant_data
+            )
+            db.add(db_plant)
+            db.commit()
+            db.refresh(db_plant)
         
         return plant_data
 
@@ -109,11 +113,11 @@ async def upload_plant(file: UploadFile = File(...), db: Session = Depends(get_d
 @app.get("/api/public-plants")
 def get_public_plants(db: Session = Depends(get_db)):
     """
-    Returns list of all public plants.
+    Returns list of all public plants, excluding "unknown" identifications.
     """
     plants = db.query(PublicPlant).order_by(PublicPlant.uploaded_at.desc()).all()
-    # Return just the JSON data blobs
-    return [p.data for p in plants]
+    # Filter out any existing unknown entries in Python for simplicity
+    return [p.data for p in plants if p.data.get("identified_name", "").lower() != "unknown"]
 
 if __name__ == "__main__":
     import uvicorn
