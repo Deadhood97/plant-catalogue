@@ -80,3 +80,21 @@ dialog[open] {
     transform: translateY(-10px);
   }
 }
+
+/* Uncertainty Model Effects */
+.uncertain-faded {
+  filter: grayscale(0.6) opacity(0.7);
+  transition: filter 0.5s ease, opacity 0.5s ease;
+}
+
+.guessing-blurred {
+  filter: grayscale(1) blur(3px);
+  opacity: 0.5;
+  transition: filter 0.5s ease, opacity 0.5s ease;
+}
+
+.card-hover:hover .uncertain-faded,
+.card-hover:hover .guessing-blurred {
+  filter: none;
+  opacity: 1;
+}

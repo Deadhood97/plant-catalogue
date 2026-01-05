@@ -1,5 +1,20 @@
 // Redundant API_URL removed, using global constant from common.js
 
+// --- Uncertainty Model Logic ---
+
+function getUncertaintyMetadata(confidence) {
+    const percent = Math.round(confidence * 100);
+    if (percent >= 90) {
+        return { label: "🌟 Very Confident", class: "" };
+    } else if (percent >= 75) {
+        return { label: "✅ Likely", class: "" };
+    } else if (percent >= 60) {
+        return { label: "🔍 Uncertain", class: "uncertain-faded" };
+    } else {
+        return { label: "⚠️ Guessing", class: "guessing-blurred" };
+    }
+}
+
 // --- Rendering Logic ---
 
 function renderGrid(filteredPlants, container) {
@@ -43,7 +58,14 @@ function renderGrid(filteredPlants, container) {
             thumbPath = thumbPath.replace("photos/", "thumbnails/");
         }
         img.src = thumbPath;
-        img.className = "w-full h-full object-cover transition-transform duration-700 group-hover:scale-110";
+
+        // Apply Uncertainty Visual Effects
+        const uncertainty = getUncertaintyMetadata(plant.confidence || 0);
+        if (uncertainty.class) {
+            img.classList.add(uncertainty.class);
+        }
+
+        img.classList.add("w-full", "h-full", "object-cover", "transition-transform", "duration-700", "group-hover:scale-110");
         img.loading = "lazy";
 
         // Badge: Personality
@@ -59,8 +81,10 @@ function renderGrid(filteredPlants, container) {
             const confPercent = Math.round(plant.confidence * 100);
             const ring = document.createElement('div');
             let color = confPercent >= 90 ? "border-emerald-500 text-emerald-600" : "border-amber-500 text-amber-600";
-            ring.className = `absolute top-3 left-3 w-10 h-10 rounded-full bg-white flex items-center justify-center text-[10px] font-bold border-2 ${color} shadow-lg`;
-            ring.textContent = `${confPercent}%`;
+            ring.className = `absolute top-3 left-3 px-2 h-10 rounded-full bg-white flex items-center justify-center text-[10px] font-bold border-2 ${color} shadow-lg z-10`;
+
+            const uncertainty = getUncertaintyMetadata(plant.confidence);
+            ring.innerHTML = `<span class="whitespace-nowrap">${uncertainty.label} (${confPercent}%)</span>`;
             imgContainer.appendChild(ring);
         }
 
@@ -121,6 +145,14 @@ function openModal(plant) {
         thumbPath = thumbPath.replace("photos/", "thumbnails/");
     }
     img.src = thumbPath;
+
+    // Apply Uncertainty Visual Effects to Modal
+    const uncertainty = getUncertaintyMetadata(plant.confidence || 0);
+    img.className = "w-full h-full object-cover"; // Reset
+    if (uncertainty.class) {
+        img.classList.add(uncertainty.class);
+    }
+
     document.getElementById('modalName').textContent = plant.identified_name;
     document.getElementById('modalSci').textContent = plant.scientific_name;
 
