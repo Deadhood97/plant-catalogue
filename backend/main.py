@@ -55,13 +55,37 @@ async def upload_plant(file: UploadFile = File(...), db: Session = Depends(get_d
     Receives an image, saves it, runs AI ID, saves to DB, returns JSON.
     """
     try:
-        # 1. Save File
-        file_ext = file.filename.split('.')[-1]
+        # Security: Validate file upload
+        ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png', 'webp'}
+        ALLOWED_CONTENT_TYPES = {'image/jpeg', 'image/png', 'image/webp'}
+        MAX_FILE_SIZE = 10 * 1024 * 1024  # 10MB
+        
+        # 1. Validate content type
+        if file.content_type not in ALLOWED_CONTENT_TYPES:
+            raise HTTPException(status_code=400, detail="Invalid file type. Please upload a JPEG, PNG, or WebP image.")
+        
+        # 2. Validate and sanitize file extension
+        if not file.filename or '.' not in file.filename:
+            raise HTTPException(status_code=400, detail="Invalid filename.")
+        
+        file_ext = file.filename.split('.')[-1].lower()
+        if file_ext not in ALLOWED_EXTENSIONS:
+            raise HTTPException(status_code=400, detail=f"Invalid file extension. Allowed: {', '.join(ALLOWED_EXTENSIONS)}")
+        
+        # 3. Read file content and validate size
+        file_content = await file.read()
+        if len(file_content) > MAX_FILE_SIZE:
+            raise HTTPException(status_code=400, detail="File too large. Maximum size is 10MB.")
+        
+        if len(file_content) == 0:
+            raise HTTPException(status_code=400, detail="File is empty.")
+        
+        # 4. Save File
         unique_filename = f"{uuid.uuid4()}.{file_ext}"
         file_path = os.path.join(UPLOAD_DIR, unique_filename)
         
         with open(file_path, "wb") as buffer:
-            shutil.copyfileobj(file.file, buffer)
+            buffer.write(file_content)
             
         # 2. Run AI Identification
         plant_data = identify_plant_from_file(file_path)
@@ -106,9 +130,16 @@ async def upload_plant(file: UploadFile = File(...), db: Session = Depends(get_d
         
         return plant_data
 
+    except HTTPException:
+        # Re-raise HTTP exceptions (validation errors) as-is
+        raise
     except Exception as e:
+        # Log detailed error internally
         print(f"Error during upload: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        import traceback
+        traceback.print_exc()
+        # Return generic error to client to avoid leaking internal details
+        raise HTTPException(status_code=500, detail="Upload failed. Please try again later.")
 
 @app.get("/api/public-plants")
 def get_public_plants(db: Session = Depends(get_db)):
